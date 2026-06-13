@@ -1,0 +1,31 @@
+---
+import { getCollection } from 'astro:content';
+import Section from '../../layouts/Section.astro';
+import EntryList from '../../components/EntryList.astro';
+
+const items = (await getCollection('aktuelles'))
+	.filter((e) => !e.id.endsWith('-ko'))
+	.sort(
+		(a, b) =>
+			(b.data.datum ?? b.data.pubDate).valueOf() - (a.data.datum ?? a.data.pubDate).valueOf(),
+	)
+	.map((e) => ({
+		href: `/aktuelles/${e.id}/`,
+		title: e.data.title,
+		eyebrow: e.data.ort,
+		meta: (e.data.datum ?? e.data.pubDate).toLocaleDateString('en-GB', {
+			year: 'numeric',
+			month: 'long',
+			day: 'numeric',
+		}),
+		description: e.data.description,
+	}));
+---
+
+<Section
+	title="News & Events"
+	description="Conferences, talks, readings and announcements by Sool Park."
+	intro="Conferences, lectures, readings and announcements."
+>
+	<EntryList items={items} />
+</Section>

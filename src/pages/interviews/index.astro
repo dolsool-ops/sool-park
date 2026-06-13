@@ -1,0 +1,28 @@
+---
+import { getCollection } from 'astro:content';
+import Section from '../../layouts/Section.astro';
+import EntryList from '../../components/EntryList.astro';
+
+const items = (await getCollection('interviews'))
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+	.map((i) => ({
+		href: `/interviews/${i.id}/`,
+		title: i.data.title,
+		eyebrow: i.data.medium,
+		meta: [
+			i.data.pubDate.toLocaleDateString('en-GB', { year: 'numeric', month: 'long' }),
+			i.data.interviewer,
+		]
+			.filter(Boolean)
+			.join(' · '),
+		description: i.data.description,
+	}));
+---
+
+<Section
+	title="Interviews"
+	description="Interviews and conversations with Sool Park."
+	intro="Conversations and interviews on translation, philosophy and literature."
+>
+	<EntryList items={items} />
+</Section>

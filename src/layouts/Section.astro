@@ -1,0 +1,25 @@
+---
+import Base from './Base.astro';
+import { SITE_TITLE } from '../consts';
+
+interface Props { title: string; description?: string; intro?: string; }
+const { title, description = SITE_TITLE, intro } = Astro.props;
+---
+
+<Base title={`${title} · ${SITE_TITLE}`} description={description}>
+	<header class="section-head">
+		<h1>{title}</h1>
+		{intro && <p class="section-intro">{intro}</p>}
+	</header>
+	<slot />
+</Base>
+<style>
+	.section-head { margin-bottom: 2.6rem; }
+	.section-head h1 { font-size: 2.1rem; }
+	.section-intro {
+		color: rgb(var(--gray));
+		max-width: 38em;
+		margin: 0.5em 0 0;
+		font-size: 1rem;
+	}
+</style>

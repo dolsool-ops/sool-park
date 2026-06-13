@@ -1,0 +1,143 @@
+/* Sool Park — portfolio style. Palatino (Latin) + KoPubWorld Dotum (Korean). */
+
+/* Korean: KoPubWorld Dotum (free license, self-hosted). Latin uses Palatino (system). */
+@font-face {
+	font-family: 'KoPubWorld Dotum';
+	src: local('KoPubWorld Dotum'), url('/fonts/KoPubWorldDotum-Medium.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+4E00-9FFF, U+AC00-D7AF, U+F900-FAFF, U+FF00-FFEF;
+}
+@font-face {
+	font-family: 'KoPubWorld Dotum';
+	src: local('KoPubWorld Dotum Bold'), url('/fonts/KoPubWorldDotum-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+	unicode-range: U+1100-11FF, U+3000-303F, U+3130-318F, U+4E00-9FFF, U+AC00-D7AF, U+F900-FAFF, U+FF00-FFEF;
+}
+
+:root {
+	--accent: #5b4bd6;
+	--accent-dark: #3d2fae;
+	--black: 22, 20, 17;
+	--gray: 140, 136, 128;
+	--gray-light: 233, 231, 225;
+	--gray-dark: 46, 43, 38;
+	--bg: #f0efec;
+	--sidebar-w: 270px;
+	--content-max: 760px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+	font-family: Palatino, 'Palatino Linotype', 'Book Antiqua', 'KoPubWorld Dotum', 'Apple SD Gothic Neo', 'Noto Sans KR', Georgia, serif;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	background: var(--bg);
+	color: rgb(var(--gray-dark));
+	font-size: 18px;
+	line-height: 1.65;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* ---------- two-column shell ---------- */
+.wrap {
+	display: flex;
+	align-items: flex-start;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.content {
+	flex: 1;
+	min-width: 0;
+	max-width: var(--content-max);
+	padding: 4.5rem 3.2rem 7rem;
+}
+@media (max-width: 860px) {
+	.wrap { flex-direction: column; }
+	.content { width: 100%; max-width: 100%; padding: 1.5rem 1.4rem 4rem; }
+}
+
+/* ---------- type ---------- */
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 0.5rem 0;
+	color: rgb(var(--black));
+	line-height: 1.2;
+	font-weight: 700;
+	letter-spacing: normal;
+}
+h1 { font-size: 2.3rem; }
+h2 { font-size: 1.55rem; }
+h3 { font-size: 1.2rem; }
+strong, b { font-weight: 700; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { color: var(--accent-dark); }
+p { margin: 0 0 1.2em; }
+
+hr { border: none; border-top: 1px solid rgb(var(--gray-light)); margin: 2.4em 0; }
+
+img { max-width: 100%; height: auto; display: block; }
+
+code {
+	padding: 2px 5px;
+	background: rgb(var(--gray-light));
+	border-radius: 3px;
+	font-size: 0.9em;
+}
+pre { padding: 1.2em 1.4em; border-radius: 8px; overflow-x: auto; }
+pre > code { all: unset; }
+
+blockquote {
+	border-left: 2px solid var(--accent);
+	padding: 0.1em 0 0.1em 1.2em;
+	margin: 1.4em 0;
+	color: rgb(var(--gray-dark));
+	font-style: italic;
+}
+
+/* ---------- prose (article body) ---------- */
+.prose { font-size: 1.05rem; line-height: 1.75; }
+.prose p { margin: 0 0 1.5em; }
+.prose img { margin: 2em 0; border-radius: 2px; }
+.prose h2 { margin-top: 1.8em; font-size: 1.4rem; }
+.prose h3 { margin-top: 1.5em; }
+.prose blockquote { font-size: 1rem; }
+.prose .buy { font-size: 0.82rem; color: rgb(var(--gray)); margin-top: 1.5em; }
+.prose .buy a { color: rgb(var(--gray)); }
+.prose .buy a:hover { color: var(--accent); }
+/* crawler-resistant email: text stored reversed, displayed via bidi override */
+.eml { unicode-bidi: bidi-override; direction: rtl; }
+
+/* ---------- tables / conference schedule grid ---------- */
+.table-scroll { overflow-x: auto; margin: 1.6em 0; }
+.prose table { border-collapse: collapse; width: 100%; font-size: 0.8rem; line-height: 1.4; }
+.prose th,
+.prose td { border: 1px solid rgb(var(--gray-light)); padding: 0.5em 0.65em; text-align: left; vertical-align: top; }
+.prose thead th { background: rgba(91, 75, 214, 0.08); color: rgb(var(--black)); font-weight: 700; }
+.conf .time { white-space: nowrap; font-weight: 700; color: var(--accent); width: 5.2em; }
+.conf .plenary { background: rgba(91, 75, 214, 0.05); }
+.conf .theme { font-weight: 700; display: block; margin-bottom: 0.15em; }
+.conf .chair { color: rgb(var(--gray)); font-size: 0.92em; }
+.conf ol.talks { margin: 0.4em 0 0; padding-left: 1.2em; }
+.conf ol.talks li { margin: 0.2em 0; }
+.conf td p { margin: 0; }
+
+/* ---------- accessibility ---------- */
+.sr-only {
+	border: 0; padding: 0; margin: 0;
+	position: absolute !important;
+	height: 1px; width: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	white-space: nowrap;
+}

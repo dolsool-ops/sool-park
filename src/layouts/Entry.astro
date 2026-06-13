@@ -1,0 +1,65 @@
+---
+import Base from './Base.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import { SITE_TITLE } from '../consts';
+
+interface Props {
+	title: string;
+	description?: string;
+	date?: Date;
+	meta?: string;
+	eyebrow?: string;
+	backHref?: string;
+	backLabel?: string;
+}
+
+const {
+	title,
+	description = SITE_TITLE,
+	date,
+	meta,
+	eyebrow,
+	backHref,
+	backLabel,
+} = Astro.props;
+---
+
+<Base title={`${title} · ${SITE_TITLE}`} description={description}>
+	<article class="prose">
+		<header class="entry-head">
+			{backHref && <a class="back" href={backHref}>← {backLabel ?? 'Back'}</a>}
+			{eyebrow && <p class="eyebrow">{eyebrow}</p>}
+			<h1>{title}</h1>
+			{
+				(date || meta) && (
+					<p class="entry-meta">
+						{date && <FormattedDate date={date} />}
+						{date && meta && <span> · </span>}
+						{meta && <span>{meta}</span>}
+					</p>
+				)
+			}
+		</header>
+		<slot />
+	</article>
+</Base>
+<style>
+	.entry-head { margin-bottom: 2.4rem; }
+	.back {
+		display: inline-block;
+		margin-bottom: 1.4rem;
+		font-size: 0.85rem;
+		color: rgb(var(--gray));
+	}
+	.back:hover { color: var(--accent); }
+	.eyebrow {
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		font-size: 0.72rem;
+		font-weight: 700;
+		color: var(--accent);
+		margin: 0 0 0.6em;
+	}
+	.entry-head h1 { font-size: 2.1rem; }
+	.entry-meta { color: rgb(var(--gray)); margin: 0.5em 0 0; font-size: 0.9rem; }
+</style>

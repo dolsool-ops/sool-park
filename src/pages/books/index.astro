@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import Section from '../../layouts/Section.astro';
+import EntryList from '../../components/EntryList.astro';
+
+const books = (await getCollection('books')).sort((a, b) => b.data.jahr - a.data.jahr);
+const items = books.map((b) => ({
+	href: `/books/${b.id}/`,
+	title: b.data.title,
+	eyebrow: b.data.autor,
+	meta: [b.data.verlag, b.data.jahr, b.data.status].filter(Boolean).join(' · '),
+	description: b.data.description,
+}));
+---
+
+<Section
+	title="Books"
+	description="Book translations by Sool Park — philosophy and literature between German and Korean."
+	intro="Book translations between German and Korean — philosophy and literature — and the author's own poetry."
+>
+	<EntryList items={items} />
+</Section>

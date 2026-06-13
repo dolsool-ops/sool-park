@@ -1,0 +1,23 @@
+---
+import { getCollection } from 'astro:content';
+import Section from '../../layouts/Section.astro';
+import EntryList from '../../components/EntryList.astro';
+
+const items = (await getCollection('research'))
+	.sort((a, b) => (b.data.jahr ?? 0) - (a.data.jahr ?? 0))
+	.map((r) => ({
+		href: `/research/${r.id}/`,
+		title: r.data.title,
+		eyebrow: r.data.autor,
+		meta: [r.data.jahr, r.data.status].filter(Boolean).join(' · '),
+		description: r.data.description,
+	}));
+---
+
+<Section
+	title="Research"
+	description="Scholarly editions and research projects by Sool Park."
+	intro="Scholarly editions and research projects."
+>
+	<EntryList items={items} />
+</Section>

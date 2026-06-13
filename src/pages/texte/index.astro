@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import Section from '../../layouts/Section.astro';
+import EntryList from '../../components/EntryList.astro';
+
+const texte = (await getCollection('texte'))
+	.filter((t) => !t.data.draft)
+	.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const items = texte.map((t) => ({
+	href: `/texte/${t.id}/`,
+	title: t.data.title,
+	eyebrow: t.data.rubrik,
+	meta: t.data.pubDate.toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' }),
+	description: t.data.description,
+}));
+---
+
+<Section
+	title="Blog"
+	description="Essays, translation criticism, poetry and notes by Sool Park."
+	intro="Essays, translation criticism, poetry and notes — an archive of writing (2015–present). Mostly in Korean and German."
+>
+	<EntryList items={items} />
+</Section>
