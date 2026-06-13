@@ -26,3 +26,9 @@ pnpm-debug.log*
 # WordPress content backups (import sources — kept on disk, not deployed)
 _wp-backup/
 www/
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
