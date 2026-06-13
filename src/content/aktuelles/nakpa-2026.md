@@ -77,7 +77,7 @@ Talks are 30 minutes (20-minute presentation + 10-minute discussion). Parallel s
 <tr>
 <td class="time">14:00–15:30<br>Slot 4</td>
 <td><span class="theme">Methodological Reflections</span><span class="chair">Chair: Jin Y. Park</span><ol class="talks"><li>Jinwoo Park — Jing as a Condition of Ritual Performance</li><li>Janghee Lee — Asymmetry of Korean 'Philosophy' — On Metaphysics</li><li>Seonhee Kim — Qi as Narrative: Understanding the Human Beyond Cognition</li></ol></td>
-<td><span class="theme">Korean Society, Feminism &amp; Religion</span><span class="chair">Chair: Bongrae Seok</span><ol class="talks"><li>Ye Eun Esther Ghim — Continuities in Korean New Religious Movements</li><li>Sophia Jea Oh — Choe Si-hyeong's Gyeongmul and Relational Be-Coming</li><li>Ingrid Mae H. De Jesus — A Genealogy of South Korean Feminist Thought</li></ol></td>
+<td><span class="theme">Korean Society, Feminism &amp; Religion</span><span class="chair">Chair: Bongrae Seok</span><ol class="talks"><li>Ye Eun Esther Ghim — Continuities in Korean New Religious Movements</li><li>Jea Sophia Oh — Choe Si-hyeong's Gyeongmul and Relational Be-Coming</li><li>Ingrid Mae H. De Jesus — A Genealogy of South Korean Feminist Thought</li></ol></td>
 <td><span class="theme">Intercultural &amp; Comparative</span><span class="chair">Chair: Sool Park</span><ol class="talks"><li>David Kim — Joseon Gyeong in Woodruff's Greco-Chinese Matrix</li><li>Boram Jeong — A Phenomenology of Nunchi and Affective Attunement</li><li>Qian Ran — Truth and Public Discourse</li></ol></td>
 </tr>
 <tr><td class="time">15:30–16:00</td><td class="plenary" colspan="3">Coffee break</td></tr>
