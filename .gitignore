@@ -26,3 +26,6 @@ pnpm-debug.log*
 # WordPress content backups (import sources — kept on disk, not deployed)
 _wp-backup/
 www/
+
+# drop zone for new content (not deployed)
+_inbox/

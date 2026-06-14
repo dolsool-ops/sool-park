@@ -131,6 +131,87 @@ blockquote {
 .conf ol.talks li { margin: 0.2em 0; }
 .conf td p { margin: 0; }
 
+/* ---------- bilingual language toggle (interviews) ---------- */
+.bilingual { margin: 0; }
+.lang-radio {
+	position: absolute;
+	width: 1px; height: 1px;
+	opacity: 0;
+	pointer-events: none;
+}
+.lang-switch {
+	display: inline-flex;
+	border: 1px solid rgb(var(--gray-light));
+	border-radius: 999px;
+	overflow: hidden;
+	background: #fff;
+	margin: 0 0 2.4em;
+}
+.lang-switch label {
+	font-size: 0.82rem;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	padding: 0.42em 1.2em;
+	cursor: pointer;
+	color: rgb(var(--gray));
+	user-select: none;
+	transition: background 0.15s ease, color 0.15s ease;
+}
+.lang-switch label + label { border-left: 1px solid rgb(var(--gray-light)); }
+.lang-switch label:hover { color: var(--accent); }
+#iv-en:checked ~ .lang-switch label[for="iv-en"],
+#iv-ko:checked ~ .lang-switch label[for="iv-ko"] {
+	background: var(--accent);
+	color: #fff;
+}
+.lang-radio:focus-visible ~ .lang-switch { outline: 2px solid var(--accent); outline-offset: 2px; }
+.bilingual .pane { display: none; }
+#iv-en:checked ~ .pane-en { display: block; }
+#iv-ko:checked ~ .pane-ko { display: block; }
+.pane .stage {
+	text-align: center;
+	color: rgb(var(--gray));
+	font-style: italic;
+	font-size: 0.92rem;
+	margin: 2em 0;
+}
+.pane .standfirst { color: rgb(var(--gray-dark)); font-style: italic; }
+
+/* speaker colors: Sool = accent purple, Taehun = black, audience = green */
+.pane .q-sool, .pane .q-sool strong { color: var(--accent); }
+.pane .a-taehun, .pane .a-taehun strong { color: rgb(var(--black)); }
+.pane .q-audience, .pane .q-audience strong { color: #1f7a4d; }
+.pane a { text-decoration: underline; text-underline-offset: 0.15em; }
+.pane .credit {
+	border-top: 1px solid rgb(var(--gray-light));
+	margin-top: 2.6em;
+	padding-top: 1.2em;
+	font-size: 0.8rem;
+	font-style: italic;
+	color: rgb(var(--gray));
+}
+
+/* ---------- responsive video embed ---------- */
+.video-embed {
+	position: relative;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	background: #000;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.video-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+/* ---------- figures ---------- */
+.prose figure { margin: 2.2em 0; }
+.prose figure img { margin: 0; border-radius: 2px; }
+.prose figcaption {
+	font-size: 0.82rem;
+	color: rgb(var(--gray));
+	margin-top: 0.6em;
+	line-height: 1.45;
+}
+
 /* ---------- accessibility ---------- */
 .sr-only {
 	border: 0; padding: 0; margin: 0;
