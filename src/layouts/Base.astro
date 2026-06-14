@@ -3,14 +3,14 @@ import BaseHead from '../components/BaseHead.astro';
 import Sidebar from '../components/Sidebar.astro';
 import { SITE_TITLE } from '../consts';
 
-interface Props { title?: string; description?: string; }
-const { title = SITE_TITLE, description = SITE_TITLE } = Astro.props;
+interface Props { title?: string; description?: string; image?: string; }
+const { title = SITE_TITLE, description = SITE_TITLE, image } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={title} description={description} />
+		<BaseHead title={title} description={description} image={image} />
 	</head>
 	<body>
 		<div class="wrap">

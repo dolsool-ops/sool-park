@@ -11,6 +11,7 @@ interface Props {
 	eyebrow?: string;
 	backHref?: string;
 	backLabel?: string;
+	image?: string;
 }
 
 const {
@@ -21,10 +22,11 @@ const {
 	eyebrow,
 	backHref,
 	backLabel,
+	image,
 } = Astro.props;
 ---
 
-<Base title={`${title} · ${SITE_TITLE}`} description={description}>
+<Base title={`${title} · ${SITE_TITLE}`} description={description} image={image}>
 	<article class="prose">
 		<header class="entry-head">
 			{backHref && <a class="back" href={backHref}>← {backLabel ?? 'Back'}</a>}

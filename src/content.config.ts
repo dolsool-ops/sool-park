@@ -56,6 +56,7 @@ const interviews = defineCollection({
 		interviewer: z.string().optional(),
 		url: z.string().optional(),
 		description: z.string().optional(),
+		ogImage: z.string().optional(),
 	}),
 });
 

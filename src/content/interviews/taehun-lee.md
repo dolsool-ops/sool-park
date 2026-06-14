@@ -4,6 +4,7 @@ pubDate: 2024-06-04
 medium: "University of Hildesheim"
 interviewer: "Sool Park"
 description: "Guitarist Taehun Lee in conversation with Sool Park on improvisation, freedom, listening, and the Daoist art of getting out of the way — recorded at an intercultural-philosophy seminar in Hildesheim. Bilingual (English / 한국어)."
+ogImage: "/interviews/taehun-lee-og.jpg"
 ---
 
 <figure>
