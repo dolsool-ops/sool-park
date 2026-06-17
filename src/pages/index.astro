@@ -17,6 +17,14 @@ import Entry from '../layouts/Entry.astro';
 		Philosophy. Translator and author working between German and Korean. Based in Munich.
 	</p>
 
+	<p class="lead-contact">
+		<a href="mailto:sool.park@uni-hildesheim.de">sool.park@uni-hildesheim.de</a>
+		<span class="dot">·</span>
+		<a href="https://uni-hildesheim.academia.edu/SoolPark" target="_blank" rel="me noopener">Academia.edu</a>
+		<span class="dot">·</span>
+		<a href="https://www.instagram.com/parksool_/" target="_blank" rel="me noopener">Instagram</a>
+	</p>
+
 	<h2>Areas of Research</h2>
 	<ul class="plain">
 		<li>Korean philosophy (classical and modern)</li>
@@ -347,7 +355,11 @@ import Entry from '../layouts/Entry.astro';
 	</footer>
 </Entry>
 <style>
-	.lead { font-size: 1.05rem; max-width: 40em; color: rgb(var(--gray-dark)); margin-bottom: 2.4em; }
+	.lead { font-size: 1.05rem; max-width: 40em; color: rgb(var(--gray-dark)); margin-bottom: 1em; }
+	.lead-contact { font-size: 0.95rem; margin: 0 0 2.6em; }
+	.lead-contact a { color: var(--accent); text-decoration: none; }
+	.lead-contact a:hover { text-decoration: underline; }
+	.lead-contact .dot { color: rgb(var(--gray)); margin: 0 0.4em; }
 	.portrait { max-width: 520px; margin: 0 0 2.4em; }
 	.portrait img { width: 100%; height: auto; display: block; border: 1px solid rgb(var(--gray-light)); }
 	.portrait figcaption { font-size: 0.78rem; color: rgb(var(--gray)); margin-top: 0.55em; }

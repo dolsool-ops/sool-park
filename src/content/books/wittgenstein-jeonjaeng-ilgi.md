@@ -1,5 +1,6 @@
 ---
-title: "전쟁일기 — Kriegstagebücher"
+title: "Kriegstagebücher — 전쟁일기"
+kind: "Translation"
 autor: "Ludwig Wittgenstein · 루트비히 비트겐슈타인"
 jahr: 2016
 verlag: "읻다 (Itta)"

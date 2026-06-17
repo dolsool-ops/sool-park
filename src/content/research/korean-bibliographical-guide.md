@@ -1,8 +1,9 @@
 ---
 title: "Histories of Philosophy and Thought in the Korean Language"
+verlag: "Universität Hildesheim (Open Access)"
+kind: "Bibliography"
 autor: "Sool Park · 박술"
 jahr: 2023
-status: "Bibliographical guide · open access"
 description: "A bibliographical guide to historiography of philosophy and thought written in Korean, 8th century to 2021."
 url: "https://hilpub.uni-hildesheim.de/handle/ubhi/15392/"
 ---

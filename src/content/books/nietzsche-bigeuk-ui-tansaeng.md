@@ -1,5 +1,6 @@
 ---
-title: "비극의 탄생 — Die Geburt der Tragödie"
+title: "Die Geburt der Tragödie — 비극의 탄생"
+kind: "Translation"
 autor: "Friedrich Nietzsche · 프리드리히 니체"
 jahr: 2017
 verlag: "읻다 (Itta)"

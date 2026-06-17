@@ -3,11 +3,16 @@ import { getCollection, render } from 'astro:content';
 import Entry from '../../layouts/Entry.astro';
 
 export async function getStaticPaths() {
-	const items = await getCollection('interviews');
-	return items.map((item) => ({ params: { slug: item.id }, props: item }));
+	const items = (await getCollection('interviews')).sort(
+		(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+	);
+	return items.map((item, i) => ({
+		params: { slug: item.id },
+		props: { item, prev: items[i - 1] ?? null, next: items[i + 1] ?? null },
+	}));
 }
 
-const item = Astro.props;
+const { item, prev, next } = Astro.props;
 const { Content } = await render(item);
 const meta = [item.data.medium, item.data.interviewer].filter(Boolean).join(' · ');
 ---
@@ -21,6 +26,10 @@ const meta = [item.data.medium, item.data.interviewer].filter(Boolean).join(' ·
 	image={item.data.ogImage}
 	backHref="/interviews/"
 	backLabel="All interviews"
+	prevHref={prev ? `/interviews/${prev.id}/` : undefined}
+	prevLabel={prev?.data.title}
+	nextHref={next ? `/interviews/${next.id}/` : undefined}
+	nextLabel={next?.data.title}
 >
 	<Content />
 	{item.data.url && (

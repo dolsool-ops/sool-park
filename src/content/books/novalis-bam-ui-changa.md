@@ -1,5 +1,6 @@
 ---
-title: "밤의 찬가 · 철학 파편집 — Hymnen an die Nacht"
+title: "Hymnen an die Nacht — 밤의 찬가 · 철학 파편집"
+kind: "Translation"
 autor: "Novalis · 노발리스"
 jahr: 2018
 verlag: "읻다 (Itta)"

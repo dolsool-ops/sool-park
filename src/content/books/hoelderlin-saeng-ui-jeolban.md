@@ -1,5 +1,6 @@
 ---
-title: "생의 절반 — Hälfte des Lebens"
+title: "Hälfte des Lebens — 생의 절반"
+kind: "Translation"
 autor: "Friedrich Hölderlin · 프리드리히 횔덜린"
 jahr: 2024
 verlag: "읻다 (Itta · 시인선 15)"

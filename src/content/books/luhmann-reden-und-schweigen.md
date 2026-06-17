@@ -1,9 +1,9 @@
 ---
-title: "말과 침묵 — Reden und Schweigen"
+title: "Reden und Schweigen — 말과 침묵"
+kind: "Translation"
 autor: "Niklas Luhmann & Peter Fuchs · 니클라스 루만, 페터 푹스"
 jahr: 2014
 verlag: "문학과사회 105호 · 문학과지성사"
-status: "journal translation · 잡지 수록"
 description: "Sool Park's first published translation — Luhmann & Fuchs on speaking and silence, in the literary quarterly Literature and Society (issue 105)."
 ---
 

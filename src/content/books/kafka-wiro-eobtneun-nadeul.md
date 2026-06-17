@@ -1,5 +1,6 @@
 ---
-title: "위로 없는 날들 — Die Zürauer Aphorismen"
+title: "Die Zürauer Aphorismen — 위로 없는 날들"
+kind: "Translation"
 autor: "Franz Kafka · 프란츠 카프카"
 jahr: 2024
 verlag: "읻다 (Itta)"

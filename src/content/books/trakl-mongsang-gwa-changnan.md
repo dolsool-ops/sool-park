@@ -1,9 +1,10 @@
 ---
-title: "몽상과 착란 — Traum und Umnachtung"
+title: "Traum und Umnachtung — 몽상과 착란"
+kind: "Translation"
 autor: "Georg Trakl · 게오르크 트라클"
 jahr: 2020
 verlag: "읻다 (Itta · 시인선 9)"
-status: "out of print · 절판"
+status: "Out of print · 절판"
 description: "Selected poems of the great Expressionist, translated from Walter Killy's edition of Trakl's poetic work."
 ---
 

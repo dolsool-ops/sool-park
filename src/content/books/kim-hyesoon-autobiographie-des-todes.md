@@ -1,5 +1,6 @@
 ---
-title: "Autobiographie des Todes — 죽음의 자서전"
+title: "죽음의 자서전 — Autobiographie des Todes"
+kind: "Translation"
 autor: "Kim Hyesoon · 김혜순"
 jahr: 2025
 verlag: "S. Fischer"

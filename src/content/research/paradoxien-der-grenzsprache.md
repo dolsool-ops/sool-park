@@ -1,8 +1,9 @@
 ---
 title: "Paradoxien der Grenzsprache und das Problem der Übersetzung"
+verlag: "Königshausen & Neumann"
+kind: "Dissertation"
 autor: "Sool Park · 박술"
 jahr: 2022
-status: "Doctoral dissertation · 박사학위논문"
 description: "Sool Park's dissertation — a philosophy of 'limit-language' (Wittgenstein) and the problem of translating philosophical texts."
 url: "https://verlag.koenigshausen-neumann.de/product/9783826075261-paradoxien-der-grenzsprache-und-das-problem-der-uebersetzung/"
 ---

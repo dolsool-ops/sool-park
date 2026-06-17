@@ -16,11 +16,11 @@ const year = new Date().getFullYear();
 			{
 				NAV.map((item) =>
 					item.children ? (
-						<details class="group" open={item.children.some((c) => isActive(c.href))}>
-							<summary class="nav-link summary">
+						<div class="group">
+							<span class="nav-link group-label">
 								<span class="arrow">→</span>
 								<span>{item.label}</span>
-							</summary>
+							</span>
 							<div class="sub">
 								{item.children.map((c) => (
 									<a href={c.href} class:list={['nav-link', 'sub-link', { active: isActive(c.href) }]}>
@@ -29,7 +29,7 @@ const year = new Date().getFullYear();
 									</a>
 								))}
 							</div>
-						</details>
+						</div>
 					) : (
 						<a href={item.href} class:list={['nav-link', { active: isActive(item.href) }]}>
 							<span class="arrow">→</span>
@@ -92,18 +92,11 @@ const year = new Date().getFullYear();
 	.nav-link.active .arrow { opacity: 1; }
 	.nav-link.active { color: var(--accent); font-weight: 700; }
 
-	/* collapsible group (Work) — shares .nav-link so the label aligns with the others */
+	/* Work group — always expanded; the label is a non-clickable category header */
 	.group { margin: 0; }
-	.summary { cursor: pointer; list-style: none; user-select: none; }
-	.summary::-webkit-details-marker { display: none; }
-	.summary::after {
-		content: '+';
-		margin-left: 0.5em;
-		color: rgb(var(--gray));
-		font-size: 0.95em;
-		opacity: 0.7;
-	}
-	.group[open] .summary::after { content: '–'; }
+	.group-label { cursor: default; }
+	.group-label:hover { color: rgb(var(--gray-dark)); }
+	.group-label .arrow { opacity: 0 !important; }
 	.sub { display: flex; flex-direction: column; gap: 0.05em; padding: 0.05em 0 0.4em 1.3em; }
 	.sub-link { font-size: 0.96rem; }
 

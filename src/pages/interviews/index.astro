@@ -8,10 +8,11 @@ const items = (await getCollection('interviews'))
 	.map((i) => ({
 		href: `/interviews/${i.id}/`,
 		title: i.data.title,
-		eyebrow: i.data.medium,
+		eyebrow: 'Interview',
 		meta: [
-			i.data.pubDate.toLocaleDateString('en-GB', { year: 'numeric', month: 'long' }),
+			i.data.medium,
 			i.data.interviewer,
+			i.data.pubDate.toLocaleDateString('en-GB', { year: 'numeric', month: 'long' }),
 		]
 			.filter(Boolean)
 			.join(' · '),

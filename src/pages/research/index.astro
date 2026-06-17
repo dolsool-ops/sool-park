@@ -8,8 +8,8 @@ const items = (await getCollection('research'))
 	.map((r) => ({
 		href: `/research/${r.id}/`,
 		title: r.data.title,
-		eyebrow: r.data.autor,
-		meta: [r.data.jahr, r.data.status].filter(Boolean).join(' · '),
+		eyebrow: r.data.kind ?? r.data.autor,
+		meta: [r.data.autor, r.data.verlag, r.data.jahr, r.data.status].filter(Boolean).join(' · '),
 		description: r.data.description,
 	}));
 ---

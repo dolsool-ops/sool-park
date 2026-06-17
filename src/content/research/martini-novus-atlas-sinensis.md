@@ -1,5 +1,6 @@
 ---
 title: "Novus Atlas Sinensis (1655)"
+kind: "Translation"
 autor: "Martino Martini, S.J."
 jahr: 2026
 status: "Bilingual · Latin / Korean"

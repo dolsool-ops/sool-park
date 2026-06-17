@@ -3,22 +3,31 @@ import { getCollection, render } from 'astro:content';
 import Entry from '../../layouts/Entry.astro';
 
 export async function getStaticPaths() {
-	const items = await getCollection('research');
-	return items.map((item) => ({ params: { slug: item.id }, props: item }));
+	const items = (await getCollection('research')).sort((a, b) => (b.data.jahr ?? 0) - (a.data.jahr ?? 0));
+	return items.map((item, i) => ({
+		params: { slug: item.id },
+		props: { item, prev: items[i - 1] ?? null, next: items[i + 1] ?? null },
+	}));
 }
 
-const item = Astro.props;
+const { item, prev, next } = Astro.props;
 const { Content } = await render(item);
-const meta = [item.data.jahr, item.data.status].filter(Boolean).join(' · ');
+const meta = [item.data.autor, item.data.verlag, item.data.jahr, item.data.status]
+	.filter(Boolean)
+	.join(' · ');
 ---
 
 <Entry
 	title={item.data.title}
 	description={item.data.description ?? item.data.title}
-	eyebrow={item.data.autor}
+	eyebrow={item.data.kind ?? item.data.autor}
 	meta={meta}
 	backHref="/research/"
 	backLabel="All research"
+	prevHref={prev ? `/research/${prev.id}/` : undefined}
+	prevLabel={prev?.data.title}
+	nextHref={next ? `/research/${next.id}/` : undefined}
+	nextLabel={next?.data.title}
 >
 	<Content />
 </Entry>

@@ -8,6 +8,7 @@ const books = defineCollection({
 	schema: ({ image }) =>
 		z.object({
 			title: z.string(),
+			kind: z.string().optional(),
 			autor: z.string().optional(),
 			jahr: z.number(),
 			verlag: z.string().optional(),
@@ -24,8 +25,10 @@ const research = defineCollection({
 	schema: ({ image }) =>
 		z.object({
 			title: z.string(),
+			kind: z.string().optional(),
 			autor: z.string().optional(),
 			jahr: z.number().optional(),
+			verlag: z.string().optional(),
 			status: z.string().optional(),
 			description: z.string().optional(),
 			url: z.string().optional(),

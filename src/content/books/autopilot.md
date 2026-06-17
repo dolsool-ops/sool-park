@@ -1,9 +1,9 @@
 ---
 title: "오토파일럿 — Autopilot"
+kind: "Poetry"
 autor: "Sool Park · 박술"
 jahr: 2025
 verlag: "아침달 (Achimdal)"
-status: "own poetry · 자작 시집"
 description: "Sool Park's own first poetry collection — Achimdal Poetry series vol. 47; selected by 94 poets and editors as a 'young poet of tomorrow.'"
 ---
 

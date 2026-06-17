@@ -1,8 +1,9 @@
 ---
 title: "Chang Dobin: History of Korean Thought (1925)"
+verlag: "Universität Hildesheim (Open Access)"
+kind: "Translation & Commentary"
 autor: "Chang Dobin · 장도빈 (tr. & comm. Sool Park)"
 jahr: 2024
-status: "Translation & commentary · open access"
 description: "Sool Park's German translation and commentary of Chang Dobin's 1925 work — the first history of Korean philosophy written in Korean."
 url: "https://hilpub.uni-hildesheim.de/entities/publication/5c7660b0-d987-4826-9b74-301c163aa113"
 ---

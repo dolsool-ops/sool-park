@@ -3,11 +3,16 @@ import { getCollection, render } from 'astro:content';
 import Entry from '../../layouts/Entry.astro';
 
 export async function getStaticPaths() {
-	const items = await getCollection('texte');
-	return items.map((item) => ({ params: { slug: item.id }, props: item }));
+	const items = (await getCollection('texte'))
+		.filter((t) => !t.data.draft)
+		.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+	return items.map((item, i) => ({
+		params: { slug: item.id },
+		props: { item, prev: items[i - 1] ?? null, next: items[i + 1] ?? null },
+	}));
 }
 
-const item = Astro.props;
+const { item, prev, next } = Astro.props;
 const { Content } = await render(item);
 ---
 
@@ -18,6 +23,10 @@ const { Content } = await render(item);
 	eyebrow={item.data.rubrik}
 	backHref="/texte/"
 	backLabel="All posts"
+	prevHref={prev ? `/texte/${prev.id}/` : undefined}
+	prevLabel={prev?.data.title}
+	nextHref={next ? `/texte/${next.id}/` : undefined}
+	nextLabel={next?.data.title}
 >
 	<Content />
 </Entry>

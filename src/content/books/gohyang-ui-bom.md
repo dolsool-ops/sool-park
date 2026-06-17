@@ -1,5 +1,6 @@
 ---
 title: "고향의 봄 — Spring in the Homeland"
+kind: "Translation"
 autor: "Korean Art Songs · 한국 가곡"
 jahr: 2023
 verlag: "풍월당 (Pungwoldang)"

@@ -7,8 +7,8 @@ const books = (await getCollection('books')).sort((a, b) => b.data.jahr - a.data
 const items = books.map((b) => ({
 	href: `/books/${b.id}/`,
 	title: b.data.title,
-	eyebrow: b.data.autor,
-	meta: [b.data.verlag, b.data.jahr, b.data.status].filter(Boolean).join(' · '),
+	eyebrow: b.data.kind ?? b.data.autor,
+	meta: [b.data.autor, b.data.verlag, b.data.jahr, b.data.status].filter(Boolean).join(' · '),
 	description: b.data.description,
 }));
 ---

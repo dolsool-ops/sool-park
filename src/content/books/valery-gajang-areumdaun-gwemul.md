@@ -1,9 +1,9 @@
 ---
-title: "가장 아름다운 괴물이 저 자신을 괴롭힌다 — Paul Valéry"
+title: "가장 아름다운 괴물이 저 자신을 괴롭힌다"
+kind: "Co-translation"
 autor: "Paul Valéry · 폴 발레리 (공역)"
 jahr: 2018
 verlag: "읻다 (Itta)"
-status: "co-translation · 공역"
 description: "An Itta anthology of Paul Valéry's poetry, co-translated by several hands — Sool Park among them."
 ---
 

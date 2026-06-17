@@ -1,9 +1,10 @@
 ---
 title: "우리는 순수한 것을 생각했다"
+kind: "Co-translation"
 autor: "Various poets · 여러 시인 (공역)"
 jahr: 2016
 verlag: "읻다 (Itta)"
-status: "not for sale · 비매품"
+status: "Not for sale · 비매품"
 description: "An early, non-commercial Itta anthology of world poetry — Rilke, Kafka, Miyazawa Kenji, Lu Xun and others — co-translated by six hands incl. Sool Park."
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: "패러데이와 맥스웰 — Faraday, Maxwell, and the Electromagnetic Field"
+title: "Faraday, Maxwell, and the Electromagnetic Field — 패러데이와 맥스웰"
+kind: "Translation"
 autor: "Nancy Forbes & Basil Mahon · 낸시 포브스, 배질 마혼"
 jahr: 2015
 verlag: "반니 (Banni)"
