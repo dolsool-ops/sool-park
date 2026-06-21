@@ -43,16 +43,16 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 약 
 <tr><td class="time">12:30–14:00</td><td class="plenary" colspan="3">점심 (Mensa)</td></tr>
 <tr>
 <td class="time">14:00–15:30<br>세션 1</td>
-<td><span class="theme">Joseon Political Philosophy</span><span class="chair">좌장: David Kim</span><ol class="talks"><li>Hyeon Sop Baek — Freedom and Decoloniality in Jeong Do-jeon's Thought</li><li>Juyong Kim — Mencian Autonomy in the Social World: the Neo-Confucian Reading of Mencius through Dasan</li><li>Nikolett Roque-Kőrösi — Minbon and Political Responsibility in Silhak Thought</li></ol></td>
-<td><span class="theme">Dasan Jeong Yagyong</span><span class="chair">좌장: Boram Jeong</span><ol class="talks"><li>Sang Hyun Chung — The Human Body (shin) in Tasan's Philosophy</li><li>Insok Hwang — The Moral Subject of 'Weighing': Dasan's Theory of Quan</li><li>Eun-Young Kim — Jeong Yakyong in Comparative Dialogue with Hume and Kant</li></ol></td>
-<td><span class="theme">Modern Korean Thinkers</span><span class="chair">좌장: Song Chong Lee</span><ol class="talks"><li>Jae Won Edward Chung — A Cosmotechnical Approach to Korean Vitalism: Kim Chiha</li><li>Hye Young Kim — Shame and Ethical Self-Relation: Yun Dong-Ju and Agnes Heller</li><li>Juman Kim — Ham Sok Hon on Revolution, Religion, and the Politics of Humanism</li></ol></td>
+<td><span class="theme">Joseon Political Philosophy</span><span class="chair">좌장: David Kim</span><ol class="talks"><li>Hyeon Sop Baek (Hawaii) — Freedom and Decoloniality in Jeong Do-jeon's Thought</li><li>Juyong Kim (Warwick) — Mencian Autonomy in the Social World: the Neo-Confucian Reading of Mencius through Dasan</li><li>Nikolett Roque-Kőrösi (Károli Gáspár) — Minbon and Political Responsibility in Silhak Thought</li></ol></td>
+<td><span class="theme">Dasan Jeong Yagyong</span><span class="chair">좌장: Boram Jeong</span><ol class="talks"><li>Sang Hyun Chung — The Human Body (shin) in Tasan's Philosophy</li><li>Insok Hwang (SKKU) — The Moral Subject of 'Weighing': Dasan's Theory of Quan</li><li>Eun-Young Kim (SKKU) — Jeong Yakyong in Comparative Dialogue with Hume and Kant</li></ol></td>
+<td><span class="theme">Modern Korean Thinkers</span><span class="chair">좌장: Song Chong Lee</span><ol class="talks"><li>Jae Won Edward Chung (Rutgers) — A Cosmotechnical Approach to Korean Vitalism: Kim Chiha</li><li>Hye Young Kim (ENS Paris) — Shame and Ethical Self-Relation: Yun Dong-Ju and Agnes Heller</li><li>Juman Kim (Towson) — Ham Sok Hon on Revolution, Religion, and the Politics of Humanism</li></ol></td>
 </tr>
 <tr><td class="time">15:30–16:00</td><td class="plenary" colspan="3">휴식</td></tr>
 <tr>
 <td class="time">16:00–17:30<br>세션 2</td>
-<td><span class="theme">Mid-Joseon: Four-Seven Debate &amp; Seongho</span><span class="chair">좌장: Jin Y. Park</span><ol class="talks"><li>Jeseong Bae / Youngsun Back — When Moral Emotions Go Wrong</li><li>Jaeryung Lim — Seongho Yi Ik's Theory of Perception (Jigak)</li><li>Hajin Oh — Gong in Seongho Yi Ik's Theory of Four Beginnings and Seven Emotions</li></ol></td>
-<td><span class="theme">Neo-Confucianism &amp; Silhak</span><span class="chair">좌장: Yoko Arisaka</span><ol class="talks"><li>Bongrae Seok — The Horak Debate and Intercultural AI Ethics</li><li>Suk G. Choi — Scholars of Silhak on Music</li><li>Chan Lee — Vice in Neo-Confucian Ethics: Qi, Luck, and Moral Responsibility</li></ol></td>
-<td><span class="theme">Korean Buddhism I</span><span class="chair">좌장: Halla Kim</span><ol class="talks"><li>Edris Voet — The 'Brief Transcriptions of Efficacious Resonance,' 1485</li><li>Sumi Lee — Between and Beyond the Ultimate and the Phenomenal</li><li>Moonsuk Heo / Hye Yu Sunim — Korean Buddhism: Hanmaum Seonwon's German Branch</li></ol></td>
+<td><span class="theme">Mid-Joseon: Four-Seven Debate &amp; Seongho</span><span class="chair">좌장: Jin Y. Park</span><ol class="talks"><li>Jeseong Bae / Youngsun Back (SKKU) — When Moral Emotions Go Wrong</li><li>Jaeryung Lim (Ewha) — Seongho Yi Ik's Theory of Perception (Jigak)</li><li>Hajin Oh (Ewha) — Gong in Seongho Yi Ik's Theory of Four Beginnings and Seven Emotions</li></ol></td>
+<td><span class="theme">Neo-Confucianism &amp; Silhak</span><span class="chair">좌장: Yoko Arisaka</span><ol class="talks"><li>Bongrae Seok (Alvernia) — The Horak Debate and Intercultural AI Ethics</li><li>Suk G. Choi (Towson) — Scholars of Silhak on Music</li><li>Chan Lee (Korea University) — Vice in Neo-Confucian Ethics: Qi, Luck, and Moral Responsibility</li></ol></td>
+<td><span class="theme">Korean Buddhism I</span><span class="chair">좌장: Halla Kim</span><ol class="talks"><li>Edris Voet (Oxford) — The 'Brief Transcriptions of Efficacious Resonance,' 1485</li><li>Sumi Lee (Ewha) — Between and Beyond the Ultimate and the Phenomenal</li><li>Moonsuk Heo / Hye Yu Sunim (Hanmaum Seonwon) — Korean Buddhism: Hanmaum Seonwon's German Branch</li></ol></td>
 </tr>
 <tr><td class="time">18:00</td><td class="plenary" colspan="3">환영 만찬 · 뷔페 (Musiksaal, HC.K.1)</td></tr>
 </tbody>
@@ -67,25 +67,25 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 약 
 <tbody>
 <tr>
 <td class="time">09:00–10:30<br>세션 3</td>
-<td><span class="theme">Joseon Political Philosophy &amp; Governance</span><span class="chair">좌장: Song Chong Lee</span><ol class="talks"><li>Heewon Byun — The Political-Philosophical Role of Shu</li><li>Ji-hyun Ahn — The Canonization of the Simgyeong and Joseon Confucianism</li><li>Hyangjun Lee — Joseon from the Perspective of Neo-Confucian Narrative</li></ol></td>
-<td><span class="theme">Heart/Mind, Desire and Diagrams</span><span class="chair">좌장: Suk G. Choi</span><ol class="talks"><li>Borum Kim — Jeong Yak-yong's 'Chu-seo': The Circuit of Reflected Desire</li><li>Sangwho Shin — The Heart-Mind in Yulgok Yi I's Philosophy</li><li>Maria Long — From Taiji tu to Cheonmyeong do: Comparative Cosmology</li></ol></td>
-<td><span class="theme">Korean Buddhism II &amp; Comparative Ethics</span><span class="chair">좌장: Halla Kim</span><ol class="talks"><li>Thapakorn Kamnerdsiri — Won Buddhism, Ethics and the Others</li><li>Seolin Choi — Non-Obstruction and Transcendental Freedom in Wonhyo and Kant</li><li>WooHyun Jung — Immanent Transcendence in Tian, Kant, and Donghak</li></ol></td>
+<td><span class="theme">Joseon Political Philosophy &amp; Governance</span><span class="chair">좌장: Song Chong Lee</span><ol class="talks"><li>Heewon Byun (Ewha) — The Political-Philosophical Role of Shu</li><li>Ji-hyun Ahn (SKKU) — The Canonization of the Simgyeong and Joseon Confucianism</li><li>Hyangjun Lee (Chonnam National University) — Joseon from the Perspective of Neo-Confucian Narrative</li></ol></td>
+<td><span class="theme">Heart/Mind, Desire and Diagrams</span><span class="chair">좌장: Suk G. Choi</span><ol class="talks"><li>Borum Kim (Anyang) — Jeong Yak-yong's 'Chu-seo': The Circuit of Reflected Desire</li><li>Sangwho Shin (Academy of Korean Studies) — The Heart-Mind in Yulgok Yi I's Philosophy</li><li>Maria Long (Linnaeus) — From Taiji tu to Cheonmyeong do: Comparative Cosmology</li></ol></td>
+<td><span class="theme">Korean Buddhism II &amp; Comparative Ethics</span><span class="chair">좌장: Halla Kim</span><ol class="talks"><li>Thapakorn Kamnerdsiri (Thammasat) — Won Buddhism, Ethics and the Others</li><li>Seolin Choi (Ewha) — Non-Obstruction and Transcendental Freedom in Wonhyo and Kant</li><li>WooHyun Jung (Sogang) — Immanent Transcendence in Tian, Kant, and Donghak</li></ol></td>
 </tr>
 <tr><td class="time">10:30–10:45</td><td class="plenary" colspan="3">휴식</td></tr>
 <tr><td class="time">10:45–12:15</td><td class="plenary" colspan="3"><span class="theme">전체 패널 2 · The Realms of East Asian Literati Arts</span><span class="chair">좌장: David Kim</span><ol class="talks"><li>Jiehua Cai (Munich) — The Development of Korean Literati Painting</li><li>Cun-Yi Zhang (Munich) — Late Ming and Joseon Korean Literati Brush Notes</li><li>Elmar Oberfrank (Munich) — The 64th Chapter of the 'Journey to the West'</li><li>Marc Nürnberger (Munich) — Viewing Stones in Joseon Korea</li></ol></td></tr>
 <tr><td class="time">12:30–14:00</td><td class="plenary" colspan="3">점심 (Mensa)</td></tr>
 <tr>
 <td class="time">14:00–15:30<br>세션 4</td>
-<td><span class="theme">Methodological Reflections</span><span class="chair">좌장: Jin Y. Park</span><ol class="talks"><li>Jinwoo Park — Jing as a Condition of Ritual Performance</li><li>Janghee Lee — Asymmetry of Korean 'Philosophy' — On Metaphysics</li><li>Seonhee Kim — Qi as Narrative: Understanding the Human Beyond Cognition</li></ol></td>
-<td><span class="theme">Korean Society, Feminism &amp; Religion</span><span class="chair">좌장: Bongrae Seok</span><ol class="talks"><li>Ye Eun Esther Ghim — Continuities in Korean New Religious Movements</li><li>Jea Sophia Oh — Choe Si-hyeong's Gyeongmul and Relational Be-Coming</li><li>Ingrid Mae H. De Jesus — A Genealogy of South Korean Feminist Thought</li></ol></td>
-<td><span class="theme">Intercultural &amp; Comparative</span><span class="chair">좌장: Sool Park</span><ol class="talks"><li>David Kim — Joseon Gyeong in Woodruff's Greco-Chinese Matrix</li><li>Boram Jeong — A Phenomenology of Nunchi and Affective Attunement</li><li>Qian Ran — Truth and Public Discourse</li></ol></td>
+<td><span class="theme">Methodological Reflections</span><span class="chair">좌장: Jin Y. Park</span><ol class="talks"><li>Jinwoo Park (SKKU) — Jing as a Condition of Ritual Performance</li><li>Janghee Lee (Gyeongin Univ. of Education) — Asymmetry of Korean 'Philosophy' — On Metaphysics</li><li>Seonhee Kim (Ewha) — Qi as Narrative: Understanding the Human Beyond Cognition</li></ol></td>
+<td><span class="theme">Korean Society, Feminism &amp; Religion</span><span class="chair">좌장: Bongrae Seok</span><ol class="talks"><li>Ye Eun Esther Ghim (SNU) — Continuities in Korean New Religious Movements</li><li>Jea Sophia Oh (West Chester) — Choe Si-hyeong's Gyeongmul and Relational Be-Coming</li><li>Ingrid Mae H. De Jesus (UP Diliman) — A Genealogy of South Korean Feminist Thought</li></ol></td>
+<td><span class="theme">Intercultural &amp; Comparative</span><span class="chair">좌장: Sool Park</span><ol class="talks"><li>David Kim (San Francisco) — Joseon Gyeong in Woodruff's Greco-Chinese Matrix</li><li>Boram Jeong (Colorado Denver) — A Phenomenology of Nunchi and Affective Attunement</li><li>Qian Ran (Bochum) — Truth and Public Discourse</li></ol></td>
 </tr>
 <tr><td class="time">15:30–16:00</td><td class="plenary" colspan="3">휴식</td></tr>
 <tr>
 <td class="time">16:00–17:30<br>세션 5</td>
-<td><span class="theme">Korean Culture &amp; Religion</span><span class="chair">좌장: Youngsun Back</span><ol class="talks"><li>Anthony Curtis Adler — A Tale of Two Dragons: Bong Joon Ho and Daoist Nature</li><li>HyeonMinh Ryu — Xunzi's Sanhuo and the Limits of Counter-Naming</li><li>Wonjean Lee — Hauntology and Techno-shamanism in Korean Specter Narratives</li></ol></td>
-<td><span class="theme">Modern Korean Thought &amp; Intercultural</span><span class="chair">좌장: Bongrae Seok</span><ol class="talks"><li>Song Chong Lee — Ham Sok Hon's Reception of Henri Bergson</li><li>Sunuk Kim — Seiendes, 存在者, and the Limits of Ontological Difference</li><li>Yookyung Nho-von Blumröder — Confucian and Buddhist Thought in Musical Language</li></ol></td>
-<td><span class="theme">Comparative Confucian Ethics</span><span class="chair">좌장: Hwa Yeong Wang</span><ol class="talks"><li>George Tsai — Generative AI and the Loss of Practice: A Confucian Account</li><li>Lok Chui Chao — Resentment (Yuan) and Dasan's Moral Psychology</li><li>추후 공지</li></ol></td>
+<td><span class="theme">Korean Culture &amp; Religion</span><span class="chair">좌장: Youngsun Back</span><ol class="talks"><li>Anthony Curtis Adler (Yonsei) — A Tale of Two Dragons: Bong Joon Ho and Daoist Nature</li><li>HyeonMinh Ryu (SNU) — Xunzi's Sanhuo and the Limits of Counter-Naming</li><li>Wonjean Lee (Sookmyung) — Hauntology and Techno-shamanism in Korean Specter Narratives</li></ol></td>
+<td><span class="theme">Modern Korean Thought &amp; Intercultural</span><span class="chair">좌장: Bongrae Seok</span><ol class="talks"><li>Song Chong Lee (SNU) — Ham Sok Hon's Reception of Henri Bergson</li><li>Sunuk Kim (Hildesheim) — Seiendes, 存在者, and the Limits of Ontological Difference</li><li>Yookyung Nho-von Blumröder (Cologne) — Confucian and Buddhist Thought in Musical Language</li></ol></td>
+<td><span class="theme">Comparative Confucian Ethics</span><span class="chair">좌장: Hwa Yeong Wang</span><ol class="talks"><li>George Tsai (Hawaii) — Generative AI and the Loss of Practice: A Confucian Account</li><li>Lok Chui Choo (Hawaii) — Resentment (Yuan) and Dasan's Moral Psychology</li><li>추후 공지</li></ol></td>
 </tr>
 <tr><td class="time">17:30–18:15</td><td class="plenary" colspan="3">폐회사 및 NAKPA 총회 (Musiksaal)</td></tr>
 <tr><td class="time">18:30</td><td class="plenary" colspan="3">폐회 만찬 (Südklause)</td></tr>
@@ -96,6 +96,10 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 약 
 ## 참가 신청
 
 **발표 신청(초록 제출)은 이미 마감되었습니다** — [NAKPA 제출 페이지](https://nakpa.weebly.com/proposal-submission.html) 참조. 다만 청중 참석은 관심 있는 학생·연구자·일반인 누구나 가능합니다. 참석을 원하시는 분은 성명과 소속을 적어 주최자 **박술**에게 이메일로 연락해 주십시오 — dolsool [at] gmail [dot] com. 발표자와 좌장은 별도 신청 없이 자동 등록됩니다. NAKPA 회원 가입 문의는 NAKPA로 직접 연락해 주십시오 (kim.halla [at] hotmail.com).
+
+## 재정 지원
+
+학술대회 기간의 만찬과 커피 브레이크는 주최 측이 제공합니다. 아울러 박사 학위를 아직 취득하지 않은 초기 경력 연구자(early-career researcher)를 위한 재정 지원에도 최선을 다하겠습니다. 지원 규모는 외부 기금 확보 상황에 따라 달라지며, 2026년 9월에 공지될 예정입니다. 지원 대상자는 학술대회 현장에서 작성할 양식을 받게 됩니다.
 
 ## 장소 및 오시는 길
 
