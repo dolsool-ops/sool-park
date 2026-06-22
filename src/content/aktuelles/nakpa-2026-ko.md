@@ -105,8 +105,13 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 약 
 
 모든 행사는 **힐데스하임대학교 본 캠퍼스(Universitätsplatz 1, 31141 Hildesheim**, Marienburger Höhe 지구)에서 열립니다. 전체 세션은 Musiksaal(HC.K.1), 병렬 세션은 HC.J.1.07·HC.J.2.09 강의실에서 진행되며, 점심은 대학 식당(Mensa)에서 제공됩니다.
 
+<figure style="margin:1.6em 0;">
+<img src="/news/hauptcampus-map.jpg" alt="힐데스하임대학교 본 캠퍼스(Marienburger Höhe) 지도" style="width:100%;max-width:760px;height:auto;border:1px solid rgb(var(--gray-light));" />
+<figcaption style="font-size:0.8rem;color:rgb(var(--gray));margin-top:0.5em;line-height:1.5;">본 캠퍼스(Marienburger Höhe). 전체회의는 <strong>Musiksaal — K동</strong>, 병렬 세션은 <strong>J동</strong>(HC.J.1.07 · HC.J.2.09), GloPhi는 <strong>H동</strong>, 점심은 <strong>Mensa</strong>(왼쪽 아래). 지도: 힐데스하임대학교.</figcaption>
+</figure>
+
 - **프랑크푸르트 공항(FRA)에서:** 힐데스하임 중앙역(Hildesheim Hbf)까지 직행 ICE가 하루 수차례 운행하며 가장 빠른 연결편은 약 2시간 30분 소요. 직행이 아닐 경우 괴팅겐 또는 하노버 중앙역에서 1회 환승.
-- **하노버 공항(HAJ)에서:** S5로 하노버 중앙역(약 18분) 이동 후, RE10(erixx)으로 힐데스하임 중앙역까지(약 25–30분). 전체 약 1시간.
+- **하노버 공항(HAJ)에서:** S5로 하노버 중앙역(약 18분) 이동 후, RE10(erixx)으로 힐데스하임 중앙역까지(약 25–30분). 전체 약 1시간. 또는 공항에서 힐데스하임까지 택시로 직접 이동할 수 있으며, 약 40분(A7 경유 약 50 km)·요금 대략 140–160유로입니다.
 - **중앙역에서 캠퍼스까지:** 버스 1·4·10·34·42번 *"Hildesheim / Universität"* 정류장 하차, 또는 택시(약 10분). 캠퍼스 내 주차 가능.
 
 대학 공식 오시는 길: [uni-hildesheim.de/anfahrt/anfahrt-marienburger-hoehe](https://www.uni-hildesheim.de/anfahrt/anfahrt-marienburger-hoehe)

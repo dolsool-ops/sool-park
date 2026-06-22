@@ -105,8 +105,13 @@ Dinner and coffee breaks during the conference are provided by the organizers. W
 
 All events take place at the **Main Campus of the University of Hildesheim, Universitätsplatz 1, 31141 Hildesheim** (Marienburger Höhe). Plenary sessions are in the Musiksaal (HC.K.1); parallel sessions in HC.J.1.07 and HC.J.2.09; lunch at the university Mensa.
 
+<figure style="margin:1.6em 0;">
+<img src="/news/hauptcampus-map.jpg" alt="Map of the Main Campus (Marienburger Höhe), University of Hildesheim" style="width:100%;max-width:760px;height:auto;border:1px solid rgb(var(--gray-light));" />
+<figcaption style="font-size:0.8rem;color:rgb(var(--gray));margin-top:0.5em;line-height:1.5;">Main Campus (Marienburger Höhe). Plenary sessions in the <strong>Musiksaal — Building K</strong>; parallel sessions in <strong>Building J</strong> (HC.J.1.07 / HC.J.2.09); GloPhi in <strong>Building H</strong>; lunch at the <strong>Mensa</strong> (lower left). Map: University of Hildesheim.</figcaption>
+</figure>
+
 - **From Frankfurt Airport (FRA):** Direct ICE trains run to Hildesheim Hbf several times a day (fastest ≈ 2.5 h); otherwise change at Göttingen or Hannover Hbf.
-- **From Hannover Airport (HAJ):** S5 to Hannover Hbf (≈ 18 min), then RE10 (erixx) to Hildesheim Hbf (≈ 25–30 min); total ≈ 1 h.
+- **From Hannover Airport (HAJ):** S5 to Hannover Hbf (≈ 18 min), then RE10 (erixx) to Hildesheim Hbf (≈ 25–30 min); total ≈ 1 h. Alternatively, a taxi directly to Hildesheim takes about 40 minutes (≈ 50 km via the A7) and costs roughly €140–160.
 - **From Hildesheim Hbf to campus:** Bus lines 1, 4, 10, 34, 42 to stop *"Hildesheim / Universität"*; or taxi (≈ 10 min). Parking is available on campus.
 
 Official directions: [uni-hildesheim.de/anfahrt/anfahrt-marienburger-hoehe](https://www.uni-hildesheim.de/anfahrt/anfahrt-marienburger-hoehe)
