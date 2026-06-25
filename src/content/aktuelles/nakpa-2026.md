@@ -93,6 +93,12 @@ Talks are 30 minutes (20-minute presentation + 10-minute discussion). Parallel s
 </table>
 </div>
 
+## Book of Abstracts
+
+The abstracts of all talks are collected in the conference Book of Abstracts.
+
+<p style="margin:1em 0 0.5em;"><a href="/news/NAKPA_2026_Book_of_Abstracts.pdf" target="_blank" rel="noopener" style="display:inline-block;padding:0.78em 1.5em;background:var(--accent);color:#fff;text-decoration:none;border-radius:8px;font-weight:700;font-size:1.02rem;">↓ Download the Book of Abstracts (PDF)</a></p>
+
 ## Registration &amp; Participation
 
 **The call for papers (abstract submission) is now closed** — see the [NAKPA submission page](https://nakpa.weebly.com/proposal-submission.html). Attendance, however, remains open to all interested students, researchers and members of the public. To attend, please contact the organiser **Sool Park** by email — dolsool [at] gmail [dot] com — with your name and affiliation. Speakers and panel chairs are registered automatically. For questions concerning NAKPA membership, please contact NAKPA directly (kim.halla [at] hotmail.com).

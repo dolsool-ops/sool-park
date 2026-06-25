@@ -93,6 +93,12 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 약 
 </table>
 </div>
 
+## 초록집 (Book of Abstracts)
+
+모든 발표의 초록을 모은 학술대회 초록집입니다.
+
+<p style="margin:1em 0 0.5em;"><a href="/news/NAKPA_2026_Book_of_Abstracts.pdf" target="_blank" rel="noopener" style="display:inline-block;padding:0.78em 1.5em;background:var(--accent);color:#fff;text-decoration:none;border-radius:8px;font-weight:700;font-size:1.02rem;">↓ 초록집 내려받기 (PDF)</a></p>
+
 ## 참가 신청
 
 **발표 신청(초록 제출)은 이미 마감되었습니다** — [NAKPA 제출 페이지](https://nakpa.weebly.com/proposal-submission.html) 참조. 다만 청중 참석은 관심 있는 학생·연구자·일반인 누구나 가능합니다. 참석을 원하시는 분은 성명과 소속을 적어 주최자 **박술**에게 이메일로 연락해 주십시오 — dolsool [at] gmail [dot] com. 발표자와 좌장은 별도 신청 없이 자동 등록됩니다. NAKPA 회원 가입 문의는 NAKPA로 직접 연락해 주십시오 (kim.halla [at] hotmail.com).
