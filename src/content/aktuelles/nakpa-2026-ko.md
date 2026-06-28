@@ -28,7 +28,7 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 약 
 
 ## 학술대회 프로그램
 
-발표는 30분(발표 20분 + 질의응답 10분)이며, 병렬 세션은 세 개의 강의실에서 진행됩니다 — **Musiksaal (HC.K.1)**, **HC.J.1.07**, **HC.J.2.09**. 전체 세션은 Musiksaal에서 열립니다. (발표 제목은 공식 원어인 영어로 표기합니다.)
+발표는 30분(발표 20분 + 질의응답 10분)이며, 병렬 세션은 세 개의 강의실에서 진행됩니다 — **Musiksaal (HC.K.1)**, **HC.J.1.07**, **HC.J.2.09**. 전체 세션은 Musiksaal에서 열립니다. **학술대회 언어는 영어입니다.** (발표 제목은 공식 원어인 영어로 표기합니다.)
 
 ### 첫째 날 — 10월 5일 (월요일)
 
@@ -101,7 +101,7 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 약 
 
 ## 참가 신청
 
-**발표 신청(초록 제출)은 이미 마감되었습니다** — [NAKPA 제출 페이지](https://nakpa.weebly.com/proposal-submission.html) 참조. 다만 청중 참석은 관심 있는 학생·연구자·일반인 누구나 가능합니다. 참석을 원하시는 분은 성명과 소속을 적어 주최자 **박술**에게 이메일로 연락해 주십시오 — dolsool [at] gmail [dot] com. 발표자와 좌장은 별도 신청 없이 자동 등록됩니다. NAKPA 회원 가입 문의는 NAKPA로 직접 연락해 주십시오 (kim.halla [at] hotmail.com).
+**발표 신청(초록 제출)은 이미 마감되었습니다** — [NAKPA 제출 페이지](https://nakpa.weebly.com/proposal-submission.html) 참조. 다만 청중 참석은 관심 있는 학생·연구자·일반인 누구나 가능합니다. 참석을 원하시는 분은 성명과 소속을 적어 주최자 **박술**에게 이메일로 연락해 주십시오 — dolsool [at] gmail [dot] com. **신청 마감은 2026년 9월 15일입니다.** 발표자와 좌장은 별도 신청 없이 자동 등록됩니다. NAKPA 회원 가입 문의는 NAKPA로 직접 연락해 주십시오 (kim.halla [at] hotmail.com).
 
 ## 재정 지원
 
@@ -121,6 +121,8 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 약 
 - **중앙역에서 캠퍼스까지:** 버스 1·4·10·34·42번 *"Hildesheim / Universität"* 정류장 하차, 또는 택시(약 10분). 캠퍼스 내 주차 가능.
 
 대학 공식 오시는 길: [uni-hildesheim.de/anfahrt/anfahrt-marienburger-hoehe](https://www.uni-hildesheim.de/anfahrt/anfahrt-marienburger-hoehe)
+
+**장애인 접근성:** 힐데스하임대학교의 [장애인을 위한 캠퍼스 안내](https://www.uni-hildesheim.de/universitaet/standorte-anfahrt/wegweiser-fuer-menschen-mit-behinderung-hauptcampus-am-universitaetsplatz/)를 참고하세요.
 
 ## 숙박 안내
 

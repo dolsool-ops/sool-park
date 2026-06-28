@@ -28,7 +28,7 @@ This year's conference is devoted to *"Korean Philosophy: From a Comparative and
 
 ## Program
 
-Talks are 30 minutes (20-minute presentation + 10-minute discussion). Parallel sessions run in three rooms — **Musiksaal (HC.K.1)**, **HC.J.1.07** and **HC.J.2.09**; plenary sessions take place in the Musiksaal.
+Talks are 30 minutes (20-minute presentation + 10-minute discussion). Parallel sessions run in three rooms — **Musiksaal (HC.K.1)**, **HC.J.1.07** and **HC.J.2.09**; plenary sessions take place in the Musiksaal. The conference language is English.
 
 ### Day 1 — Monday, October 5
 
@@ -101,7 +101,7 @@ The abstracts of all talks are collected in the conference Book of Abstracts.
 
 ## Registration &amp; Participation
 
-**The call for papers (abstract submission) is now closed** — see the [NAKPA submission page](https://nakpa.weebly.com/proposal-submission.html). Attendance, however, remains open to all interested students, researchers and members of the public. To attend, please contact the organiser **Sool Park** by email — dolsool [at] gmail [dot] com — with your name and affiliation. Speakers and panel chairs are registered automatically. For questions concerning NAKPA membership, please contact NAKPA directly (kim.halla [at] hotmail.com).
+**The call for papers (abstract submission) is now closed** — see the [NAKPA submission page](https://nakpa.weebly.com/proposal-submission.html). Attendance, however, remains open to all interested students, researchers and members of the public. To attend, please contact the organiser **Sool Park** by email — dolsool [at] gmail [dot] com — with your name and affiliation, **by 15 September 2026**. Speakers and panel chairs are registered automatically. For questions concerning NAKPA membership, please contact NAKPA directly (kim.halla [at] hotmail.com).
 
 ## Financial Support
 
@@ -121,6 +121,8 @@ All events take place at the **Main Campus of the University of Hildesheim, Univ
 - **From Hildesheim Hbf to campus:** Bus lines 1, 4, 10, 34, 42 to stop *"Hildesheim / Universität"*; or taxi (≈ 10 min). Parking is available on campus.
 
 Official directions: [uni-hildesheim.de/anfahrt/anfahrt-marienburger-hoehe](https://www.uni-hildesheim.de/anfahrt/anfahrt-marienburger-hoehe)
+
+**Accessibility:** the university provides an [accessibility guide for visitors with disabilities](https://www.uni-hildesheim.de/universitaet/standorte-anfahrt/wegweiser-fuer-menschen-mit-behinderung-hauptcampus-am-universitaetsplatz/) for the Main Campus.
 
 ## Accommodation
 
