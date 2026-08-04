@@ -50,7 +50,7 @@ description: "한국 근대 사상가(19세기 말–1945)를 다루는 제2회 
 <table class="conf">
 <thead><tr><th>시간</th><th>세션</th></tr></thead>
 <tbody>
-<tr><td class="time">09:30–10:30</td><td><span class="theme">슬롯 5 · 김일엽 Kim Iryeop / 박치우 Park Chiwu</span>박진영 (아메리칸대학교) <span class="chair">· 사상가 추후 확정</span></td></tr>
+<tr><td class="time">09:30–10:30</td><td><span class="theme">슬롯 5 · 김일엽 Kim Iryeop</span>박진영 (아메리칸대학교)</td></tr>
 <tr><td class="time">10:30–11:00</td><td class="plenary">휴식</td></tr>
 <tr><td class="time">11:00–12:00</td><td><span class="theme">슬롯 6 · 함석헌 Ham Seok-heon</span>이성청 (서울대학교)</td></tr>
 <tr><td class="time">12:00</td><td class="plenary">종료 → 점심 (Mensa)</td></tr>

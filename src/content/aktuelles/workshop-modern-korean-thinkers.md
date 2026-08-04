@@ -50,7 +50,7 @@ Each slot runs 60 minutes: 40-minute presentation + 20-minute discussion. All se
 <table class="conf">
 <thead><tr><th>Time</th><th>Session</th></tr></thead>
 <tbody>
-<tr><td class="time">09:30–10:30</td><td><span class="theme">Slot 5 · 김일엽 Kim Iryeop / 박치우 Park Chiwu</span>Jin Y. Park (American University) <span class="chair">· thinker to be confirmed</span></td></tr>
+<tr><td class="time">09:30–10:30</td><td><span class="theme">Slot 5 · 김일엽 Kim Iryeop</span>Jin Y. Park (American University)</td></tr>
 <tr><td class="time">10:30–11:00</td><td class="plenary">Coffee break</td></tr>
 <tr><td class="time">11:00–12:00</td><td><span class="theme">Slot 6 · 함석헌 Ham Seok-heon</span>Song Chong Lee (Seoul National University)</td></tr>
 <tr><td class="time">12:00</td><td class="plenary">Close → Lunch (Mensa)</td></tr>
