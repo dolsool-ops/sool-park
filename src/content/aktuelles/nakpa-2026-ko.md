@@ -22,7 +22,7 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 약 
 
 ## 주요 프로그램
 
-- **기조강연** — 마리온 에거트 교수(Prof. Marion Eggert, 보훔 루르대학교), 10월 5일(월) 9:30
+- **기조강연** — 마리온 에거트 교수(Prof. Marion Eggert, 보훔 루르대학교), 10월 5일(월) 10:00
 - **Author-Meets-Critics(저자와의 대화)** — 박진영(Jin Y. Park) 교수의 *Marginality* (Columbia UP, 2025) · 토론: Anthony Curtis Adler, Yoko Arisaka, Youngsun Back, George Tsai · 답변: Jin Y. Park — 10월 5일(월) 10:45
 - **전체 패널** — The Realms of East Asian Literati Arts — 10월 6일(화) 10:45
 
@@ -36,8 +36,8 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 약 
 <table class="conf">
 <thead><tr><th>시간</th><th>Musiksaal · HC.K.1</th><th>HC.J.1.07</th><th>HC.J.2.09</th></tr></thead>
 <tbody>
-<tr><td class="time">09:00–09:30</td><td class="plenary" colspan="3"><span class="theme">개회식 및 환영사</span>Halla Kim (NAKPA 회장) · Sool Park (현지 조직위원장) · Rolf Elberfeld (힐데스하임대학교)</td></tr>
-<tr><td class="time">09:30–10:30</td><td class="plenary" colspan="3"><span class="theme">기조강연</span>Prof. Marion Eggert (Ruhr-Universität Bochum) <span class="chair">· 좌장: Halla Kim</span></td></tr>
+<tr><td class="time">09:30–10:00</td><td class="plenary" colspan="3"><span class="theme">개회식 및 환영사</span>Halla Kim (NAKPA 회장) · Sool Park (현지 조직위원장) · Rolf Elberfeld (힐데스하임대학교)</td></tr>
+<tr><td class="time">10:00–10:30</td><td class="plenary" colspan="3"><span class="theme">기조강연</span>Prof. Marion Eggert (Ruhr-Universität Bochum) <span class="chair">· 좌장: Halla Kim</span></td></tr>
 <tr><td class="time">10:30–10:45</td><td class="plenary" colspan="3">휴식</td></tr>
 <tr><td class="time">10:45–12:15</td><td class="plenary" colspan="3"><span class="theme">전체 패널 1 · Author-Meets-Critics — Jin Y. Park, <em>Marginality</em></span>토론: Anthony Curtis Adler (Yonsei), Yoko Arisaka (Hildesheim), Youngsun Back (SKKU), George Tsai (Hawaii) · 답변: Jin Y. Park (American University) <span class="chair">· 좌장: Sool Park</span></td></tr>
 <tr><td class="time">12:30–14:00</td><td class="plenary" colspan="3">점심 (Mensa)</td></tr>
@@ -149,4 +149,4 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 약 
 
 ---
 
-*학술대회 직후인 2026년 10월 7–8일, 힐데스하임대학교에서 워크숍 **"Modern Korean Thinkers"**(현대 한국 사상가들)가 열립니다. 자세한 내용은 추후 공지됩니다.*
+*학술대회 직후인 2026년 10월 7–8일, 힐데스하임대학교에서 워크숍 **"Modern Korean Thinkers"**(현대 한국 사상가들)가 열립니다. 자세한 내용은 [워크숍 페이지](/aktuelles/workshop-modern-korean-thinkers-ko/)를 참조해 주세요됩니다.*

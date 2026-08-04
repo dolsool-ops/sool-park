@@ -4,7 +4,7 @@ import Section from '../../layouts/Section.astro';
 import EntryList from '../../components/EntryList.astro';
 
 const items = (await getCollection('aktuelles'))
-	.filter((e) => !e.id.endsWith('-ko'))
+	.filter((e) => !e.id.endsWith('-ko') && !e.id.endsWith('-de'))
 	.sort(
 		(a, b) =>
 			(b.data.datum ?? b.data.pubDate).valueOf() - (a.data.datum ?? a.data.pubDate).valueOf(),

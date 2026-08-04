@@ -22,7 +22,7 @@ This year's conference is devoted to *"Korean Philosophy: From a Comparative and
 
 ## Highlights
 
-- **Keynote Address** — Prof. Marion Eggert (Ruhr-Universität Bochum), Monday, Oct 5, 9:30
+- **Keynote Address** — Prof. Marion Eggert (Ruhr-Universität Bochum), Monday, Oct 5, 10:00
 - **Author-Meets-Critics** — Jin Y. Park's *Marginality* (Columbia UP, 2025), with critics Anthony Curtis Adler, Yoko Arisaka, Youngsun Back and George Tsai; respondent Jin Y. Park — Monday, Oct 5, 10:45
 - **Plenary Panel** — The Realms of East Asian Literati Arts — Tuesday, Oct 6, 10:45
 
@@ -36,8 +36,8 @@ Talks are 30 minutes (20-minute presentation + 10-minute discussion). Parallel s
 <table class="conf">
 <thead><tr><th>Time</th><th>Musiksaal · HC.K.1</th><th>HC.J.1.07</th><th>HC.J.2.09</th></tr></thead>
 <tbody>
-<tr><td class="time">09:00–09:30</td><td class="plenary" colspan="3"><span class="theme">Opening &amp; Greeting</span>Halla Kim (NAKPA President) · Sool Park (Local Organizer) · Rolf Elberfeld (University of Hildesheim)</td></tr>
-<tr><td class="time">09:30–10:30</td><td class="plenary" colspan="3"><span class="theme">Keynote Address</span>Prof. Marion Eggert (Ruhr-Universität Bochum) <span class="chair">· Chair: Halla Kim</span></td></tr>
+<tr><td class="time">09:30–10:00</td><td class="plenary" colspan="3"><span class="theme">Opening &amp; Greeting</span>Halla Kim (NAKPA President) · Sool Park (Local Organizer) · Rolf Elberfeld (University of Hildesheim)</td></tr>
+<tr><td class="time">10:00–10:30</td><td class="plenary" colspan="3"><span class="theme">Keynote Address</span>Prof. Marion Eggert (Ruhr-Universität Bochum) <span class="chair">· Chair: Halla Kim</span></td></tr>
 <tr><td class="time">10:30–10:45</td><td class="plenary" colspan="3">Coffee break</td></tr>
 <tr><td class="time">10:45–12:15</td><td class="plenary" colspan="3"><span class="theme">Plenary Panel 1 · Author-Meets-Critics — Jin Y. Park, <em>Marginality</em></span>Critics: Anthony Curtis Adler (Yonsei), Yoko Arisaka (Hildesheim), Youngsun Back (SKKU), George Tsai (Hawaii) · Respondent: Jin Y. Park (American University) <span class="chair">· Chair: Sool Park</span></td></tr>
 <tr><td class="time">12:30–14:00</td><td class="plenary" colspan="3">Lunch (Mensa)</td></tr>
@@ -149,4 +149,4 @@ Organized by the **North American Korean Philosophy Association** (NAKPA; Presid
 
 ---
 
-*Following the conference, the workshop **"Modern Korean Thinkers"** takes place at the University of Hildesheim on October 7–8, 2026. More information to follow.*
+*Following the conference, the workshop **["Modern Korean Thinkers"](/aktuelles/workshop-modern-korean-thinkers/)** takes place at the University of Hildesheim on October 7–8, 2026 — see the [workshop page](/aktuelles/workshop-modern-korean-thinkers/) for the full program.*
