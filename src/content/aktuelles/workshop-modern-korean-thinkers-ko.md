@@ -9,7 +9,7 @@ description: "한국 근대 사상가(19세기 말–1945)를 다루는 국제 �
 <p style="font-size:0.85rem;color:rgb(var(--gray));margin:0 0 1.4em;"><a href="/aktuelles/workshop-modern-korean-thinkers/">English</a> · <strong>한국어</strong></p>
 
 **국제 워크숍 · Modern Korean Thinkers**
-**2026년 10월 7–8일** · 힐데스하임대학교, KFG GloPhi (HC 0.10.0)
+**2026년 10월 7–8일** · 힐데스하임대학교 본 캠퍼스 (HC.G.2.07)
 
 ## 워크숍 소개
 
@@ -23,7 +23,7 @@ description: "한국 근대 사상가(19세기 말–1945)를 다루는 국제 �
 
 ## 프로그램
 
-각 슬롯은 60분입니다(발표 40분 + 토론 20분). 모든 세션은 GloPhi 세미나실(HC 0.10.0)에서 열리며, 워크숍 언어는 영어입니다.
+각 슬롯은 60분입니다(발표 40분 + 토론 20분). 모든 세션은 본 캠퍼스 HC.G.2.07에서 열리며, 워크숍 언어는 영어입니다.
 
 ### 첫째 날 — 10월 7일 (수요일)
 
@@ -31,15 +31,16 @@ description: "한국 근대 사상가(19세기 말–1945)를 다루는 국제 �
 <table class="conf">
 <thead><tr><th>시간</th><th>세션</th></tr></thead>
 <tbody>
-<tr><td class="time">09:30–10:00</td><td class="plenary"><span class="theme">개회 및 소개</span>박술 (힐데스하임대학교)</td></tr>
+<tr><td class="time">09:30–09:55</td><td class="plenary"><span class="theme">개회 및 소개</span>박술 (힐데스하임대학교)</td></tr>
 <tr><td class="time">10:00–11:00</td><td><span class="theme">슬롯 1 · 최시형 Choe Sihyeong</span>조성환 (원광대학교)</td></tr>
 <tr><td class="time">11:00–11:30</td><td class="plenary">휴식</td></tr>
 <tr><td class="time">11:30–12:30</td><td><span class="theme">슬롯 2 · 이제마 Yi Jema</span>이효진 (베네치아 카포스카리대학교)</td></tr>
-<tr><td class="time">12:30–14:00</td><td class="plenary">점심 (Mensa)</td></tr>
-<tr><td class="time">14:00–15:00</td><td><span class="theme">슬롯 3 · 최한기 Choe Hangi</span>김선희 (이화여자대학교)</td></tr>
-<tr><td class="time">15:00–16:00</td><td><span class="theme">슬롯 4 · 나혜석 / 허정숙 Na Hyeseok / Heo Jeongsuk</span>정보람 (콜로라도대학교 덴버)</td></tr>
-<tr><td class="time">16:00–16:30</td><td class="plenary">휴식</td></tr>
-<tr><td class="time">16:30–17:30</td><td class="plenary"><span class="theme">출판 기획</span><ol class="talks"><li>파트 A — 리더 <em>Modern Korean Thinkers</em> (Brill): 장 구성, 집필 분담, 일정</li><li>파트 B — <em>위버벡 『철학사 강요』(Grundriss der Geschichte der Philosophie)</em> 중 <em>Philosophy in East Asia: Modernity (Korea)</em> 권: 범위·집필진·마감</li></ol></td></tr>
+<tr><td class="time">12:30–13:45</td><td class="plenary">점심 (Mensa)</td></tr>
+<tr><td class="time">13:45–14:45</td><td><span class="theme">슬롯 3 · 최한기 Choe Hangi</span>김선희 (이화여자대학교)</td></tr>
+<tr><td class="time">14:45–15:45</td><td><span class="theme">슬롯 4 · 나혜석 / 허정숙 Na Hyeseok / Heo Jeongsuk</span>정보람 (콜로라도대학교 덴버)</td></tr>
+<tr><td class="time">15:45–16:15</td><td class="plenary">휴식</td></tr>
+<tr><td class="time">16:15–17:15</td><td class="plenary"><span class="theme">출판 기획</span><ol class="talks"><li>파트 A — 리더 <em>Modern Korean Thinkers</em> (Brill): 장 구성, 집필 분담, 일정</li><li>파트 B — <em>위버벡 『철학사 강요』(Grundriss der Geschichte der Philosophie)</em> 중 <em>Philosophy in East Asia: Modernity (Korea)</em> 권: 범위·집필진·마감 <span class="chair">· 이 권의 편집회의는 10월 8–9일 별도로 열립니다</span></li></ol></td></tr>
+<tr><td class="time">17:15</td><td class="plenary">학술 프로그램 종료</td></tr>
 </tbody>
 </table>
 </div>
@@ -64,7 +65,7 @@ description: "한국 근대 사상가(19세기 말–1945)를 다루는 국제 �
 
 **리더 *Modern Korean Thinkers* (Brill, 예정).** 각 장은 한 사상가를 핵심 텍스트의 최초 영역과 함께 소개하는 것을 목표로 합니다. 이 형식의 선례로는 최근 출간된 [***Korean Buddhism: Selected Readings from Primary Texts***](https://uhpress.hawaii.edu/title/korean-buddhism-selected-readings-from-primary-texts/)(**박진영·이수미** 공편, University of Hawai'i Press, 2026)를 들 수 있습니다. 7세기부터 21세기에 이르는 25편의 1차 문헌을 번역으로 제공하는 책으로, 필자 여러 명이 이번 힐데스하임 행사에도 참여합니다.
 
-**위버벡 『철학사 강요』(*Grundriss der Geschichte der Philosophie*).** [『강요』](https://www.schwabe.ch/reihe/grundriss-der-geschichte-der-philosophie-r-86)(슈바베 출판사, 바젤)는 독일어권에서 가장 유서 깊고 권위 있는 철학사 편찬 프로젝트의 하나로, 고대·중세부터 *Philosophie in der islamischen Welt*(이슬람 세계의 철학) 시리즈에 이르기까지 독일어권의 표준 참고 문헌으로 자리해 왔습니다. 현재 ***Philosophy in East Asia: Modernity (Korea)*** 권이 준비 중이며, 워크숍에서는 이 권의 한국 부분에 어떤 사상가와 핵심 텍스트를 넣을지, 또 누가 집필할지를 논의합니다.
+**위버벡 『철학사 강요』(*Grundriss der Geschichte der Philosophie*).** [『강요』](https://www.schwabe.ch/reihe/grundriss-der-geschichte-der-philosophie-r-86)(슈바베 출판사, 바젤)는 독일어권에서 가장 유서 깊고 권위 있는 철학사 편찬 프로젝트의 하나로, 고대·중세부터 *Philosophie in der islamischen Welt*(이슬람 세계의 철학) 시리즈에 이르기까지 독일어권의 표준 참고 문헌으로 자리해 왔습니다. 현재 ***Philosophy in East Asia: Modernity (Korea)*** 권이 준비 중이며, 워크숍에서는 이 권의 한국 부분에 어떤 사상가와 핵심 텍스트를 넣을지, 또 누가 집필할지를 논의합니다. 이어 10월 8–9일에는 한국 부분권 국제 편집회의가 힐데스하임에서 열립니다.
 
 ## 참가 및 발표
 
@@ -72,4 +73,6 @@ description: "한국 근대 사상가(19세기 말–1945)를 다루는 국제 �
 
 *발표자 안내:* 최종 제목과 초록(약 300단어)은 **2026년 8월 25일**까지 보내주시기 바랍니다.
 
-오시는 길·숙박 등은 [NAKPA 2026 학술대회 페이지](/aktuelles/nakpa-2026-ko/#장소-및-오시는-길)를 참조해 주십시오. 같은 캠퍼스에서 열리지만, 장소는 Musiksaal이 아니라 **GloPhi 세미나실**(HC 0.10.0, H동)입니다.
+이 워크숍은 **한국국제교류재단**(Korea Foundation)의 지원을 받습니다.
+
+오시는 길·숙박 등은 [NAKPA 2026 학술대회 페이지](/aktuelles/nakpa-2026-ko/#장소-및-오시는-길)를 참조해 주십시오. 같은 캠퍼스에서 열리지만, 장소는 Musiksaal이 아니라 **HC.G.2.07**(G동)입니다.

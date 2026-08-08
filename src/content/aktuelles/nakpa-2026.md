@@ -4,7 +4,7 @@ pubDate: 2026-02-16
 datum: 2026-10-05
 ort: "University of Hildesheim"
 url: "https://www.uni-hildesheim.de/glophi/2026/02/16/korea-2026/"
-description: "The 11th Annual Conference of the North American Korean Philosophy Association — around 50 speakers, 5–6 October 2026, University of Hildesheim. Hosted by Sool Park."
+description: "The 11th Annual Conference of the North American Korean Philosophy Association — 53 speakers, 5–6 October 2026, University of Hildesheim. Hosted by Sool Park."
 ---
 
 <p style="font-size:0.85rem;color:rgb(var(--gray));margin:0 0 1.4em;"><strong>English</strong> · <a href="/aktuelles/nakpa-2026-ko/">한국어</a></p>
@@ -18,7 +18,7 @@ International Conference · **October 5–6, 2026** · University of Hildesheim,
 
 The North American Korean Philosophy Association (NAKPA) holds its 11th Annual Conference at the University of Hildesheim, Germany, on October 5–6, 2026. The conference is hosted by the Center for Advanced Studies *Philosophizing in a Globalized World* (DFG Kolleg-Forschungsgruppe) under the auspices of **Prof. Sool Park**.
 
-This year's conference is devoted to *"Korean Philosophy: From a Comparative and Intercultural Perspective."* In view of the emerging importance of non-Western philosophy, the program brings together contributions on traditional and contemporary Korean philosophy — from the Four-Seven Debate, Dasan Jeong Yagyong, and Korean Buddhism to modern thinkers such as Ham Sok Hon — in dialogue with Confucian, Buddhist, European, and global philosophical traditions. Over two days, around 50 speakers from North America, Asia, and Europe present their work in two plenary panels and fifteen parallel sessions across three rooms.
+This year's conference is devoted to *"Korean Philosophy: From a Comparative and Intercultural Perspective."* In view of the emerging importance of non-Western philosophy, the program brings together contributions on traditional and contemporary Korean philosophy — from the Four-Seven Debate, Dasan Jeong Yagyong, and Korean Buddhism to modern thinkers such as Ham Sok Hon — in dialogue with Confucian, Buddhist, European, and global philosophical traditions. Over two days, 53 speakers from North America, Asia, and Europe present 54 papers in two plenary panels and fifteen parallel sessions across three rooms.
 
 ## Highlights
 
@@ -44,7 +44,7 @@ Talks are 30 minutes (20-minute presentation + 10-minute discussion). Parallel s
 <tr>
 <td class="time">14:00–15:30<br>Slot 1</td>
 <td><span class="theme">Joseon Political Philosophy</span><span class="chair">Chair: David Kim</span><ol class="talks"><li>Hyeon Sop Baek (Hawaii) — Freedom and Decoloniality in Jeong Do-jeon's Thought</li><li>Juyong Kim (Warwick) — Mencian Autonomy in the Social World: the Neo-Confucian Reading of Mencius through Dasan</li><li>Nikolett Roque-Kőrösi (Károli Gáspár) — Minbon and Political Responsibility in Silhak Thought</li></ol></td>
-<td><span class="theme">Dasan Jeong Yagyong</span><span class="chair">Chair: Boram Jeong</span><ol class="talks"><li>Sang Hyun Chung — The Human Body (shin) in Tasan's Philosophy</li><li>Insok Hwang (SKKU) — The Moral Subject of 'Weighing': Dasan's Theory of Quan</li><li>Eun-Young Kim (SKKU) — Jeong Yakyong in Comparative Dialogue with Hume and Kant</li></ol></td>
+<td><span class="theme">Dasan Jeong Yagyong</span><span class="chair">Chair: Boram Jeong</span><ol class="talks"><li>Sang Hyun Chung — The Human Body (shin) in Tasan's Philosophy</li><li>Insok Hwang (SKKU) — The Moral Subject of 'Weighing': Dasan's Theory of Quan</li><li>Eun-Young Kim (Ewha) — Jeong Yakyong in Comparative Dialogue with Hume and Kant</li></ol></td>
 <td><span class="theme">Modern Korean Thinkers</span><span class="chair">Chair: Song Chong Lee</span><ol class="talks"><li>Jae Won Edward Chung (Rutgers) — A Cosmotechnical Approach to Korean Vitalism: Kim Chiha</li><li>Hye Young Kim (ENS Paris) — Shame and Ethical Self-Relation: Yun Dong-Ju and Agnes Heller</li><li>Juman Kim (Towson) — Ham Sok Hon on Revolution, Religion, and the Politics of Humanism</li></ol></td>
 </tr>
 <tr><td class="time">15:30–16:00</td><td class="plenary" colspan="3">Coffee break</td></tr>
@@ -84,7 +84,7 @@ Talks are 30 minutes (20-minute presentation + 10-minute discussion). Parallel s
 <tr>
 <td class="time">16:00–17:30<br>Slot 5</td>
 <td><span class="theme">Korean Culture &amp; Religion</span><span class="chair">Chair: Youngsun Back</span><ol class="talks"><li>Anthony Curtis Adler (Yonsei) — A Tale of Two Dragons: Bong Joon Ho and Daoist Nature</li><li>HyeonMinh Ryu (SNU) — Xunzi's Sanhuo and the Limits of Counter-Naming</li><li>Wonjean Lee (Sookmyung) — Hauntology and Techno-shamanism in Korean Specter Narratives</li></ol></td>
-<td><span class="theme">Modern Korean Thought &amp; Intercultural</span><span class="chair">Chair: Bongrae Seok</span><ol class="talks"><li>Song Chong Lee (SNU) — Ham Sok Hon's Reception of Henri Bergson</li><li>Sunuk Kim (Hildesheim) — Seiendes, 存在者, and the Limits of Ontological Difference</li><li>Yookyung Nho-von Blumröder (Cologne) — Confucian and Buddhist Thought in Musical Language</li></ol></td>
+<td><span class="theme">Modern Korean Thought &amp; Intercultural</span><span class="chair">Chair: Bongrae Seok</span><ol class="talks"><li>Song Chong Lee (SNU) — Ham Sok Hon's Reception of Henri Bergson</li><li>Sunuk Kim (Hildesheim) — Seiendes, 存在者, and the Limits of Ontological Difference</li><li>Yookyung Nho-von Blumröder (Cologne) — Music as Comparative Philosophy: Korean Thought Becoming Audible Form</li></ol></td>
 <td><span class="theme">Comparative Confucian Ethics</span><span class="chair">Chair: Hwa Yeong Wang</span><ol class="talks"><li>George Tsai (Hawaii) — Generative AI and the Loss of Practice: A Confucian Account</li><li>Lok Chui Choo (Hawaii) — Resentment (Yuan) and Dasan's Moral Psychology</li><li>Dobin Choi (Leiden) — Free Will or the Faculty of Choice: Reconsidering Dasan's Jajujigwon in Comparative Perspective</li></ol></td>
 </tr>
 <tr><td class="time">17:30–18:15</td><td class="plenary" colspan="3">Closing Remarks &amp; NAKPA Business Meeting (Musiksaal)</td></tr>
@@ -145,7 +145,7 @@ Through consultation between the *Journal of Confucian Philosophy and Culture* (
 
 ## Organizers &amp; Contact
 
-Organized by the **North American Korean Philosophy Association** (NAKPA; President: Prof. Halla Kim, Sogang University) and hosted by the **Center for Advanced Studies *Philosophizing in a Globalized World*** (DFG Kolleg-Forschungsgruppe) at the University of Hildesheim. Local organization: Prof. Sool Park. Contact: dolsool [at] gmail [dot] com. With the support of the University of Hildesheim and the German Society for Philosophy (DGPhil).
+Organized by the **North American Korean Philosophy Association** (NAKPA; President: Prof. Halla Kim, Sogang University) and hosted by the **Center for Advanced Studies *Philosophizing in a Globalized World*** (DFG Kolleg-Forschungsgruppe) at the University of Hildesheim. Local organization: Prof. Sool Park. Contact: dolsool [at] gmail [dot] com. With the support of the University of Hildesheim, the Lower Saxony Ministry for Science and Culture (*zukunft.niedersachsen*) and the German Society for Philosophy (DGPhil).
 
 ---
 

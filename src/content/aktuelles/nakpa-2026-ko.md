@@ -4,7 +4,7 @@ pubDate: 2026-02-16
 datum: 2026-10-05
 ort: "힐데스하임대학교"
 url: "https://www.uni-hildesheim.de/glophi/2026/02/16/korea-2026/"
-description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 약 50명 발표, 2026년 10월 5–6일, 힐데스하임대학교. 박술 교수 주관."
+description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 발표자 53명, 2026년 10월 5–6일, 힐데스하임대학교. 박술 교수 주관."
 ---
 
 <p style="font-size:0.85rem;color:rgb(var(--gray));margin:0 0 1.4em;"><a href="/aktuelles/nakpa-2026/">English</a> · <strong>한국어</strong></p>
@@ -18,7 +18,7 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 약 
 
 북미한국철학회(NAKPA)는 2026년 10월 5일부터 6일까지 독일 힐데스하임대학교에서 제11차 연례 학술대회를 개최합니다. 이번 학술대회는 **박술 교수**의 주관으로, DFG 콜렉연구그룹 고등연구센터 *Philosophizing in a Globalized World*가 주최합니다.
 
-올해의 주제는 *"한국철학: 비교철학적·상호문화철학적 관점에서"*입니다. 비서구 철학의 중요성이 부상하는 오늘날, 이번 프로그램은 사단칠정논쟁(四端七情論爭), 다산 정약용, 한국불교에서 함석헌을 비롯한 현대 사상가들에 이르기까지 전통·현대 한국철학에 관한 연구를 유교·불교·유럽 및 글로벌 철학 전통과의 대화 속에서 폭넓게 다룹니다. 이틀간 북미·아시아·유럽에서 온 약 50명의 발표자가 2개의 전체 패널과 3개 강의실에서 진행되는 15개의 병렬 세션에서 연구를 발표합니다.
+올해의 주제는 *"한국철학: 비교철학적·상호문화철학적 관점에서"*입니다. 비서구 철학의 중요성이 부상하는 오늘날, 이번 프로그램은 사단칠정논쟁(四端七情論爭), 다산 정약용, 한국불교에서 함석헌을 비롯한 현대 사상가들에 이르기까지 전통·현대 한국철학에 관한 연구를 유교·불교·유럽 및 글로벌 철학 전통과의 대화 속에서 폭넓게 다룹니다. 이틀간 북미·아시아·유럽에서 온 53명의 발표자가 2개의 전체 패널과 3개 강의실에서 진행되는 15개의 병렬 세션에서 총 54편을 발표합니다.
 
 ## 주요 프로그램
 
@@ -44,7 +44,7 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 약 
 <tr>
 <td class="time">14:00–15:30<br>세션 1</td>
 <td><span class="theme">Joseon Political Philosophy</span><span class="chair">좌장: David Kim</span><ol class="talks"><li>Hyeon Sop Baek (Hawaii) — Freedom and Decoloniality in Jeong Do-jeon's Thought</li><li>Juyong Kim (Warwick) — Mencian Autonomy in the Social World: the Neo-Confucian Reading of Mencius through Dasan</li><li>Nikolett Roque-Kőrösi (Károli Gáspár) — Minbon and Political Responsibility in Silhak Thought</li></ol></td>
-<td><span class="theme">Dasan Jeong Yagyong</span><span class="chair">좌장: Boram Jeong</span><ol class="talks"><li>Sang Hyun Chung — The Human Body (shin) in Tasan's Philosophy</li><li>Insok Hwang (SKKU) — The Moral Subject of 'Weighing': Dasan's Theory of Quan</li><li>Eun-Young Kim (SKKU) — Jeong Yakyong in Comparative Dialogue with Hume and Kant</li></ol></td>
+<td><span class="theme">Dasan Jeong Yagyong</span><span class="chair">좌장: Boram Jeong</span><ol class="talks"><li>Sang Hyun Chung — The Human Body (shin) in Tasan's Philosophy</li><li>Insok Hwang (SKKU) — The Moral Subject of 'Weighing': Dasan's Theory of Quan</li><li>Eun-Young Kim (Ewha) — Jeong Yakyong in Comparative Dialogue with Hume and Kant</li></ol></td>
 <td><span class="theme">Modern Korean Thinkers</span><span class="chair">좌장: Song Chong Lee</span><ol class="talks"><li>Jae Won Edward Chung (Rutgers) — A Cosmotechnical Approach to Korean Vitalism: Kim Chiha</li><li>Hye Young Kim (ENS Paris) — Shame and Ethical Self-Relation: Yun Dong-Ju and Agnes Heller</li><li>Juman Kim (Towson) — Ham Sok Hon on Revolution, Religion, and the Politics of Humanism</li></ol></td>
 </tr>
 <tr><td class="time">15:30–16:00</td><td class="plenary" colspan="3">휴식</td></tr>
@@ -84,7 +84,7 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 약 
 <tr>
 <td class="time">16:00–17:30<br>세션 5</td>
 <td><span class="theme">Korean Culture &amp; Religion</span><span class="chair">좌장: Youngsun Back</span><ol class="talks"><li>Anthony Curtis Adler (Yonsei) — A Tale of Two Dragons: Bong Joon Ho and Daoist Nature</li><li>HyeonMinh Ryu (SNU) — Xunzi's Sanhuo and the Limits of Counter-Naming</li><li>Wonjean Lee (Sookmyung) — Hauntology and Techno-shamanism in Korean Specter Narratives</li></ol></td>
-<td><span class="theme">Modern Korean Thought &amp; Intercultural</span><span class="chair">좌장: Bongrae Seok</span><ol class="talks"><li>Song Chong Lee (SNU) — Ham Sok Hon's Reception of Henri Bergson</li><li>Sunuk Kim (Hildesheim) — Seiendes, 存在者, and the Limits of Ontological Difference</li><li>Yookyung Nho-von Blumröder (Cologne) — Confucian and Buddhist Thought in Musical Language</li></ol></td>
+<td><span class="theme">Modern Korean Thought &amp; Intercultural</span><span class="chair">좌장: Bongrae Seok</span><ol class="talks"><li>Song Chong Lee (SNU) — Ham Sok Hon's Reception of Henri Bergson</li><li>Sunuk Kim (Hildesheim) — Seiendes, 存在者, and the Limits of Ontological Difference</li><li>Yookyung Nho-von Blumröder (Cologne) — Music as Comparative Philosophy: Korean Thought Becoming Audible Form</li></ol></td>
 <td><span class="theme">Comparative Confucian Ethics</span><span class="chair">좌장: Hwa Yeong Wang</span><ol class="talks"><li>George Tsai (Hawaii) — Generative AI and the Loss of Practice: A Confucian Account</li><li>Lok Chui Choo (Hawaii) — Resentment (Yuan) and Dasan's Moral Psychology</li><li>Dobin Choi (Leiden) — Free Will or the Faculty of Choice: Reconsidering Dasan's Jajujigwon in Comparative Perspective</li></ol></td>
 </tr>
 <tr><td class="time">17:30–18:15</td><td class="plenary" colspan="3">폐회사 및 NAKPA 총회 (Musiksaal)</td></tr>
@@ -145,7 +145,7 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 약 
 
 ## 주최·문의·후원
 
-본 학술대회는 **북미한국철학회**(NAKPA; 회장: Halla Kim 교수, 서강대학교)가 주관하고, 힐데스하임대학교의 **DFG 콜렉연구그룹 고등연구센터 *Philosophizing in a Globalized World***가 주최합니다. 현지 조직: 박술 교수. 문의: dolsool [at] gmail [dot] com. 힐데스하임대학교와 독일철학회(DGPhil)의 지원에 감사드립니다.
+본 학술대회는 **북미한국철학회**(NAKPA; 회장: Halla Kim 교수, 서강대학교)가 주관하고, 힐데스하임대학교의 **DFG 콜렉연구그룹 고등연구센터 *Philosophizing in a Globalized World***가 주최합니다. 현지 조직: 박술 교수. 문의: dolsool [at] gmail [dot] com. 힐데스하임대학교, 니더작센주 학술문화부(*zukunft.niedersachsen*), 독일철학회(DGPhil)의 지원에 감사드립니다.
 
 ---
 
