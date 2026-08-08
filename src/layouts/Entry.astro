@@ -7,6 +7,7 @@ interface Props {
 	title: string;
 	description?: string;
 	date?: Date;
+	endDate?: Date;
 	meta?: string;
 	eyebrow?: string;
 	backHref?: string;
@@ -22,6 +23,7 @@ const {
 	title,
 	description = SITE_TITLE,
 	date,
+	endDate,
 	meta,
 	eyebrow,
 	backHref,
@@ -43,7 +45,7 @@ const {
 			{
 				(date || meta) && (
 					<p class="entry-meta">
-						{date && <FormattedDate date={date} />}
+						{date && <FormattedDate date={date} end={endDate} />}
 						{date && meta && <span> · </span>}
 						{meta && <span>{meta}</span>}
 					</p>

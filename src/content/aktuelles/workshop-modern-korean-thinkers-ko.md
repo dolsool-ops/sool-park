@@ -2,6 +2,7 @@
 title: "Modern Korean Thinkers — 국제 워크숍"
 pubDate: 2026-07-30
 datum: 2026-10-07
+datumBis: 2026-10-08
 ort: "힐데스하임대학교"
 description: "한국 근대 사상가(19세기 말–1945)를 다루는 국제 워크숍, 2026년 10월 7–8일 힐데스하임대학교 — Brill 리더와 위버벡 『철학사 강요』 “Philosophy in East Asia: Modernity (Korea)” 권을 위한 작업 모임."
 ---

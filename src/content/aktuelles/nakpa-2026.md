@@ -2,6 +2,7 @@
 title: "NAKPA 2026 — Korean Philosophy from a Comparative and Intercultural Perspective"
 pubDate: 2026-02-16
 datum: 2026-10-05
+datumBis: 2026-10-06
 ort: "University of Hildesheim"
 url: "https://www.uni-hildesheim.de/glophi/2026/02/16/korea-2026/"
 description: "The 11th Annual Conference of the North American Korean Philosophy Association — 53 speakers, 5–6 October 2026, University of Hildesheim. Hosted by Sool Park."

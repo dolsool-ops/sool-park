@@ -2,6 +2,7 @@
 title: "NAKPA 2026 — 한국철학: 비교철학적·상호문화철학적 관점에서"
 pubDate: 2026-02-16
 datum: 2026-10-05
+datumBis: 2026-10-06
 ort: "힐데스하임대학교"
 url: "https://www.uni-hildesheim.de/glophi/2026/02/16/korea-2026/"
 description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 발표자 53명, 2026년 10월 5–6일, 힐데스하임대학교. 박술 교수 주관."

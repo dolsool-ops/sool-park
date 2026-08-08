@@ -3,6 +3,17 @@ import { getCollection } from 'astro:content';
 import Section from '../../layouts/Section.astro';
 import EntryList from '../../components/EntryList.astro';
 
+const full = { year: 'numeric', month: 'long', day: 'numeric' } as const;
+const fmt = (d: Date, o: Intl.DateTimeFormatOptions = full) => d.toLocaleDateString('en-GB', o);
+function formatRange(start: Date, end?: Date) {
+	if (!end || end.getTime() <= start.getTime()) return fmt(start);
+	if (start.getFullYear() === end.getFullYear() && start.getMonth() === end.getMonth())
+		return `${start.getDate()}–${fmt(end)}`;
+	if (start.getFullYear() === end.getFullYear())
+		return `${fmt(start, { month: 'long', day: 'numeric' })} – ${fmt(end)}`;
+	return `${fmt(start)} – ${fmt(end)}`;
+}
+
 const items = (await getCollection('aktuelles'))
 	.filter((e) => !e.id.endsWith('-ko') && !e.id.endsWith('-de'))
 	.sort(
@@ -13,11 +24,7 @@ const items = (await getCollection('aktuelles'))
 		href: `/aktuelles/${e.id}/`,
 		title: e.data.title,
 		eyebrow: e.data.ort,
-		meta: (e.data.datum ?? e.data.pubDate).toLocaleDateString('en-GB', {
-			year: 'numeric',
-			month: 'long',
-			day: 'numeric',
-		}),
+		meta: formatRange(e.data.datum ?? e.data.pubDate, e.data.datumBis),
 		description: e.data.description,
 	}));
 ---

@@ -1,17 +1,25 @@
 ---
 interface Props {
 	date: Date;
+	end?: Date;
 }
 
-const { date } = Astro.props;
+const { date, end } = Astro.props;
+
+const full = { year: 'numeric', month: 'long', day: 'numeric' } as const;
+const fmt = (d: Date, opts: Intl.DateTimeFormatOptions = full) => d.toLocaleDateString('en-GB', opts);
+
+// Multi-day events read as a range: "7–8 October 2026", "30 September – 2 October 2026"
+let label: string;
+if (!end || end.getTime() <= date.getTime()) {
+	label = fmt(date);
+} else if (date.getFullYear() === end.getFullYear() && date.getMonth() === end.getMonth()) {
+	label = `${date.getDate()}–${fmt(end)}`;
+} else if (date.getFullYear() === end.getFullYear()) {
+	label = `${fmt(date, { month: 'long', day: 'numeric' })} – ${fmt(end)}`;
+} else {
+	label = `${fmt(date)} – ${fmt(end)}`;
+}
 ---
 
-<time datetime={date.toISOString()}>
-	{
-		date.toLocaleDateString('en-GB', {
-			year: 'numeric',
-			month: 'long',
-			day: 'numeric',
-		})
-	}
-</time>
+<time datetime={date.toISOString()}>{label}</time>

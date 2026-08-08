@@ -69,6 +69,7 @@ const aktuelles = defineCollection({
 		title: z.string(),
 		pubDate: z.coerce.date(),
 		datum: z.coerce.date().optional(),
+		datumBis: z.coerce.date().optional(),
 		ort: z.string().optional(),
 		url: z.string().optional(),
 		description: z.string().optional(),

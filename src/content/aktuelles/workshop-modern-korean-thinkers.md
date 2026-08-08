@@ -2,6 +2,7 @@
 title: "Modern Korean Thinkers — International Workshop"
 pubDate: 2026-07-30
 datum: 2026-10-07
+datumBis: 2026-10-08
 ort: "University of Hildesheim"
 description: "International Workshop on modern Korean thinkers (late 19th century–1945), 7–8 October 2026 at the University of Hildesheim — working toward a Brill Reader and the volume “Philosophy in East Asia: Modernity (Korea)” of the Ueberweg Grundriss."
 ---

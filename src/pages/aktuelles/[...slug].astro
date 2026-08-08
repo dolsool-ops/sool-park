@@ -15,6 +15,7 @@ const { Content } = await render(item);
 	title={item.data.title}
 	description={item.data.description ?? item.data.title}
 	date={item.data.datum ?? item.data.pubDate}
+	endDate={item.data.datumBis}
 	meta={item.data.ort}
 	eyebrow="News"
 	backHref="/aktuelles/"
