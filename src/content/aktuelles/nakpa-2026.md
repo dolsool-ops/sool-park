@@ -88,7 +88,8 @@ Talks are 30 minutes (20-minute presentation + 10-minute discussion). Parallel s
 <td><span class="theme">Modern Korean Thought &amp; Intercultural</span><span class="chair">Chair: Bongrae Seok</span><ol class="talks"><li>Song Chong Lee (SNU) — Ham Sok Hon's Reception of Henri Bergson</li><li>Sunuk Kim (Hildesheim) — Seiendes, 存在者, and the Limits of Ontological Difference</li><li>Yookyung Nho-von Blumröder (Cologne) — Music as Comparative Philosophy: Korean Thought Becoming Audible Form</li></ol></td>
 <td><span class="theme">Confucian Ethics and the Korean Worldview</span><span class="chair">Chair: Hwa Yeong Wang · this room runs until 17:45</span><ol class="talks"><li>Isabelle Sancho (CNRS, Paris) <span class="chair">· title to be announced</span></li><li>Dobin Choi (Leiden) — Free Will or the Faculty of Choice: Reconsidering Dasan's Jajujigwon in Comparative Perspective</li><li>Gyuseog Han (Chonnam National University) / Bongyoung Choi / Seo-hong Kim — The Chok Worldview Underlying Korean Philosophical Thought <span class="chair">· 17:00–17:45</span></li></ol></td>
 </tr>
-<tr><td class="time">17:30–18:15</td><td class="plenary" colspan="3">Closing Remarks &amp; NAKPA Business Meeting (Musiksaal)</td></tr>
+<tr><td class="time">17:30–17:45</td><td class="plenary" colspan="3">Break</td></tr>
+<tr><td class="time">17:45–18:15</td><td class="plenary" colspan="3">Closing Remarks &amp; NAKPA Business Meeting (Musiksaal)</td></tr>
 <tr><td class="time">18:30</td><td class="plenary" colspan="3">Farewell Dinner (Südklause)</td></tr>
 </tbody>
 </table>
