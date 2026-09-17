@@ -19,7 +19,7 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 발�
 
 북미한국철학회(NAKPA)는 2026년 10월 5일부터 6일까지 독일 힐데스하임대학교에서 제11차 연례 학술대회를 개최합니다. 이번 학술대회는 **박술 교수**의 주관으로, DFG 콜렉연구그룹 고등연구센터 *Philosophizing in a Globalized World*가 주최합니다.
 
-올해의 주제는 *"한국철학: 비교철학적·상호문화철학적 관점에서"*입니다. 비서구 철학의 중요성이 부상하는 오늘날, 이번 프로그램은 사단칠정논쟁(四端七情論爭), 다산 정약용, 한국불교에서 함석헌을 비롯한 현대 사상가들에 이르기까지 전통·현대 한국철학에 관한 연구를 유교·불교·유럽 및 글로벌 철학 전통과의 대화 속에서 폭넓게 다룹니다. 이틀간 북미·아시아·유럽에서 온 56명의 발표자가 2개의 전체 패널과 3개 강의실에서 진행되는 15개의 병렬 세션에서 총 54편을 발표합니다.
+올해의 주제는 *"한국철학: 비교철학적·상호문화철학적 관점에서"*입니다. 비서구 철학의 중요성이 부상하는 오늘날, 이번 프로그램은 사단칠정논쟁(四端七情論爭), 다산 정약용, 한국불교에서 함석헌을 비롯한 현대 사상가들에 이르기까지 전통·현대 한국철학에 관한 연구를 유교·불교·유럽 및 글로벌 철학 전통과의 대화 속에서 폭넓게 다룹니다. 이틀간 북미·아시아·유럽에서 온 56명의 발표자가 2개의 전체 패널과 3개 강의실에서 진행되는 15개의 병렬 세션에서 총 55편을 발표합니다.
 
 ## 주요 프로그램
 
@@ -52,7 +52,7 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 발�
 <tr>
 <td class="time">16:00–17:30<br>세션 2</td>
 <td><span class="theme">Mid-Joseon: Four-Seven Debate &amp; Seongho</span><span class="chair">좌장: Jin Y. Park</span><ol class="talks"><li>Jeseong Bae / Youngsun Back (SKKU) — When Moral Emotions Go Wrong</li><li>Jaeryung Lim (Ewha) — Seongho Yi Ik's Theory of Perception (Jigak)</li><li>Hajin Oh (Ewha) — Gong in Seongho Yi Ik's Theory of Four Beginnings and Seven Emotions</li></ol></td>
-<td><span class="theme">Neo-Confucianism &amp; Silhak</span><span class="chair">좌장: Yoko Arisaka</span><ol class="talks"><li>Bongrae Seok (Alvernia) — The Horak Debate and Intercultural AI Ethics</li><li>Suk G. Choi (Towson) — Scholars of Silhak on Music</li><li>Chan Lee (Korea University) — Vice in Neo-Confucian Ethics: Qi, Luck, and Moral Responsibility</li></ol></td>
+<td><span class="theme">Neo-Confucianism &amp; Silhak</span><span class="chair">좌장: Yoko Arisaka · 이 강의실은 18:00까지 진행</span><ol class="talks"><li>Bongrae Seok (Alvernia) — The Horak Debate and Intercultural AI Ethics</li><li>Suk G. Choi (Towson) — Scholars of Silhak on Music</li><li>Chan Lee (Korea University) — Vice in Neo-Confucian Ethics: Qi, Luck, and Moral Responsibility</li><li>Martin Gehlmann (Bochum) — Teaching the Basics. The Role of the Elementary Learning in Chosŏn Korea <span class="chair">· 17:30–18:00</span></li></ol></td>
 <td><span class="theme">Korean Buddhism I</span><span class="chair">좌장: Halla Kim</span><ol class="talks"><li>Edris Voet (Oxford) — The 'Brief Transcriptions of Efficacious Resonance,' 1485</li><li>Sumi Lee (Ewha) — Between and Beyond the Ultimate and the Phenomenal</li><li>Moonsuk Heo / Hye Yu Sunim (Hanmaum Seonwon) — Korean Buddhism: Hanmaum Seonwon's German Branch</li></ol></td>
 </tr>
 <tr><td class="time">18:00</td><td class="plenary" colspan="3">환영 만찬 · 뷔페 (Musiksaal, HC.K.1)</td></tr>
@@ -70,7 +70,7 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 발�
 <td class="time">09:00–10:30<br>세션 3</td>
 <td><span class="theme">Joseon Political Philosophy &amp; Governance</span><span class="chair">좌장: Song Chong Lee</span><ol class="talks"><li>Heewon Byun (Ewha) — The Political-Philosophical Role of Shu</li><li>Ji-hyun Ahn (SKKU) — The Canonization of the Simgyeong and Joseon Confucianism</li><li>Hyangjun Lee (Chonnam National University) — Joseon from the Perspective of Neo-Confucian Narrative</li></ol></td>
 <td><span class="theme">Heart/Mind, Desire and Diagrams</span><span class="chair">좌장: Suk G. Choi</span><ol class="talks"><li>Borum Kim (Anyang) — Jeong Yak-yong's 'Chu-seo': The Circuit of Reflected Desire</li><li>Sangwho Shin (Academy of Korean Studies) — The Heart-Mind in Yulgok Yi I's Philosophy</li><li>Maria Long (Linnaeus) — From Taiji tu to Cheonmyeong do: Comparative Cosmology</li></ol></td>
-<td><span class="theme">Korean Buddhism II</span><span class="chair">좌장: Halla Kim</span><ol class="talks"><li>Thapakorn Kamnerdsiri (Thammasat) — Won Buddhism, Ethics and the Others</li><li>Seolin Choi (Ewha) — Non-Obstruction and Transcendental Freedom in Wonhyo and Kant</li><li>Johannes Baer (Hildesheim) — Social Ontology and Ethics in Uisang's <em>Hwaom Ilsung popkye to</em></li></ol></td>
+<td><span class="theme">Korean Buddhism II</span><span class="chair">좌장: Halla Kim</span><ol class="talks"><li>Thapakorn Kamnerdsiri (Thammasat) — Won Buddhism, Ethics and the Others</li><li>Seolin Choi (Ewha) — Non-Obstruction and Transcendental Freedom in Wonhyo and Kant</li><li>Johannes Baer (Hildesheim) — Social Ontology and Ethics in Uisang's <em>Hwaŏm ilsŭng pŏpkye to</em></li></ol></td>
 </tr>
 <tr><td class="time">10:30–10:45</td><td class="plenary" colspan="3">휴식</td></tr>
 <tr><td class="time">10:45–12:15</td><td class="plenary" colspan="3"><span class="theme">전체 패널 2 · The Realms of East Asian Literati Arts</span><span class="chair">좌장: David Kim</span><ol class="talks"><li>Jiehua Cai (Munich) — The Development of Korean Literati Painting</li><li>Cun-Yi Zhang (Munich) — Late Ming and Joseon Korean Literati Brush Notes</li><li>Elmar Oberfrank (Munich) — The 64th Chapter of the 'Journey to the West'</li><li>Marc Nürnberger (Munich) — Viewing Stones in Joseon Korea</li></ol></td></tr>
