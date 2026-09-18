@@ -29,13 +29,13 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 발�
 
 ## 학술대회 프로그램
 
-발표는 30분(발표 20분 + 질의응답 10분)이며, 병렬 세션은 세 개의 강의실에서 진행됩니다 — **Musiksaal (HC.K.1)**, **HC.J.1.07**, **HC.J.2.09**. 전체 세션은 Musiksaal에서 열립니다. **학술대회 언어는 영어입니다.** (발표 제목은 공식 원어인 영어로 표기합니다.)
+발표는 30분(발표 20분 + 질의응답 10분)이며, 병렬 세션은 세 개의 강의실에서 진행됩니다 — **Musiksaal (HC.K.1)**, **GloPhi 회의실(HC.H.0.11)**, **HC.J.2.09**. 전체 세션은 Musiksaal에서 열립니다. **학술대회 언어는 영어입니다.** (발표 제목은 공식 원어인 영어로 표기합니다.)
 
 ### 첫째 날 — 10월 5일 (월요일)
 
 <div class="table-scroll">
 <table class="conf">
-<thead><tr><th>시간</th><th>Musiksaal · HC.K.1</th><th>HC.J.1.07</th><th>HC.J.2.09</th></tr></thead>
+<thead><tr><th>시간</th><th>Musiksaal · HC.K.1</th><th>GloPhi · HC.H.0.11</th><th>HC.J.2.09</th></tr></thead>
 <tbody>
 <tr><td class="time">09:30–10:00</td><td class="plenary" colspan="3"><span class="theme">개회식 및 환영사</span>Halla Kim (NAKPA 회장) · Sool Park (현지 조직위원장) · Rolf Elberfeld (힐데스하임대학교)</td></tr>
 <tr><td class="time">10:00–10:30</td><td class="plenary" colspan="3"><span class="theme">기조강연</span>Prof. Marion Eggert (Ruhr-Universität Bochum) <span class="chair">· 좌장: Halla Kim</span></td></tr>
@@ -64,7 +64,7 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 발�
 
 <div class="table-scroll">
 <table class="conf">
-<thead><tr><th>시간</th><th>Musiksaal · HC.K.1</th><th>HC.J.1.07</th><th>HC.J.2.09</th></tr></thead>
+<thead><tr><th>시간</th><th>Musiksaal · HC.K.1</th><th>GloPhi · HC.H.0.11</th><th>HC.J.2.09</th></tr></thead>
 <tbody>
 <tr>
 <td class="time">09:00–10:30<br>세션 3</td>
@@ -111,11 +111,11 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 발�
 
 ## 장소 및 오시는 길
 
-모든 행사는 **힐데스하임대학교 본 캠퍼스(Universitätsplatz 1, 31141 Hildesheim**, Marienburger Höhe 지구)에서 열립니다. 전체 세션은 Musiksaal(HC.K.1), 병렬 세션은 HC.J.1.07·HC.J.2.09 강의실에서 진행되며, 점심은 대학 식당(Mensa)에서 제공됩니다.
+모든 행사는 **힐데스하임대학교 본 캠퍼스(Universitätsplatz 1, 31141 Hildesheim**, Marienburger Höhe 지구)에서 열립니다. 전체 세션은 Musiksaal(HC.K.1), 병렬 세션은 GloPhi 회의실(HC.H.0.11, H동)과 HC.J.2.09 강의실에서 진행되며, 점심은 대학 식당(Mensa)에서 제공됩니다.
 
 <figure style="margin:1.6em 0;">
 <img src="/news/hauptcampus-map.jpg" alt="힐데스하임대학교 본 캠퍼스(Marienburger Höhe) 지도" style="width:100%;max-width:760px;height:auto;border:1px solid rgb(var(--gray-light));" />
-<figcaption style="font-size:0.8rem;color:rgb(var(--gray));margin-top:0.5em;line-height:1.5;">본 캠퍼스(Marienburger Höhe). 전체회의는 <strong>Musiksaal — K동</strong>, 병렬 세션은 <strong>J동</strong>(HC.J.1.07 · HC.J.2.09), GloPhi는 <strong>H동</strong>, 점심은 <strong>Mensa</strong>(왼쪽 아래). 지도: 힐데스하임대학교.</figcaption>
+<figcaption style="font-size:0.8rem;color:rgb(var(--gray));margin-top:0.5em;line-height:1.5;">본 캠퍼스(Marienburger Höhe). 전체회의는 <strong>Musiksaal — K동</strong>, 병렬 세션은 <strong>GloPhi 회의실 — H동</strong>(HC.H.0.11)과 <strong>J동</strong>(HC.J.2.09), 점심은 <strong>Mensa</strong>(왼쪽 아래). 지도: 힐데스하임대학교.</figcaption>
 </figure>
 
 - **프랑크푸르트 공항(FRA)에서:** 힐데스하임 중앙역(Hildesheim Hbf)까지 직행 ICE가 하루 수차례 운행하며 가장 빠른 연결편은 약 2시간 30분 소요. 직행이 아닐 경우 괴팅겐 또는 하노버 중앙역에서 1회 환승.

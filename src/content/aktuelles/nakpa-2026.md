@@ -29,13 +29,13 @@ This year's conference is devoted to *"Korean Philosophy: From a Comparative and
 
 ## Program
 
-Talks are 30 minutes (20-minute presentation + 10-minute discussion). Parallel sessions run in three rooms — **Musiksaal (HC.K.1)**, **HC.J.1.07** and **HC.J.2.09**; plenary sessions take place in the Musiksaal. The conference language is English.
+Talks are 30 minutes (20-minute presentation + 10-minute discussion). Parallel sessions run in three rooms — **Musiksaal (HC.K.1)**, the **GloPhi Conference Room (HC.H.0.11)** and **HC.J.2.09**; plenary sessions take place in the Musiksaal. The conference language is English.
 
 ### Day 1 — Monday, October 5
 
 <div class="table-scroll">
 <table class="conf">
-<thead><tr><th>Time</th><th>Musiksaal · HC.K.1</th><th>HC.J.1.07</th><th>HC.J.2.09</th></tr></thead>
+<thead><tr><th>Time</th><th>Musiksaal · HC.K.1</th><th>GloPhi · HC.H.0.11</th><th>HC.J.2.09</th></tr></thead>
 <tbody>
 <tr><td class="time">09:30–10:00</td><td class="plenary" colspan="3"><span class="theme">Opening &amp; Greeting</span>Halla Kim (NAKPA President) · Sool Park (Local Organizer) · Rolf Elberfeld (University of Hildesheim)</td></tr>
 <tr><td class="time">10:00–10:30</td><td class="plenary" colspan="3"><span class="theme">Keynote Address</span>Prof. Marion Eggert (Ruhr-Universität Bochum) <span class="chair">· Chair: Halla Kim</span></td></tr>
@@ -64,7 +64,7 @@ Talks are 30 minutes (20-minute presentation + 10-minute discussion). Parallel s
 
 <div class="table-scroll">
 <table class="conf">
-<thead><tr><th>Time</th><th>Musiksaal · HC.K.1</th><th>HC.J.1.07</th><th>HC.J.2.09</th></tr></thead>
+<thead><tr><th>Time</th><th>Musiksaal · HC.K.1</th><th>GloPhi · HC.H.0.11</th><th>HC.J.2.09</th></tr></thead>
 <tbody>
 <tr>
 <td class="time">09:00–10:30<br>Slot 3</td>
@@ -111,11 +111,11 @@ Dinner and coffee breaks during the conference are provided by the organizers. W
 
 ## Venue &amp; Getting There
 
-All events take place at the **Main Campus of the University of Hildesheim, Universitätsplatz 1, 31141 Hildesheim** (Marienburger Höhe). Plenary sessions are in the Musiksaal (HC.K.1); parallel sessions in HC.J.1.07 and HC.J.2.09; lunch at the university Mensa.
+All events take place at the **Main Campus of the University of Hildesheim, Universitätsplatz 1, 31141 Hildesheim** (Marienburger Höhe). Plenary sessions are in the Musiksaal (HC.K.1); parallel sessions in the GloPhi Conference Room (HC.H.0.11, Building H) and HC.J.2.09 (Building J); lunch at the university Mensa.
 
 <figure style="margin:1.6em 0;">
 <img src="/news/hauptcampus-map.jpg" alt="Map of the Main Campus (Marienburger Höhe), University of Hildesheim" style="width:100%;max-width:760px;height:auto;border:1px solid rgb(var(--gray-light));" />
-<figcaption style="font-size:0.8rem;color:rgb(var(--gray));margin-top:0.5em;line-height:1.5;">Main Campus (Marienburger Höhe). Plenary sessions in the <strong>Musiksaal — Building K</strong>; parallel sessions in <strong>Building J</strong> (HC.J.1.07 / HC.J.2.09); GloPhi in <strong>Building H</strong>; lunch at the <strong>Mensa</strong> (lower left). Map: University of Hildesheim.</figcaption>
+<figcaption style="font-size:0.8rem;color:rgb(var(--gray));margin-top:0.5em;line-height:1.5;">Main Campus (Marienburger Höhe). Plenary sessions in the <strong>Musiksaal — Building K</strong>; parallel sessions in the <strong>GloPhi Conference Room — Building H</strong> (HC.H.0.11) and <strong>Building J</strong> (HC.J.2.09); lunch at the <strong>Mensa</strong> (lower left). Map: University of Hildesheim.</figcaption>
 </figure>
 
 - **From Frankfurt Airport (FRA):** Direct ICE trains run to Hildesheim Hbf several times a day (fastest ≈ 2.5 h); otherwise change at Göttingen or Hannover Hbf.
