@@ -33,12 +33,12 @@ description: "한국 근대 사상가(19세기 말–1945)를 다루는 국제 �
 <thead><tr><th>시간</th><th>세션</th></tr></thead>
 <tbody>
 <tr><td class="time">09:30–09:55</td><td class="plenary"><span class="theme">개회 및 소개</span>박술 (힐데스하임대학교)</td></tr>
-<tr><td class="time">10:00–11:00</td><td><span class="theme">슬롯 1 · 최시형 Choe Sihyeong</span>조성환 (원광대학교)</td></tr>
+<tr><td class="time">10:00–11:00</td><td><span class="theme">슬롯 1 · 나혜석 Na Hyeseok</span>정보람 (콜로라도대학교 덴버)</td></tr>
 <tr><td class="time">11:00–11:30</td><td class="plenary">휴식</td></tr>
 <tr><td class="time">11:30–12:30</td><td><span class="theme">슬롯 2 · 이제마 Yi Jema</span>이효진 (베네치아 카포스카리대학교)</td></tr>
 <tr><td class="time">12:30–13:45</td><td class="plenary">점심 (Mensa)</td></tr>
 <tr><td class="time">13:45–14:45</td><td><span class="theme">슬롯 3 · 최한기 Choe Hangi</span>김선희 (이화여자대학교)</td></tr>
-<tr><td class="time">14:45–15:45</td><td><span class="theme">슬롯 4 · 나혜석 / 허정숙 Na Hyeseok / Heo Jeongsuk</span>정보람 (콜로라도대학교 덴버)</td></tr>
+<tr><td class="time">14:45–15:45</td><td><span class="theme">슬롯 4 · 최시형 Choe Sihyeong</span>조성환 (원광대학교)</td></tr>
 <tr><td class="time">15:45–16:15</td><td class="plenary">휴식</td></tr>
 <tr><td class="time">16:15–17:15</td><td class="plenary"><span class="theme">출판 기획</span><ol class="talks"><li>파트 A — 리더 <em>Modern Korean Thinkers</em> (Brill): 장 구성, 집필 분담, 일정</li><li>파트 B — <em>위버벡 『철학사 강요』(Grundriss der Geschichte der Philosophie)</em> 중 <em>Philosophy in East Asia: Modernity (Korea)</em> 권: 범위·집필진·마감 <span class="chair">· 이 권의 편집회의는 10월 8–9일 별도로 열립니다</span></li></ol></td></tr>
 <tr><td class="time">17:15</td><td class="plenary">학술 프로그램 종료</td></tr>
@@ -54,7 +54,7 @@ description: "한국 근대 사상가(19세기 말–1945)를 다루는 국제 �
 <tbody>
 <tr><td class="time">09:30–10:30</td><td><span class="theme">슬롯 5 · 김일엽 Kim Iryeop</span>박진영 (아메리칸대학교)</td></tr>
 <tr><td class="time">10:30–11:00</td><td class="plenary">휴식</td></tr>
-<tr><td class="time">11:00–12:00</td><td><span class="theme">슬롯 6 · 함석헌 Ham Seok-heon</span>이성청 (서울대학교)</td></tr>
+<tr><td class="time">11:00–12:00</td><td><span class="theme">슬롯 6 · 함석헌 Ham Sok Hon</span>이성청 (서울대학교)</td></tr>
 <tr><td class="time">12:00</td><td class="plenary">종료 → 점심 (Mensa)</td></tr>
 </tbody>
 </table>

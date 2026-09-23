@@ -20,7 +20,7 @@ The guiding question is the concept of **"philosophy"** itself: how far can the 
 
 The workshop is the second event of the Hildesheim **"Korean Philosophy Week"**, following directly after the [11th Annual Conference of the North American Korean Philosophy Association](/aktuelles/nakpa-2026/) (5–6 October 2026) at the same university. It is open to conference participants and to colleagues and students from Hildesheim.
 
-**Organizers:** Sool Park (Hildesheim) · Dobin Choi (Leiden) · Hyojin Lee (Ca' Foscari, Venice)
+**Organizers:** Sool Park (Hildesheim) · Dobin Choi (Leiden) · Hyojin Lee Fromell (Ca' Foscari, Venice)
 
 ## Program
 
@@ -33,12 +33,12 @@ Each slot runs 60 minutes: 40-minute presentation + 20-minute discussion. All se
 <thead><tr><th>Time</th><th>Session</th></tr></thead>
 <tbody>
 <tr><td class="time">09:30–09:55</td><td class="plenary"><span class="theme">Opening &amp; Introduction</span>Sool Park (University of Hildesheim)</td></tr>
-<tr><td class="time">10:00–11:00</td><td><span class="theme">Slot 1 · 최시형 Choe Sihyeong</span>Jo Seonghwan (Wonkwang University)</td></tr>
+<tr><td class="time">10:00–11:00</td><td><span class="theme">Slot 1 · 나혜석 Na Hyeseok</span>Boram Jeong (University of Colorado Denver)</td></tr>
 <tr><td class="time">11:00–11:30</td><td class="plenary">Coffee break</td></tr>
-<tr><td class="time">11:30–12:30</td><td><span class="theme">Slot 2 · 이제마 Yi Jema</span>Hyojin Lee (Ca' Foscari University of Venice)</td></tr>
+<tr><td class="time">11:30–12:30</td><td><span class="theme">Slot 2 · 이제마 Yi Jema</span>Hyojin Lee Fromell (Ca' Foscari University of Venice)</td></tr>
 <tr><td class="time">12:30–13:45</td><td class="plenary">Lunch (Mensa)</td></tr>
 <tr><td class="time">13:45–14:45</td><td><span class="theme">Slot 3 · 최한기 Choe Hangi</span>Seonhee Kim (Ewha Womans University)</td></tr>
-<tr><td class="time">14:45–15:45</td><td><span class="theme">Slot 4 · 나혜석 / 허정숙 Na Hyeseok / Heo Jeongsuk</span>Boram Jeong (University of Colorado Denver)</td></tr>
+<tr><td class="time">14:45–15:45</td><td><span class="theme">Slot 4 · 최시형 Choe Sihyeong</span>Jo Sunghwan (Wonkwang University)</td></tr>
 <tr><td class="time">15:45–16:15</td><td class="plenary">Coffee break</td></tr>
 <tr><td class="time">16:15–17:15</td><td class="plenary"><span class="theme">Publication Planning</span><ol class="talks"><li>Part A — Reader <em>Modern Korean Thinkers</em> (Brill): chapter structure, assignments, timeline</li><li>Part B — <em>Ueberweg. Grundriss der Geschichte der Philosophie</em>, volume <em>Philosophy in East Asia: Modernity (Korea)</em>: scope, contributors, deadlines <span class="chair">· the volume has its own editorial meeting on 8–9 October</span></li></ol></td></tr>
 <tr><td class="time">17:15</td><td class="plenary">Close of the academic programme</td></tr>
@@ -54,7 +54,7 @@ Each slot runs 60 minutes: 40-minute presentation + 20-minute discussion. All se
 <tbody>
 <tr><td class="time">09:30–10:30</td><td><span class="theme">Slot 5 · 김일엽 Kim Iryeop</span>Jin Y. Park (American University)</td></tr>
 <tr><td class="time">10:30–11:00</td><td class="plenary">Coffee break</td></tr>
-<tr><td class="time">11:00–12:00</td><td><span class="theme">Slot 6 · 함석헌 Ham Seok-heon</span>Song Chong Lee (Seoul National University)</td></tr>
+<tr><td class="time">11:00–12:00</td><td><span class="theme">Slot 6 · 함석헌 Ham Sok Hon</span>Song Chong Lee (Seoul National University)</td></tr>
 <tr><td class="time">12:00</td><td class="plenary">Close → Lunch (Mensa)</td></tr>
 </tbody>
 </table>
