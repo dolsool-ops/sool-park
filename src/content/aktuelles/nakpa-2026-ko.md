@@ -37,7 +37,7 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 발�
 <table class="conf">
 <thead><tr><th>시간</th><th>Musiksaal · HC.K.1</th><th>GloPhi · HC.H.0.11</th><th>HC.J.2.09</th></tr></thead>
 <tbody>
-<tr><td class="time">09:30–10:00</td><td class="plenary" colspan="3"><span class="theme">개회식 및 환영사</span>Halla Kim (NAKPA 회장) · Sool Park (현지 조직위원장) · Rolf Elberfeld (힐데스하임대학교)</td></tr>
+<tr><td class="time">09:30–10:00</td><td class="plenary" colspan="3"><span class="theme">개회식 및 환영사</span>Halla Kim (NAKPA 회장) · Sool Park (현지 조직위원장) · Rolf Elberfeld (힐데스하임대학교) · Junghyun Seo (주함부르크 대한민국 총영사관)</td></tr>
 <tr><td class="time">10:00–10:45</td><td class="plenary" colspan="3"><span class="theme">기조강연</span>Prof. Marion Eggert (Ruhr-Universität Bochum) <span class="chair">· 좌장: Halla Kim · 강연 30분 + 질의응답 15분</span></td></tr>
 <tr><td class="time">10:45–11:00</td><td class="plenary" colspan="3">휴식</td></tr>
 <tr><td class="time">11:00–12:30</td><td class="plenary" colspan="3"><span class="theme">전체 패널 1 · Author-Meets-Critics — Jin Y. Park, <em>Marginality</em></span>토론: Youngsun Back (SKKU), Anthony Curtis Adler (Yonsei), Yoko Arisaka (Hildesheim), George Tsai (Hawaii) · 답변: Jin Y. Park (American University) <span class="chair">· 좌장: Sool Park</span></td></tr>
@@ -107,7 +107,7 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 발�
 
 ## 재정 지원
 
-학술대회 기간의 만찬과 커피 브레이크는 주최 측이 제공합니다. 아울러 박사 학위를 아직 취득하지 않은 초기 경력 연구자(early-career researcher)를 위한 재정 지원에도 최선을 다하겠습니다. 지원 규모는 외부 기금 확보 상황에 따라 달라지며, 2026년 9월에 공지될 예정입니다. 지원 대상자는 학술대회 현장에서 작성할 양식을 받게 됩니다.
+학술대회 기간의 점심과 만찬, 커피 브레이크는 주최 측이 제공합니다. 숙박 지원을 안내받은 초기 경력 연구자(early-career researcher)께서는 본인 명의로 발행된 호텔 인보이스를 지참해 주십시오. 간단한 양식은 학술대회 현장에서 배부합니다.
 
 ## 장소 및 오시는 길
 
@@ -140,7 +140,7 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 발�
 
 ## 식사 및 만찬
 
-점심은 대학 식당(Mensa)에서 제공되며, 학회 기간 중 커피와 다과가 준비됩니다. 10월 5일(월) 18:00 Musiksaal에서 환영 만찬(뷔페)이, 10월 6일(화) 18:30 Südklause에서 폐회 만찬이 열립니다.
+학술대회 이틀 모두 점심은 대학 식당(Mensa)에서 제공되며, 학회 기간 중 커피와 다과가 준비됩니다. 개막 전날인 10월 4일(일) 18:00에는 KA7 Restaurant im Knochenhauer-Amtshaus(Markt 7)에서 비공식 모임이 있습니다. 10월 5일(월) 18:00 Musiksaal에서 환영 만찬(뷔페)이, 10월 6일(화) 18:30 Südklause에서 폐회 만찬이 열립니다.
 
 ## 논문 출판
 
@@ -148,8 +148,8 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 발�
 
 ## 주최·문의·후원
 
-본 학술대회는 **북미한국철학회**(NAKPA; 회장: Halla Kim 교수, 서강대학교)가 주관하고, 힐데스하임대학교의 **DFG 콜렉연구그룹 고등연구센터 *Philosophizing in a Globalized World***가 주최합니다. 현지 조직: 박술 교수. 문의: dolsool [at] gmail [dot] com. 힐데스하임대학교, 니더작센주 학술문화부(*zukunft.niedersachsen*), 독일철학회(DGPhil)의 지원에 감사드립니다.
+본 학술대회는 **북미한국철학회**(NAKPA; 회장: Halla Kim 교수, 서강대학교)가 주관하고, 힐데스하임대학교의 **DFG 콜렉연구그룹 고등연구센터 *Philosophizing in a Globalized World***가 주최합니다. 현지 조직: 박술 교수. 문의: dolsool [at] gmail [dot] com. 독일연구재단(DFG), 힐데스하임대학교, 니더작센주 학술문화부(*zukunft.niedersachsen*), 독일철학회(DGPhil)의 지원에 감사드립니다.
 
 ---
 
-*학술대회 직후인 2026년 10월 7–8일, 힐데스하임대학교에서 워크숍 **"Modern Korean Thinkers"**(현대 한국 사상가들)가 열립니다. 자세한 내용은 [워크숍 페이지](/aktuelles/workshop-modern-korean-thinkers-ko/)를 참조해 주세요됩니다.*
+*학술대회 직후인 2026년 10월 7–8일, 힐데스하임대학교에서 워크숍 **"Modern Korean Thinkers"**(현대 한국 사상가들)가 열립니다. 자세한 내용은 [워크숍 페이지](/aktuelles/workshop-modern-korean-thinkers-ko/)를 참조해 주세요.*

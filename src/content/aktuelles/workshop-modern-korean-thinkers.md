@@ -42,6 +42,7 @@ Each slot runs 60 minutes: 40-minute presentation + 20-minute discussion. All se
 <tr><td class="time">15:45–16:15</td><td class="plenary">Coffee break</td></tr>
 <tr><td class="time">16:15–17:15</td><td class="plenary"><span class="theme">Publication Planning</span><ol class="talks"><li>Part A — Reader <em>Modern Korean Thinkers</em> (Brill): chapter structure, assignments, timeline</li><li>Part B — <em>Ueberweg. Grundriss der Geschichte der Philosophie</em>, volume <em>Philosophy in East Asia: Modernity (Korea)</em>: scope, contributors, deadlines <span class="chair">· the volume has its own editorial meeting on 8–9 October</span></li></ol></td></tr>
 <tr><td class="time">17:15</td><td class="plenary">Close of the academic programme</td></tr>
+<tr><td class="time">18:30</td><td class="plenary">Workshop dinner (Namaste India, Rathausstraße 1)</td></tr>
 </tbody>
 </table>
 </div>
@@ -71,8 +72,6 @@ The workshop is a working meeting toward two publications.
 ## Participation &amp; Contributions
 
 The workshop is a working meeting with invited contributors; **attendance is open** to researchers and students. To attend, please write to **Sool Park** (dolsool [at] gmail [dot] com) with your name and affiliation.
-
-*Contributors:* final titles and abstracts (approx. 300 words) are due by **25 August 2026**.
 
 The workshop is supported by the **Korea Foundation**.
 

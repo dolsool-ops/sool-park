@@ -42,6 +42,7 @@ description: "한국 근대 사상가(19세기 말–1945)를 다루는 국제 �
 <tr><td class="time">15:45–16:15</td><td class="plenary">휴식</td></tr>
 <tr><td class="time">16:15–17:15</td><td class="plenary"><span class="theme">출판 기획</span><ol class="talks"><li>파트 A — 리더 <em>Modern Korean Thinkers</em> (Brill): 장 구성, 집필 분담, 일정</li><li>파트 B — <em>위버벡 『철학사 강요』(Grundriss der Geschichte der Philosophie)</em> 중 <em>Philosophy in East Asia: Modernity (Korea)</em> 권: 범위·집필진·마감 <span class="chair">· 이 권의 편집회의는 10월 8–9일 별도로 열립니다</span></li></ol></td></tr>
 <tr><td class="time">17:15</td><td class="plenary">학술 프로그램 종료</td></tr>
+<tr><td class="time">18:30</td><td class="plenary">워크숍 만찬 (Namaste India, Rathausstraße 1)</td></tr>
 </tbody>
 </table>
 </div>
@@ -71,8 +72,6 @@ description: "한국 근대 사상가(19세기 말–1945)를 다루는 국제 �
 ## 참가 및 발표
 
 워크숍은 초청 발표자들이 참여하는 작업 모임이지만, **청중 참석은 열려 있습니다.** 참석을 원하시는 연구자·학생은 성명과 소속을 적어 **박술**(dolsool [at] gmail [dot] com)에게 연락해 주십시오.
-
-*발표자 안내:* 최종 제목과 초록(약 300단어)은 **2026년 8월 25일**까지 보내주시기 바랍니다.
 
 이 워크숍은 **한국국제교류재단**(Korea Foundation)의 지원을 받습니다.
 

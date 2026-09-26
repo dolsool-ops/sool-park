@@ -37,7 +37,7 @@ Talks are 30 minutes (20-minute presentation + 10-minute discussion). Parallel s
 <table class="conf">
 <thead><tr><th>Time</th><th>Musiksaal · HC.K.1</th><th>GloPhi · HC.H.0.11</th><th>HC.J.2.09</th></tr></thead>
 <tbody>
-<tr><td class="time">09:30–10:00</td><td class="plenary" colspan="3"><span class="theme">Opening &amp; Greeting</span>Halla Kim (NAKPA President) · Sool Park (Local Organizer) · Rolf Elberfeld (University of Hildesheim)</td></tr>
+<tr><td class="time">09:30–10:00</td><td class="plenary" colspan="3"><span class="theme">Opening &amp; Greeting</span>Halla Kim (NAKPA President) · Sool Park (Local Organizer) · Rolf Elberfeld (University of Hildesheim) · Junghyun Seo (Consulate General of the Republic of Korea, Hamburg)</td></tr>
 <tr><td class="time">10:00–10:45</td><td class="plenary" colspan="3"><span class="theme">Keynote Address</span>Prof. Marion Eggert (Ruhr-Universität Bochum) <span class="chair">· Chair: Halla Kim · 30 min lecture + 15 min Q&amp;A</span></td></tr>
 <tr><td class="time">10:45–11:00</td><td class="plenary" colspan="3">Coffee break</td></tr>
 <tr><td class="time">11:00–12:30</td><td class="plenary" colspan="3"><span class="theme">Plenary Panel 1 · Author-Meets-Critics — Jin Y. Park, <em>Marginality</em></span>Critics: Youngsun Back (SKKU), Anthony Curtis Adler (Yonsei), Yoko Arisaka (Hildesheim), George Tsai (Hawaii) · Respondent: Jin Y. Park (American University) <span class="chair">· Chair: Sool Park</span></td></tr>
@@ -107,7 +107,7 @@ The abstracts of all talks are collected in the conference Book of Abstracts.
 
 ## Financial Support
 
-Dinner and coffee breaks during the conference are provided by the organizers. We will also do our utmost to offer financial support to early-career researchers (those who have not yet completed their PhD). The amount of support depends on external funding and will be announced in September 2026. Those who are eligible will receive a form to complete during the conference.
+Lunch, dinner and coffee breaks during the conference are provided by the organizers. Early-career researchers who have been offered accommodation support: please bring the hotel invoice in your own name; a short form will be handed out at the conference.
 
 ## Venue &amp; Getting There
 
@@ -140,7 +140,7 @@ Hildesheim offers affordable hotels within walking distance of the city center (
 
 ## Meals
 
-Lunches are at the university Mensa; coffee and refreshments are provided throughout. On Monday evening (Oct 5, 18:00) all participants are invited to a dinner buffet in the Musiksaal; the conference closes on Tuesday (Oct 6, 18:30) with a farewell dinner at the Südklause.
+Lunch at the university Mensa is provided on both conference days; coffee and refreshments are available throughout. On the eve of the conference (Sunday, Oct 4, 18:00) there is an informal get-together at KA7 Restaurant im Knochenhauer-Amtshaus, Markt 7. On Monday evening (Oct 5, 18:00) all participants are invited to a dinner buffet in the Musiksaal; the conference closes on Tuesday (Oct 6, 18:30) with a farewell dinner at the Südklause.
 
 ## Publication
 
@@ -148,7 +148,7 @@ Through consultation between the *Journal of Confucian Philosophy and Culture* (
 
 ## Organizers &amp; Contact
 
-Organized by the **North American Korean Philosophy Association** (NAKPA; President: Prof. Halla Kim, Sogang University) and hosted by the **Center for Advanced Studies *Philosophizing in a Globalized World*** (DFG Kolleg-Forschungsgruppe) at the University of Hildesheim. Local organization: Prof. Sool Park. Contact: dolsool [at] gmail [dot] com. With the support of the University of Hildesheim, the Lower Saxony Ministry for Science and Culture (*zukunft.niedersachsen*) and the German Society for Philosophy (DGPhil).
+Organized by the **North American Korean Philosophy Association** (NAKPA; President: Prof. Halla Kim, Sogang University) and hosted by the **Center for Advanced Studies *Philosophizing in a Globalized World*** (DFG Kolleg-Forschungsgruppe) at the University of Hildesheim. Local organization: Prof. Sool Park. Contact: dolsool [at] gmail [dot] com. With the support of the German Research Foundation (DFG), the University of Hildesheim, the Lower Saxony Ministry for Science and Culture (*zukunft.niedersachsen*) and the German Society for Philosophy (DGPhil).
 
 ---
 
