@@ -148,7 +148,15 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 발�
 
 ## 주최·문의·후원
 
-본 학술대회는 **북미한국철학회**(NAKPA; 회장: Halla Kim 교수, 서강대학교)가 주관하고, 힐데스하임대학교의 **DFG 콜렉연구그룹 고등연구센터 *Philosophizing in a Globalized World***가 주최합니다. 현지 조직: 박술 교수. 문의: dolsool [at] gmail [dot] com. 독일연구재단(DFG), 힐데스하임대학교, 니더작센주 학술문화부(*zukunft.niedersachsen*), 독일철학회(DGPhil)의 지원에 감사드립니다.
+본 학술대회는 **북미한국철학회**(NAKPA; 회장: Halla Kim 교수, 서강대학교)가 주관하고, 힐데스하임대학교의 **DFG 콜렉연구그룹 고등연구센터 *Philosophizing in a Globalized World***가 주최합니다. 현지 조직: 박술 교수. 문의: dolsool [at] gmail [dot] com. 독일연구재단(DFG), 힐데스하임대학교, 니더작센주 학술문화부(*zukunft.niedersachsen*), 독일철학회(DGPhil), 한국국제교류재단(Korea Foundation)의 지원에 감사드립니다.
+
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:1.2em 2.2em;margin:1.1em 0 0.4em;">
+<img src="/news/logo-dfg.png" alt="Funded by the German Research Foundation (DFG)" style="height:46px;width:auto;margin:0;" />
+<img src="/news/logo-zn.png" alt="zukunft.niedersachsen" style="height:34px;width:auto;margin:0;" />
+<img src="/news/logo-dgphil.png" alt="German Society for Philosophy (DGPhil)" style="height:38px;width:auto;margin:0;" />
+<img src="/news/kf-logo.svg" alt="Korea Foundation (한국국제교류재단)" style="height:58px;width:auto;margin:0;" />
+</div>
+<p style="font-size:0.8rem;color:rgb(var(--gray));line-height:1.5;margin-top:0.3em;">zukunft.niedersachsen: 니더작센주 학술문화부(MWK)와 폭스바겐재단(VolkswagenStiftung)의 공동 학술지원 프로그램.</p>
 
 ---
 

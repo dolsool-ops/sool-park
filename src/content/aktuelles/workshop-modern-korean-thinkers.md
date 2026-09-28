@@ -75,4 +75,6 @@ The workshop is a working meeting with invited contributors; **attendance is ope
 
 The workshop is supported by the **Korea Foundation**.
 
+<p style="margin:0.8em 0 0;"><img src="/news/kf-logo.svg" alt="Korea Foundation (한국국제교류재단)" style="height:64px;width:auto;" /></p>
+
 Directions, accommodation and travel information can be found on the [NAKPA 2026 conference page](/aktuelles/nakpa-2026/#venue--getting-there); the workshop uses the same campus. Note that it takes place in **room HC.G.2.07 (Building G)**, not in the Musiksaal.

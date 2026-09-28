@@ -75,4 +75,6 @@ description: "한국 근대 사상가(19세기 말–1945)를 다루는 국제 �
 
 이 워크숍은 **한국국제교류재단**(Korea Foundation)의 지원을 받습니다.
 
+<p style="margin:0.8em 0 0;"><img src="/news/kf-logo.svg" alt="Korea Foundation (한국국제교류재단)" style="height:64px;width:auto;" /></p>
+
 오시는 길·숙박 등은 [NAKPA 2026 학술대회 페이지](/aktuelles/nakpa-2026-ko/#장소-및-오시는-길)를 참조해 주십시오. 같은 캠퍼스에서 열리지만, 장소는 Musiksaal이 아니라 **HC.G.2.07**(G동)입니다.

@@ -148,7 +148,15 @@ Through consultation between the *Journal of Confucian Philosophy and Culture* (
 
 ## Organizers &amp; Contact
 
-Organized by the **North American Korean Philosophy Association** (NAKPA; President: Prof. Halla Kim, Sogang University) and hosted by the **Center for Advanced Studies *Philosophizing in a Globalized World*** (DFG Kolleg-Forschungsgruppe) at the University of Hildesheim. Local organization: Prof. Sool Park. Contact: dolsool [at] gmail [dot] com. With the support of the German Research Foundation (DFG), the University of Hildesheim, the Lower Saxony Ministry for Science and Culture (*zukunft.niedersachsen*) and the German Society for Philosophy (DGPhil).
+Organized by the **North American Korean Philosophy Association** (NAKPA; President: Prof. Halla Kim, Sogang University) and hosted by the **Center for Advanced Studies *Philosophizing in a Globalized World*** (DFG Kolleg-Forschungsgruppe) at the University of Hildesheim. Local organization: Prof. Sool Park. Contact: dolsool [at] gmail [dot] com. With the support of the German Research Foundation (DFG), the University of Hildesheim, the Lower Saxony Ministry for Science and Culture (*zukunft.niedersachsen*), the German Society for Philosophy (DGPhil) and the Korea Foundation.
+
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:1.2em 2.2em;margin:1.1em 0 0.4em;">
+<img src="/news/logo-dfg.png" alt="Funded by the German Research Foundation (DFG)" style="height:46px;width:auto;margin:0;" />
+<img src="/news/logo-zn.png" alt="zukunft.niedersachsen" style="height:34px;width:auto;margin:0;" />
+<img src="/news/logo-dgphil.png" alt="German Society for Philosophy (DGPhil)" style="height:38px;width:auto;margin:0;" />
+<img src="/news/kf-logo.svg" alt="Korea Foundation (한국국제교류재단)" style="height:58px;width:auto;margin:0;" />
+</div>
+<p style="font-size:0.8rem;color:rgb(var(--gray));line-height:1.5;margin-top:0.3em;">zukunft.niedersachsen: the joint science funding program of the Lower Saxony Ministry of Science and Culture and the Volkswagen Foundation.</p>
 
 ---
 
