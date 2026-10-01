@@ -23,9 +23,16 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 발�
 
 ## 주요 프로그램
 
-- **기조강연** — 마리온 에거트 교수(Prof. Marion Eggert, 보훔 루르대학교): *An Outsider’s View: On and In Korean (Confucian) Philosophy*, 10월 5일(월) 10:00–10:45
+- **기조강연** — 마리온 에거트 교수(Prof. Marion Eggert, 보훔 루르대학교): *An Outsider’s View: On and In Korean (Confucian) Philosophy*, 10월 5일(월) 10:00–10:45 · [실시간 중계](https://www.youtube.com/watch?v=RlgiXGrs6NY)
 - **Author-Meets-Critics(저자와의 대화)** — 박진영(Jin Y. Park) 교수의 *Marginality* (Columbia UP, 2025) · 토론: Youngsun Back, Anthony Curtis Adler, Yoko Arisaka, George Tsai · 답변: Jin Y. Park — 10월 5일(월) 11:00
 - **전체 패널** — The Realms of East Asian Literati Arts — 10월 6일(화) 10:45
+
+<figure>
+<div class="video-embed">
+<iframe src="https://www.youtube-nocookie.com/embed/RlgiXGrs6NY" title="기조강연 실시간 중계 — Marion Eggert, An Outsider’s View: On and In Korean (Confucian) Philosophy" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<figcaption><strong>기조강연 실시간 중계</strong> — 마리온 에거트 교수, <em>An Outsider’s View: On and In Korean (Confucian) Philosophy</em>. 2026년 10월 5일(월) 10:00–10:45(독일 시간), GloPhi 채널. <a href="https://www.youtube.com/watch?v=RlgiXGrs6NY" target="_blank" rel="noopener">유튜브에서 보기 →</a></figcaption>
+</figure>
 
 ## 학술대회 프로그램
 

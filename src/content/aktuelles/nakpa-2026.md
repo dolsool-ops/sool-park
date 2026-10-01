@@ -23,9 +23,16 @@ This year's conference is devoted to *"Korean Philosophy: From a Comparative and
 
 ## Highlights
 
-- **Keynote Address** — Prof. Marion Eggert (Ruhr-Universität Bochum): *An Outsider’s View: On and In Korean (Confucian) Philosophy*, Monday, Oct 5, 10:00–10:45
+- **Keynote Address** — Prof. Marion Eggert (Ruhr-Universität Bochum): *An Outsider’s View: On and In Korean (Confucian) Philosophy*, Monday, Oct 5, 10:00–10:45 · [livestream](https://www.youtube.com/watch?v=RlgiXGrs6NY)
 - **Author-Meets-Critics** — Jin Y. Park's *Marginality* (Columbia UP, 2025), with critics Youngsun Back, Anthony Curtis Adler, Yoko Arisaka and George Tsai; respondent Jin Y. Park — Monday, Oct 5, 11:00
 - **Plenary Panel** — The Realms of East Asian Literati Arts — Tuesday, Oct 6, 10:45
+
+<figure>
+<div class="video-embed">
+<iframe src="https://www.youtube-nocookie.com/embed/RlgiXGrs6NY" title="Keynote livestream — Marion Eggert, An Outsider’s View: On and In Korean (Confucian) Philosophy" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<figcaption><strong>Keynote livestream</strong> — Prof. Marion Eggert, <em>An Outsider’s View: On and In Korean (Confucian) Philosophy</em>. Live on Monday, 5 October 2026, 10:00–10:45 (CEST), on the GloPhi channel. <a href="https://www.youtube.com/watch?v=RlgiXGrs6NY" target="_blank" rel="noopener">Watch on YouTube →</a></figcaption>
+</figure>
 
 ## Program
 
