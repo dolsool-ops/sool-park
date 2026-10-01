@@ -23,7 +23,7 @@ This year's conference is devoted to *"Korean Philosophy: From a Comparative and
 
 ## Highlights
 
-- **Keynote Address** — Prof. Marion Eggert (Ruhr-Universität Bochum), Monday, Oct 5, 10:00–10:45
+- **Keynote Address** — Prof. Marion Eggert (Ruhr-Universität Bochum): *An Outsider’s View: On and In Korean (Confucian) Philosophy*, Monday, Oct 5, 10:00–10:45
 - **Author-Meets-Critics** — Jin Y. Park's *Marginality* (Columbia UP, 2025), with critics Youngsun Back, Anthony Curtis Adler, Yoko Arisaka and George Tsai; respondent Jin Y. Park — Monday, Oct 5, 11:00
 - **Plenary Panel** — The Realms of East Asian Literati Arts — Tuesday, Oct 6, 10:45
 
@@ -38,7 +38,7 @@ Talks are 30 minutes (20-minute presentation + 10-minute discussion). Parallel s
 <thead><tr><th>Time</th><th>Musiksaal · HC.K.1</th><th>GloPhi · HC.H.0.11</th><th>HC.J.2.09</th></tr></thead>
 <tbody>
 <tr><td class="time">09:30–10:00</td><td class="plenary" colspan="3"><span class="theme">Opening &amp; Greeting</span>Halla Kim (NAKPA President) · Sool Park (Local Organizer) · Rolf Elberfeld (University of Hildesheim) · Junghyun Seo (Consulate General of the Republic of Korea, Hamburg)</td></tr>
-<tr><td class="time">10:00–10:45</td><td class="plenary" colspan="3"><span class="theme">Keynote Address</span>Prof. Marion Eggert (Ruhr-Universität Bochum) <span class="chair">· Chair: Halla Kim · 30 min lecture + 15 min Q&amp;A</span></td></tr>
+<tr><td class="time">10:00–10:45</td><td class="plenary" colspan="3"><span class="theme">Keynote Address</span>Prof. Marion Eggert (Ruhr-Universität Bochum): <em>An Outsider’s View: On and In Korean (Confucian) Philosophy</em> <span class="chair">· Chair: Halla Kim · 30 min lecture + 15 min Q&amp;A</span></td></tr>
 <tr><td class="time">10:45–11:00</td><td class="plenary" colspan="3">Coffee break</td></tr>
 <tr><td class="time">11:00–12:30</td><td class="plenary" colspan="3"><span class="theme">Plenary Panel 1 · Author-Meets-Critics — Jin Y. Park, <em>Marginality</em></span>Critics: Youngsun Back (SKKU), Anthony Curtis Adler (Yonsei), Yoko Arisaka (Hildesheim), George Tsai (Hawaii) · Respondent: Jin Y. Park (American University) <span class="chair">· Chair: Sool Park</span></td></tr>
 <tr><td class="time">12:30–14:00</td><td class="plenary" colspan="3">Lunch (Mensa)</td></tr>
@@ -46,14 +46,14 @@ Talks are 30 minutes (20-minute presentation + 10-minute discussion). Parallel s
 <td class="time">14:00–15:30<br>Slot 1</td>
 <td><span class="theme">Joseon Political Philosophy</span><span class="chair">Chair: David Kim</span><ol class="talks"><li>Hyeon Sop Baek (Hawaii) — Freedom and Decoloniality in Jeong Do-jeon's Thought</li><li>Juyong Kim (Warwick) — Mencian Autonomy in the Social World: the Neo-Confucian Reading of Mencius through Dasan</li><li>Nikolett Roque-Kőrösi (Károli Gáspár) — Minbon and Political Responsibility in Silhak Thought</li></ol></td>
 <td><span class="theme">Dasan Jeong Yagyong</span><span class="chair">Chair: Boram Jeong</span><ol class="talks"><li>Sang Hyun Chung (Viadrina) — The Human Body (shin) in Tasan's Philosophy</li><li>Insok Hwang (SKKU) — The Moral Subject of 'Weighing': Dasan's Theory of Quan</li><li>Eun-Young Kim (Ewha) — Jeong Yakyong in Comparative Dialogue with Hume and Kant</li></ol></td>
-<td><span class="theme">Modern Korean Thinkers</span><span class="chair">Chair: Song Chong Lee</span><ol class="talks"><li>Jae Won Edward Chung (Rutgers) — A Cosmotechnical Approach to Korean Vitalism: Kim Chiha</li><li>Hye Young Kim (ENS Paris) — Shame and Ethical Self-Relation: Yun Dong-Ju and Agnes Heller</li><li>WooHyun Jung (Sogang) — Immanent Transcendence in Tian, Kant, and Donghak</li></ol></td>
+<td><span class="theme">Modern Korean Thought</span><span class="chair">Chair: Song Chong Lee</span><ol class="talks"><li>Jae Won Edward Chung (Rutgers) — A Cosmotechnical Approach to Korean Vitalism: Kim Chiha</li><li>Hye Young Kim (ENS Paris) — Shame and Ethical Self-Relation: Yun Dong-Ju and Agnes Heller</li><li>WooHyun Jung (Sogang) — Immanent Transcendence in Tian, Kant, and Donghak</li></ol></td>
 </tr>
 <tr><td class="time">15:30–16:00</td><td class="plenary" colspan="3">Coffee break</td></tr>
 <tr>
 <td class="time">16:00–17:30<br>Slot 2</td>
 <td><span class="theme">Mid-Joseon: Four-Seven Debate &amp; Seongho</span><span class="chair">Chair: Jin Y. Park</span><ol class="talks"><li>Jeseong Bae / Youngsun Back (SKKU) — When Moral Emotions Go Wrong</li><li>Jaeryung Lim (Ewha) — Seongho Yi Ik's Theory of Perception (Jigak)</li><li>Hajin Oh (Ewha) — Gong in Seongho Yi Ik's Theory of Four Beginnings and Seven Emotions</li></ol></td>
 <td><span class="theme">Neo-Confucianism &amp; Silhak</span><span class="chair">Chair: Halla Kim · this room runs until 18:00</span><ol class="talks"><li>Bongrae Seok (Alvernia) — The Horak Debate and Intercultural AI Ethics</li><li>Suk G. Choi (Towson) — Scholars of Silhak on Music</li><li>Chan Lee (Korea University) — Vice in Neo-Confucian Ethics: Qi, Luck, and Moral Responsibility</li><li>Martin Gehlmann (Bochum) — Teaching the Basics. The Role of the Elementary Learning in Chosŏn Korea <span class="chair">· 17:30–18:00</span></li></ol></td>
-<td><span class="theme">Korean Buddhism I</span><span class="chair">Chair: Yoko Arisaka</span><ol class="talks"><li>Edris Voet (Oxford) — The 'Brief Transcriptions of Efficacious Resonance,' 1485</li><li>Sumi Lee (Ewha) — Between and Beyond the Ultimate and the Phenomenal</li><li>Moonsuk Heo / Hye Yu Sunim (Hanmaum Seonwon) — Korean Buddhism: Hanmaum Seonwon's German Branch</li></ol></td>
+<td><span class="theme">Korean Buddhism I</span><span class="chair">Chair: Yoko Arisaka</span><ol class="talks"><li>Edris Voet (Oxford) — The 'Brief Transcriptions of Efficacious Resonance,' 1485</li><li>Sumi Lee (Ewha) — Between and Beyond the Ultimate and the Phenomenal</li><li>Moonsuk Heo (Hye Yu Sunim) (Hanmaum Seonwon) — Korean Buddhism: Hanmaum Seonwon's German Branch</li></ol></td>
 </tr>
 <tr><td class="time">18:00</td><td class="plenary" colspan="3">Conference Dinner Buffet (Musiksaal, HC.K.1)</td></tr>
 </tbody>

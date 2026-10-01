@@ -23,7 +23,7 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 발�
 
 ## 주요 프로그램
 
-- **기조강연** — 마리온 에거트 교수(Prof. Marion Eggert, 보훔 루르대학교), 10월 5일(월) 10:00–10:45
+- **기조강연** — 마리온 에거트 교수(Prof. Marion Eggert, 보훔 루르대학교): *An Outsider’s View: On and In Korean (Confucian) Philosophy*, 10월 5일(월) 10:00–10:45
 - **Author-Meets-Critics(저자와의 대화)** — 박진영(Jin Y. Park) 교수의 *Marginality* (Columbia UP, 2025) · 토론: Youngsun Back, Anthony Curtis Adler, Yoko Arisaka, George Tsai · 답변: Jin Y. Park — 10월 5일(월) 11:00
 - **전체 패널** — The Realms of East Asian Literati Arts — 10월 6일(화) 10:45
 
@@ -38,7 +38,7 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 발�
 <thead><tr><th>시간</th><th>Musiksaal · HC.K.1</th><th>GloPhi · HC.H.0.11</th><th>HC.J.2.09</th></tr></thead>
 <tbody>
 <tr><td class="time">09:30–10:00</td><td class="plenary" colspan="3"><span class="theme">개회식 및 환영사</span>Halla Kim (NAKPA 회장) · Sool Park (현지 조직위원장) · Rolf Elberfeld (힐데스하임대학교) · Junghyun Seo (주함부르크 대한민국 총영사관)</td></tr>
-<tr><td class="time">10:00–10:45</td><td class="plenary" colspan="3"><span class="theme">기조강연</span>Prof. Marion Eggert (Ruhr-Universität Bochum) <span class="chair">· 좌장: Halla Kim · 강연 30분 + 질의응답 15분</span></td></tr>
+<tr><td class="time">10:00–10:45</td><td class="plenary" colspan="3"><span class="theme">기조강연</span>Prof. Marion Eggert (Ruhr-Universität Bochum): <em>An Outsider’s View: On and In Korean (Confucian) Philosophy</em> <span class="chair">· 좌장: Halla Kim · 강연 30분 + 질의응답 15분</span></td></tr>
 <tr><td class="time">10:45–11:00</td><td class="plenary" colspan="3">휴식</td></tr>
 <tr><td class="time">11:00–12:30</td><td class="plenary" colspan="3"><span class="theme">전체 패널 1 · Author-Meets-Critics — Jin Y. Park, <em>Marginality</em></span>토론: Youngsun Back (SKKU), Anthony Curtis Adler (Yonsei), Yoko Arisaka (Hildesheim), George Tsai (Hawaii) · 답변: Jin Y. Park (American University) <span class="chair">· 좌장: Sool Park</span></td></tr>
 <tr><td class="time">12:30–14:00</td><td class="plenary" colspan="3">점심 (Mensa)</td></tr>
@@ -46,14 +46,14 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 발�
 <td class="time">14:00–15:30<br>세션 1</td>
 <td><span class="theme">Joseon Political Philosophy</span><span class="chair">좌장: David Kim</span><ol class="talks"><li>Hyeon Sop Baek (Hawaii) — Freedom and Decoloniality in Jeong Do-jeon's Thought</li><li>Juyong Kim (Warwick) — Mencian Autonomy in the Social World: the Neo-Confucian Reading of Mencius through Dasan</li><li>Nikolett Roque-Kőrösi (Károli Gáspár) — Minbon and Political Responsibility in Silhak Thought</li></ol></td>
 <td><span class="theme">Dasan Jeong Yagyong</span><span class="chair">좌장: Boram Jeong</span><ol class="talks"><li>Sang Hyun Chung (Viadrina) — The Human Body (shin) in Tasan's Philosophy</li><li>Insok Hwang (SKKU) — The Moral Subject of 'Weighing': Dasan's Theory of Quan</li><li>Eun-Young Kim (Ewha) — Jeong Yakyong in Comparative Dialogue with Hume and Kant</li></ol></td>
-<td><span class="theme">Modern Korean Thinkers</span><span class="chair">좌장: Song Chong Lee</span><ol class="talks"><li>Jae Won Edward Chung (Rutgers) — A Cosmotechnical Approach to Korean Vitalism: Kim Chiha</li><li>Hye Young Kim (ENS Paris) — Shame and Ethical Self-Relation: Yun Dong-Ju and Agnes Heller</li><li>WooHyun Jung (Sogang) — Immanent Transcendence in Tian, Kant, and Donghak</li></ol></td>
+<td><span class="theme">Modern Korean Thought</span><span class="chair">좌장: Song Chong Lee</span><ol class="talks"><li>Jae Won Edward Chung (Rutgers) — A Cosmotechnical Approach to Korean Vitalism: Kim Chiha</li><li>Hye Young Kim (ENS Paris) — Shame and Ethical Self-Relation: Yun Dong-Ju and Agnes Heller</li><li>WooHyun Jung (Sogang) — Immanent Transcendence in Tian, Kant, and Donghak</li></ol></td>
 </tr>
 <tr><td class="time">15:30–16:00</td><td class="plenary" colspan="3">휴식</td></tr>
 <tr>
 <td class="time">16:00–17:30<br>세션 2</td>
 <td><span class="theme">Mid-Joseon: Four-Seven Debate &amp; Seongho</span><span class="chair">좌장: Jin Y. Park</span><ol class="talks"><li>Jeseong Bae / Youngsun Back (SKKU) — When Moral Emotions Go Wrong</li><li>Jaeryung Lim (Ewha) — Seongho Yi Ik's Theory of Perception (Jigak)</li><li>Hajin Oh (Ewha) — Gong in Seongho Yi Ik's Theory of Four Beginnings and Seven Emotions</li></ol></td>
 <td><span class="theme">Neo-Confucianism &amp; Silhak</span><span class="chair">좌장: Halla Kim · 이 강의실은 18:00까지 진행</span><ol class="talks"><li>Bongrae Seok (Alvernia) — The Horak Debate and Intercultural AI Ethics</li><li>Suk G. Choi (Towson) — Scholars of Silhak on Music</li><li>Chan Lee (Korea University) — Vice in Neo-Confucian Ethics: Qi, Luck, and Moral Responsibility</li><li>Martin Gehlmann (Bochum) — Teaching the Basics. The Role of the Elementary Learning in Chosŏn Korea <span class="chair">· 17:30–18:00</span></li></ol></td>
-<td><span class="theme">Korean Buddhism I</span><span class="chair">좌장: Yoko Arisaka</span><ol class="talks"><li>Edris Voet (Oxford) — The 'Brief Transcriptions of Efficacious Resonance,' 1485</li><li>Sumi Lee (Ewha) — Between and Beyond the Ultimate and the Phenomenal</li><li>Moonsuk Heo / Hye Yu Sunim (Hanmaum Seonwon) — Korean Buddhism: Hanmaum Seonwon's German Branch</li></ol></td>
+<td><span class="theme">Korean Buddhism I</span><span class="chair">좌장: Yoko Arisaka</span><ol class="talks"><li>Edris Voet (Oxford) — The 'Brief Transcriptions of Efficacious Resonance,' 1485</li><li>Sumi Lee (Ewha) — Between and Beyond the Ultimate and the Phenomenal</li><li>Moonsuk Heo (Hye Yu Sunim) (Hanmaum Seonwon) — Korean Buddhism: Hanmaum Seonwon's German Branch</li></ol></td>
 </tr>
 <tr><td class="time">18:00</td><td class="plenary" colspan="3">환영 만찬 · 뷔페 (Musiksaal, HC.K.1)</td></tr>
 </tbody>
