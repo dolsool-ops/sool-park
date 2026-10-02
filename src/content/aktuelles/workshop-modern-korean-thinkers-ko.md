@@ -10,7 +10,7 @@ description: "한국 근대 사상가(19세기 말–1945)를 다루는 국제 �
 <p style="font-size:0.85rem;color:rgb(var(--gray));margin:0 0 1.4em;"><a href="/aktuelles/workshop-modern-korean-thinkers/">English</a> · <strong>한국어</strong></p>
 
 **국제 워크숍 · Modern Korean Thinkers**
-**2026년 10월 7–8일** · 힐데스하임대학교 본 캠퍼스 (HC.G.2.07)
+**2026년 10월 7–8일** · 힐데스하임대학교 본 캠퍼스 (GloPhi 회의실, HC.H.0.11)
 
 ## 워크숍 소개
 
@@ -24,7 +24,7 @@ description: "한국 근대 사상가(19세기 말–1945)를 다루는 국제 �
 
 ## 프로그램
 
-각 슬롯은 60분입니다(발표 40분 + 토론 20분). 모든 세션은 본 캠퍼스 HC.G.2.07에서 열리며, 워크숍 언어는 영어입니다.
+각 슬롯은 60분입니다(발표 40분 + 토론 20분). 모든 세션은 본 캠퍼스 GloPhi 회의실(HC.H.0.11, H동)에서 열리며, 워크숍 언어는 영어입니다.
 
 ### 첫째 날 — 10월 7일 (수요일)
 
@@ -77,4 +77,4 @@ description: "한국 근대 사상가(19세기 말–1945)를 다루는 국제 �
 
 <p style="margin:0.8em 0 0;"><img src="/news/kf-logo.svg" alt="Korea Foundation (한국국제교류재단)" style="height:64px;width:auto;" /></p>
 
-오시는 길·숙박 등은 [NAKPA 2026 학술대회 페이지](/aktuelles/nakpa-2026-ko/#장소-및-오시는-길)를 참조해 주십시오. 같은 캠퍼스에서 열리지만, 장소는 Musiksaal이 아니라 **HC.G.2.07**(G동)입니다.
+오시는 길·숙박 등은 [NAKPA 2026 학술대회 페이지](/aktuelles/nakpa-2026-ko/#장소-및-오시는-길)를 참조해 주십시오. 같은 캠퍼스에서 열리지만, 장소는 Musiksaal이 아니라 **GloPhi 회의실(HC.H.0.11, H동)**입니다.

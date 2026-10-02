@@ -10,7 +10,7 @@ description: "International Workshop on modern Korean thinkers (late 19th centur
 <p style="font-size:0.85rem;color:rgb(var(--gray));margin:0 0 1.4em;"><strong>English</strong> · <a href="/aktuelles/workshop-modern-korean-thinkers-ko/">한국어</a></p>
 
 **International Workshop · Modern Korean Thinkers**
-**7–8 October 2026** · University of Hildesheim, Main Campus (Room HC.G.2.07)
+**7–8 October 2026** · University of Hildesheim, Main Campus (GloPhi Conference Room, HC.H.0.11)
 
 ## About the Workshop
 
@@ -24,7 +24,7 @@ The workshop is the second event of the Hildesheim **"Korean Philosophy Week"**,
 
 ## Program
 
-Each slot runs 60 minutes: 40-minute presentation + 20-minute discussion. All sessions take place in room HC.G.2.07 on the Main Campus. The language of the workshop is English.
+Each slot runs 60 minutes: 40-minute presentation + 20-minute discussion. All sessions take place in the GloPhi Conference Room (HC.H.0.11, Building H) on the Main Campus. The language of the workshop is English.
 
 ### Day 1 — Wednesday, 7 October
 
@@ -77,4 +77,4 @@ The workshop is supported by the **Korea Foundation**.
 
 <p style="margin:0.8em 0 0;"><img src="/news/kf-logo.svg" alt="Korea Foundation (한국국제교류재단)" style="height:64px;width:auto;" /></p>
 
-Directions, accommodation and travel information can be found on the [NAKPA 2026 conference page](/aktuelles/nakpa-2026/#venue--getting-there); the workshop uses the same campus. Note that it takes place in **room HC.G.2.07 (Building G)**, not in the Musiksaal.
+Directions, accommodation and travel information can be found on the [NAKPA 2026 conference page](/aktuelles/nakpa-2026/#venue--getting-there); the workshop uses the same campus. Note that it takes place in the **GloPhi Conference Room (HC.H.0.11, Building H)**, not in the Musiksaal.
