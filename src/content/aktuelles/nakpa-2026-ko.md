@@ -36,13 +36,13 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 발�
 
 ## 학술대회 프로그램
 
-발표는 30분(발표 20분 + 질의응답 10분)이며, 병렬 세션은 세 개의 강의실에서 진행됩니다 — **Musiksaal (HC.K.1)**, **GloPhi 회의실(HC.H.0.11)**, **HC.J.2.09**. 전체 세션은 Musiksaal에서 열립니다. **학술대회 언어는 영어입니다.** (발표 제목은 공식 원어인 영어로 표기합니다.)
+발표는 30분(발표 20분 + 질의응답 10분)이며, 병렬 세션은 세 개의 강의실에서 진행됩니다 — **Musiksaal (HC.K.1)**, **GloPhi 회의실(HC.H.0.11)**, **HC.J.1.07**. 전체 세션은 Musiksaal에서 열립니다. **학술대회 언어는 영어입니다.** (발표 제목은 공식 원어인 영어로 표기합니다.)
 
 ### 첫째 날 — 10월 5일 (월요일)
 
 <div class="table-scroll">
 <table class="conf">
-<thead><tr><th>시간</th><th>Musiksaal · HC.K.1</th><th>GloPhi · HC.H.0.11</th><th>HC.J.2.09</th></tr></thead>
+<thead><tr><th>시간</th><th>Musiksaal · HC.K.1</th><th>GloPhi · HC.H.0.11</th><th>HC.J.1.07</th></tr></thead>
 <tbody>
 <tr><td class="time">09:30–10:00</td><td class="plenary" colspan="3"><span class="theme">개회식 및 환영사</span>Halla Kim (NAKPA 회장) · Sool Park (현지 조직위원장) · Rolf Elberfeld (힐데스하임대학교) · Junghyun Seo (주함부르크 대한민국 총영사관)</td></tr>
 <tr><td class="time">10:00–10:45</td><td class="plenary" colspan="3"><span class="theme">기조강연</span>Prof. Marion Eggert (Ruhr-Universität Bochum): <em>An Outsider’s View: On and In Korean (Confucian) Philosophy</em> <span class="chair">· 좌장: Halla Kim · 강연 30분 + 질의응답 15분</span></td></tr>
@@ -71,7 +71,7 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 발�
 
 <div class="table-scroll">
 <table class="conf">
-<thead><tr><th>시간</th><th>Musiksaal · HC.K.1</th><th>GloPhi · HC.H.0.11</th><th>HC.J.2.09</th></tr></thead>
+<thead><tr><th>시간</th><th>Musiksaal · HC.K.1</th><th>GloPhi · HC.H.0.11</th><th>HC.J.1.07</th></tr></thead>
 <tbody>
 <tr>
 <td class="time">09:00–10:30<br>세션 3</td>
@@ -88,7 +88,7 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 발�
 <td><span class="theme">Religion, Ecology and the Non-Human</span><span class="chair">좌장: Bongrae Seok</span><ol class="talks"><li>Ye Eun Esther Ghim (SNU) — After <em>Gaebyeok</em>: World-Renewal, Bodily Immortality, and Crisis in Contemporary Korean New Religious Movements</li><li>Jea Sophia Oh (West Chester) — Why Do We Need Goddesses Today? Toward Salim Thealogical Hermeneutics</li><li>Qingqiu Feng (East China Normal University) — Empathy with Plants and Trees: "Issuing Forth and Attaining Due Measure" in Song-Ming Neo-Confucianism <span class="chair">· 온라인 발표</span></li></ol></td>
 <td><span class="theme">Intercultural &amp; Comparative</span><span class="chair">좌장: Sool Park</span><ol class="talks"><li>David Kim (San Francisco) — Joseon Gyeong in Woodruff's Greco-Chinese Matrix</li><li>Boram Jeong (Colorado Denver) — A Phenomenology of Nunchi and Affective Attunement</li><li>Qian Ran (Bochum) — Truth and Public Discourse</li></ol></td>
 </tr>
-<tr><td class="time">15:30–16:00</td><td class="plenary" colspan="3">휴식 <span class="chair">· HC.J.2.09에서는 Hwa Yeong Wang 발표 진행</span></td></tr>
+<tr><td class="time">15:30–16:00</td><td class="plenary" colspan="3">휴식 <span class="chair">· HC.J.1.07에서는 Hwa Yeong Wang 발표 진행</span></td></tr>
 <tr>
 <td class="time">16:00–17:30<br>세션 5</td>
 <td><span class="theme">Korean Culture &amp; Religion</span><span class="chair">좌장: Youngsun Back</span><ol class="talks"><li>Anthony Curtis Adler (Yonsei) — A Tale of Two Dragons: Bong Joon Ho and Daoist Nature</li><li>HyeonMinh Ryu (SNU) — Rectifying Names in the Wake of Tragedy: Xunzi, Stigmatizing Reclassification, and the Politics of Naming in Itaewon</li><li>Wonjean Lee (Sookmyung) — Hauntology and Techno-shamanism in Korean Specter Narratives</li></ol></td>
@@ -118,11 +118,11 @@ description: "북미한국철학회(NAKPA) 제11차 연례 학술대회 — 발�
 
 ## 장소 및 오시는 길
 
-모든 행사는 **힐데스하임대학교 본 캠퍼스(Universitätsplatz 1, 31141 Hildesheim**, Marienburger Höhe 지구)에서 열립니다. 전체 세션은 Musiksaal(HC.K.1)에서 열리며 이곳에서 병렬 세션도 일부 진행됩니다. 나머지 병렬 세션은 GloPhi 회의실(HC.H.0.11, H동)과 HC.J.2.09 강의실에서 진행되며, 점심은 대학 식당(Mensa)에서 제공됩니다.
+모든 행사는 **힐데스하임대학교 본 캠퍼스(Universitätsplatz 1, 31141 Hildesheim**, Marienburger Höhe 지구)에서 열립니다. 전체 세션은 Musiksaal(HC.K.1)에서 열리며 이곳에서 병렬 세션도 일부 진행됩니다. 나머지 병렬 세션은 GloPhi 회의실(HC.H.0.11, H동)과 HC.J.1.07 강의실에서 진행되며, 점심은 대학 식당(Mensa)에서 제공됩니다.
 
 <figure style="margin:1.6em 0;">
 <img src="/news/hauptcampus-map.jpg" alt="힐데스하임대학교 본 캠퍼스(Marienburger Höhe) 지도" style="width:100%;max-width:760px;height:auto;border:1px solid rgb(var(--gray-light));" />
-<figcaption style="font-size:0.8rem;color:rgb(var(--gray));margin-top:0.5em;line-height:1.5;">본 캠퍼스(Marienburger Höhe). 전체회의는 <strong>Musiksaal — K동</strong>, 병렬 세션은 <strong>GloPhi 회의실 — H동</strong>(HC.H.0.11)과 <strong>J동</strong>(HC.J.2.09), 점심은 <strong>Mensa</strong>(왼쪽 아래). 지도: 힐데스하임대학교.</figcaption>
+<figcaption style="font-size:0.8rem;color:rgb(var(--gray));margin-top:0.5em;line-height:1.5;">본 캠퍼스(Marienburger Höhe). 전체회의는 <strong>Musiksaal — K동</strong>, 병렬 세션은 <strong>GloPhi 회의실 — H동</strong>(HC.H.0.11)과 <strong>J동</strong>(HC.J.1.07), 점심은 <strong>Mensa</strong>(왼쪽 아래). 지도: 힐데스하임대학교.</figcaption>
 </figure>
 
 - **프랑크푸르트 공항(FRA)에서:** 힐데스하임 중앙역(Hildesheim Hbf)까지 직행 ICE가 하루 수차례 운행하며 가장 빠른 연결편은 약 2시간 30분 소요. 직행이 아닐 경우 괴팅겐 또는 하노버 중앙역에서 1회 환승.
