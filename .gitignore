@@ -29,3 +29,9 @@ www/
 
 # drop zone for new content (not deployed)
 _inbox/
+
+# seminar chat: reader context (participants only, § 60a UrhG) and local secrets
+seminar-kontext/
+.dev.vars*
+# wrangler local state (contains the local KV copy of the reader context)
+.wrangler/

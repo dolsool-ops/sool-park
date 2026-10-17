@@ -2,7 +2,16 @@
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "sool-park",
 	"compatibility_date": "2026-06-01",
+	// Worker only for /api/* (seminar chat); everything else is served straight from ./dist
+	"main": "worker/index.ts",
 	"assets": {
-		"directory": "./dist"
-	}
+		"directory": "./dist",
+		"binding": "ASSETS",
+		"run_worker_first": ["/api/*"]
+	},
+	// Seminar chat: reader context, budget and rate counters.
+	// Before deploying: `npx wrangler kv namespace create SEMINAR` and put the returned id here.
+	"kv_namespaces": [{ "binding": "SEMINAR", "id": "seminar-lokal" }]
+	// Secrets (never in this file): ANTHROPIC_API_KEY, SEMINAR_CODE
+	//   local: .dev.vars   live: npx wrangler secret put <NAME>
 }

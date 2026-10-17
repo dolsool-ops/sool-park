@@ -1,0 +1,68 @@
+---
+// One interview: a click-to-load YouTube frame, a chapter timeline and guiding questions.
+import type { CollectionEntry } from 'astro:content';
+
+type V = CollectionEntry<'sitzungen'>['data']['videos'][number];
+interface Props { v: V; n: number; }
+const { v, n } = Astro.props;
+
+const sek = (t: string) => t.split(':').map(Number).reduce((a, b) => a * 60 + b, 0);
+const dauer = sek(v.dauer);
+const kapitel = v.kapitel.map((k) => ({ ...k, s: sek(k.zeit), p: ((sek(k.zeit) / dauer) * 100).toFixed(2) }));
+const datum = v.datum.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'UTC' });
+const fragen = v.fragen.length > 0 || kapitel.some((k) => k.frage);
+---
+
+<figure class="vid" data-yt={v.youtube} data-titel={v.titel}>
+	<p class="sem-label">Video {String(n).padStart(2, '0')} · {v.person}</p>
+	<div class="vid-card">
+		<div class="vid-frame">
+			<button class="vid-play" type="button" aria-label={`Video abspielen: ${v.titel}`}>
+				<span class="play"></span>
+				<span class="lab">
+					<b>{v.titel}</b>
+					<span class="mono">{v.quelle} · {datum} · {v.dauer} · {v.sprache}</span>
+				</span>
+			</button>
+			<p class="vid-hint mono">Beim Abspielen wird YouTube geladen (youtube-nocookie.com)</p>
+		</div>
+		{
+			kapitel.length > 0 && (
+				<>
+					<div class="vid-tl" aria-hidden="true">
+						<div class="bar" />
+						<div class="head" style="left:0%" />
+						{kapitel.map((k) => (
+							<button tabindex="-1" style={`left:${k.p}%`} data-s={k.s} data-p={k.p} data-frage={k.frage} title={`${k.zeit} ${k.titel}`} />
+						))}
+					</div>
+					<ol class="vid-chap">
+						{kapitel.map((k) => (
+							<li>
+								<button type="button" data-s={k.s} data-p={k.p} data-frage={k.frage}>
+									<time>{k.zeit}</time>
+									<span>{k.titel}</span>
+								</button>
+							</li>
+						))}
+					</ol>
+				</>
+			)
+		}
+	</div>
+	{
+		fragen && (
+			<div class="vid-q">
+				<span class="mono">Zum Mitdenken</span>
+				<p data-kapfrage hidden />
+				{v.fragen.length > 0 && (
+					<ol>
+						{v.fragen.map((f) => (
+							<li>{f}</li>
+						))}
+					</ol>
+				)}
+			</div>
+		)
+	}
+</figure>

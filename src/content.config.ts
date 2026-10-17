@@ -76,4 +76,56 @@ const aktuelles = defineCollection({
 	}),
 });
 
-export const collections = { books, research, texte, interviews, aktuelles };
+// Seminar "Philosophie der Digitalität" (WS 2026/27) — one file per session.
+// Texts are listed by title only (the reader goes to participants by mail);
+// `link` is set only where the text is freely available from its publisher.
+const sitzungen = defineCollection({
+	loader: glob({ base: './src/content/sitzungen', pattern: '**/*.{md,mdx}' }),
+	schema: z.object({
+		nr: z.number(),
+		datum: z.coerce.date(),
+		titel: z.string(),
+		kurz: z.string(),
+		leitfrage: z.string(),
+		markierung: z.string().optional(),
+		texte: z
+			.array(
+				z.object({
+					angabe: z.string(),
+					seiten: z.string().optional(),
+					link: z.string().url().optional(),
+					// public-domain or openly licensed texts only, served from public/teaching/digitalitaet/texte/
+					pdf: z.string().optional(),
+					lizenz: z.string().optional(),
+					folgt: z.boolean().optional(),
+				}),
+			)
+			.default([]),
+		videos: z
+			.array(
+				z.object({
+					youtube: z.string(),
+					titel: z.string(),
+					person: z.string(),
+					quelle: z.string(),
+					datum: z.coerce.date(),
+					dauer: z.string(),
+					sprache: z.string().default('EN'),
+					kapitel: z
+						.array(z.object({ zeit: z.string(), titel: z.string(), frage: z.string().optional() }))
+						.default([]),
+					fragen: z.array(z.string()).default([]),
+				}),
+			)
+			.default([]),
+		zitat: z
+			.object({ text: z.string(), quelle: z.string(), uebersetzung: z.string().optional() })
+			.optional(),
+		// further reading, not in the reader: links only
+		weiterlesen: z
+			.array(z.object({ angabe: z.string(), link: z.string().url(), notiz: z.string().optional() }))
+			.default([]),
+	}),
+});
+
+export const collections = { books, research, texte, interviews, aktuelles, sitzungen };

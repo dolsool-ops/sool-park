@@ -1,0 +1,150 @@
+---
+// Chat with the seminar assistant about this session. Needs the access code from
+// the first session; the conversation lives only in this browser tab.
+interface Props { nr: string; }
+const { nr } = Astro.props;
+---
+
+<div class="chat" data-nr={nr}>
+	<button class="chat-btn" type="button" aria-expanded="false" aria-controls="chat-panel">
+		<span class="chat-face" aria-hidden="true"></span>claude --sitzung {nr}
+	</button>
+	<section class="chat-panel" id="chat-panel" hidden aria-label="Chat mit Claude">
+		<header>
+			<span>claude@seminar ~ sitzung-{nr}</span>
+			<span>
+				<button type="button" class="chat-neu" title="Gespräch leeren">neu</button>
+				<button type="button" class="chat-zu" aria-label="Schließen">×</button>
+			</span>
+		</header>
+		<form class="chat-code" hidden>
+			<p>Claude sitzt im Seminar mit am Tisch und kennt die Reader-Texte dieser Sitzung. Zum Schreiben brauchst du den Zugangscode aus der ersten Sitzung.</p>
+			<label>Zugangscode <input name="code" autocomplete="off" required /></label>
+			<button type="submit">weiter</button>
+		</form>
+		<div class="chat-log" aria-live="polite"></div>
+		<form class="chat-in" hidden>
+			<textarea name="frage" rows="2" maxlength="4000" placeholder="Frage oder Gedanke zur Sitzung …" required></textarea>
+			<button type="submit">senden ↵</button>
+		</form>
+		<p class="chat-note">Antworten kommen von Claude (Anthropic). Gespräche werden nicht gespeichert – bitte keine persönlichen Daten.</p>
+	</section>
+</div>
+
+<script>
+	type Turn = { role: 'user' | 'assistant'; content: string };
+	const store = (s: Storage, key: string, value?: string | null) => {
+		try {
+			if (value === undefined) return s.getItem(key);
+			if (value === null) s.removeItem(key);
+			else s.setItem(key, value);
+		} catch {}
+		return null;
+	};
+
+	document.querySelectorAll<HTMLElement>('.chat').forEach((root) => {
+		const nr = root.dataset.nr!;
+		const btn = root.querySelector<HTMLButtonElement>('.chat-btn')!;
+		const panel = root.querySelector<HTMLElement>('.chat-panel')!;
+		const codeForm = root.querySelector<HTMLFormElement>('.chat-code')!;
+		const inForm = root.querySelector<HTMLFormElement>('.chat-in')!;
+		const log = root.querySelector<HTMLElement>('.chat-log')!;
+		const field = inForm.querySelector('textarea')!;
+		const key = `seminar-chat-${nr}`;
+		let turns: Turn[] = JSON.parse(store(sessionStorage, key) ?? '[]');
+		let code = store(localStorage, 'seminar-code') ?? '';
+
+		const bubble = (t: Turn) => {
+			const p = document.createElement('div');
+			p.className = t.role === 'user' ? 'me' : 'cl';
+			p.textContent = t.content;
+			log.appendChild(p);
+			log.scrollTop = log.scrollHeight;
+			return p;
+		};
+		const show = () => {
+			codeForm.hidden = !!code;
+			inForm.hidden = !code;
+			log.replaceChildren();
+			turns.forEach(bubble);
+		};
+		const toggle = (open: boolean) => {
+			panel.hidden = !open;
+			btn.setAttribute('aria-expanded', String(open));
+			if (open) {
+				show();
+				(code ? field : codeForm.querySelector('input'))?.focus();
+			}
+		};
+
+		btn.addEventListener('click', () => toggle(panel.hidden));
+		root.querySelector('.chat-zu')!.addEventListener('click', () => toggle(false));
+		root.querySelector('.chat-neu')!.addEventListener('click', () => {
+			turns = [];
+			store(sessionStorage, key, null);
+			show();
+		});
+		codeForm.addEventListener('submit', (e) => {
+			e.preventDefault();
+			code = String(new FormData(codeForm).get('code') ?? '').trim();
+			store(localStorage, 'seminar-code', code);
+			show();
+			field.focus();
+		});
+		field.addEventListener('keydown', (e) => {
+			if (e.key === 'Enter' && !e.shiftKey) {
+				e.preventDefault();
+				inForm.requestSubmit();
+			}
+		});
+
+		inForm.addEventListener('submit', async (e) => {
+			e.preventDefault();
+			const frage = field.value.trim();
+			if (!frage || inForm.classList.contains('busy')) return;
+			field.value = '';
+			turns.push({ role: 'user', content: frage });
+			bubble(turns[turns.length - 1]);
+			const antwort = bubble({ role: 'assistant', content: '' });
+			antwort.classList.add('denkt');
+			inForm.classList.add('busy');
+			let text = '';
+			try {
+				const res = await fetch('/api/seminar-chat', {
+					method: 'POST',
+					headers: { 'content-type': 'application/json' },
+					body: JSON.stringify({ code, nr, messages: turns }),
+				});
+				if (!res.ok || !res.body) {
+					const { fehler } = await res.json().catch(() => ({ fehler: `Fehler ${res.status}` }));
+					if (res.status === 401) {
+						code = '';
+						store(localStorage, 'seminar-code', null);
+					}
+					throw new Error(fehler);
+				}
+				const reader = res.body.getReader();
+				const dec = new TextDecoder();
+				for (;;) {
+					const { done, value } = await reader.read();
+					if (done) break;
+					text += dec.decode(value, { stream: true });
+					antwort.classList.remove('denkt');
+					antwort.textContent = text;
+					log.scrollTop = log.scrollHeight;
+				}
+				turns.push({ role: 'assistant', content: text });
+				store(sessionStorage, key, JSON.stringify(turns));
+			} catch (err) {
+				turns.pop();
+				field.value = frage;
+				antwort.classList.remove('denkt');
+				antwort.classList.add('fehler');
+				antwort.textContent = (err as Error).message || 'Keine Verbindung.';
+				if (!code) setTimeout(show, 1800);
+			} finally {
+				inForm.classList.remove('busy');
+			}
+		});
+	});
+</script>

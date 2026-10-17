@@ -14,6 +14,7 @@ export const NAV = [
 			{ href: '/interviews/', label: 'Interviews' },
 		],
 	},
+	{ href: '/teaching/digitalitaet/', label: 'Teaching' },
 	{ href: '/texte/', label: 'Blog' },
 	{ href: '/', label: 'Profile' },
 ];

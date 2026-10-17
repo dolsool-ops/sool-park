@@ -1,0 +1,34 @@
+---
+// The 13 sessions as stations on one line; `aktuell` is the session shown on the page.
+interface Station { nr: number; kurz: string; datum: Date; }
+interface Props { sitzungen: Station[]; aktuell?: number; }
+const { sitzungen, aktuell } = Astro.props;
+const slug = (nr: number) => String(nr).padStart(2, '0');
+const iso = (d: Date) => d.toISOString().slice(0, 10);
+const erste = sitzungen[0];
+const letzte = sitzungen[sitzungen.length - 1];
+---
+
+<nav class="pfad" aria-label="Sitzungen">
+	<div class="pfad-line">
+		{
+			sitzungen.map((s) => (
+				<a
+					href={`/teaching/digitalitaet/${slug(s.nr)}/`}
+					class:list={{ cur: s.nr === aktuell, done: aktuell !== undefined && s.nr < aktuell }}
+					data-datum={aktuell ? undefined : iso(s.datum)}
+					aria-current={s.nr === aktuell ? 'page' : undefined}
+					aria-label={`Sitzung ${s.nr}: ${s.kurz}`}
+				>
+					<i>{s.nr}</i>
+					<span class="tip">{s.kurz}</span>
+				</a>
+			))
+		}
+	</div>
+	<div class="pfad-legend" aria-hidden="true">
+		<span>{slug(erste.nr)} {erste.kurz}</span>
+		<span>Quelle → Kanal → Empfänger</span>
+		<span>{slug(letzte.nr)} {letzte.kurz}</span>
+	</div>
+</nav>

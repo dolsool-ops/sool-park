@@ -1,0 +1,156 @@
+---
+import { getCollection, render } from 'astro:content';
+import Seminar from '../../../layouts/Seminar.astro';
+import Pfad from '../../../components/seminar/Pfad.astro';
+import Video from '../../../components/seminar/Video.astro';
+import Chat from '../../../components/seminar/Chat.astro';
+
+export async function getStaticPaths() {
+	const alle = (await getCollection('sitzungen')).sort((a, b) => a.data.nr - b.data.nr);
+	return alle.map((s, i) => ({
+		params: { nr: String(s.data.nr).padStart(2, '0') },
+		props: { s, vorher: alle[i - 1], nachher: alle[i + 1], alle },
+	}));
+}
+
+const { s, vorher, nachher, alle } = Astro.props;
+const { Content } = await render(s);
+const d = s.data;
+const slug = (nr: number) => String(nr).padStart(2, '0');
+const tag = d.datum.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'UTC' });
+
+// Leitfrage with an optional highlighted part
+const [vor, nach] = d.markierung && d.leitfrage.includes(d.markierung) ? d.leitfrage.split(d.markierung) : [d.leitfrage, null];
+
+// "Thiel, „The Education …“ (2009)" → author in bold, rest as is
+const teile = (angabe: string) => {
+	const i = angabe.indexOf(', ');
+	return i > 0 && i < 40 ? [angabe.slice(0, i), angabe.slice(i + 2)] : ['', angabe];
+};
+const seiten = d.texte.filter((t) => t.seiten).map((t) => t.seiten!);
+const bereich = seiten.length ? `Reader S. ${seiten[0].split('–')[0]}–${seiten[seiten.length - 1].split('–').pop()}` : null;
+const hatText = s.body?.trim();
+---
+
+<Seminar title={`${slug(d.nr)} · ${d.titel}`} description={d.leitfrage} nr={slug(d.nr)}>
+	<div class="sem-hero">
+		<div class="sem-num">{d.nr}<small>/{alle.length}</small></div>
+		<div>
+			<p class="sem-kick">Philosophie der Digitalität · Mi {tag} · 18–20 Uhr</p>
+			<h1>{d.titel}</h1>
+		</div>
+	</div>
+	<p class="sem-lead">{vor}{nach !== null && <><span class="hl">{d.markierung}</span>{nach}</>}</p>
+	<div class="sem-meta">
+		{d.videos.length > 0 && <span>{d.videos.length} {d.videos.length === 1 ? 'Video' : 'Videos'}</span>}
+		<span>{d.texte.length} {d.texte.length === 1 ? 'Text' : 'Texte'}</span>
+		{bereich && <span>{bereich}</span>}
+	</div>
+
+	<Pfad sitzungen={alle.map((x) => x.data)} aktuell={d.nr} />
+
+	{
+		d.videos.length > 0 && (
+			<section class="sem-sec">
+				<h2>Zum Anschauen</h2>
+				{d.videos.map((v, i) => (
+					<Video v={v} n={i + 1} />
+				))}
+			</section>
+		)
+	}
+
+	{
+		hatText && (
+			<section class="sem-sec sem-prose">
+				<Content />
+			</section>
+		)
+	}
+
+	{
+		d.zitat && (
+			<blockquote class="sem-quote">
+				„{d.zitat.text}“
+				{d.zitat.uebersetzung && <span class="ue">{d.zitat.uebersetzung}</span>}
+				<cite>— {d.zitat.quelle}</cite>
+			</blockquote>
+		)
+	}
+
+	<section class="sem-sec">
+		<h2>Lektüre</h2>
+		<div class="sem-lit">
+			<ol>
+				{
+					d.texte.map((t, i) => {
+						const [autor, rest] = teile(t.angabe);
+						return (
+							<li>
+								<span class="n">{slug(i + 1)}</span>
+								<span>
+									{autor && <b>{autor}</b>}
+									{autor && ' · '}
+									{rest}
+								</span>
+								<span class="pg">
+									{t.folgt ? 'folgt' : `Reader S. ${t.seiten}`}
+									{t.link && (
+										<a href={t.link} target="_blank" rel="noopener">
+											frei online ↗
+										</a>
+									)}
+									{t.pdf && (
+										<a href={t.pdf} download title={`Lizenz: ${t.lizenz}`}>
+											PDF ↓ · {t.lizenz}
+										</a>
+									)}
+								</span>
+							</li>
+						);
+					})
+				}
+			</ol>
+		</div>
+		{
+			(d.weiterlesen ?? []).length > 0 && (
+				<div class="sem-weiter">
+					<p class="sem-label">Zum Weiterlesen · nicht im Reader</p>
+					<ul>
+						{(d.weiterlesen ?? []).map((w) => (
+							<li>
+								<a href={w.link} target="_blank" rel="noopener">{w.angabe} ↗</a>
+								{w.notiz && <span> · {w.notiz}</span>}
+							</li>
+						))}
+					</ul>
+				</div>
+			)
+		}
+		<p class="sem-note">
+			Den Reader erhalten die Teilnehmenden per Mail.
+			{d.texte.some((t) => t.pdf) && ' Als PDF stehen hier nur gemeinfreie und frei lizenzierte Texte; Quelle und Lizenz nennt jeweils das Deckblatt.'}
+		</p>
+	</section>
+
+	<nav class="sem-pn" aria-label="Weitere Sitzungen">
+		{
+			vorher && (
+				<a href={`/teaching/digitalitaet/${slug(vorher.data.nr)}/`}>
+					<span class="mono">← Sitzung {slug(vorher.data.nr)}</span>
+					<b>{vorher.data.titel}</b>
+				</a>
+			)
+		}
+		{
+			nachher && (
+				<a class="next" href={`/teaching/digitalitaet/${slug(nachher.data.nr)}/`}>
+					<span class="mono">Sitzung {slug(nachher.data.nr)} →</span>
+					<b>{nachher.data.titel}</b>
+				</a>
+			)
+		}
+	</nav>
+
+	<Chat nr={slug(d.nr)} />
+</Seminar>

@@ -1,0 +1,85 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+// Fonts are self-hosted (no requests to Google).
+import '@fontsource-variable/space-grotesk';
+import '@fontsource-variable/newsreader/opsz.css';
+import '@fontsource-variable/newsreader/opsz-italic.css';
+import '@fontsource-variable/jetbrains-mono';
+import '../styles/seminar.css';
+import { SITE_TITLE } from '../consts';
+
+interface Props { title: string; description: string; nr?: string; }
+const { title, description, nr } = Astro.props;
+const year = new Date().getFullYear();
+---
+
+<!doctype html>
+<html lang="de">
+	<head>
+		<BaseHead title={`${title} · ${SITE_TITLE}`} description={description} />
+	</head>
+	<body class="sem">
+		<header class="sem-top">
+			<a class="sem-brand" href="/">Sool Park · 박술</a>
+			<nav class="sem-crumbs" aria-label="Pfad">
+				<a href="/teaching/digitalitaet/">teaching/digitalitaet</a>{nr && <>/<span>{nr}</span></>}
+			</nav>
+		</header>
+		<main class="sem-wrap">
+			<slot />
+		</main>
+		<footer class="sem-foot">
+			<span>Philosophie der Digitalität · WS 2026/27 · Institut für Philosophie, Universität Hildesheim</span>
+			<span>© {year} <a href="/">Sool Park</a></span>
+		</footer>
+
+		<script>
+			// Videos: YouTube is contacted only after a click (youtube-nocookie.com).
+			// Chapter buttons jump to their timestamp via the iframe postMessage API.
+			const send = (iframe: HTMLIFrameElement, func: string, args: unknown[] = []) =>
+				iframe.contentWindow?.postMessage(JSON.stringify({ event: 'command', func, args }), '*');
+
+			const play = (fig: HTMLElement, start = 0) => {
+				const frame = fig.querySelector<HTMLElement>('.vid-frame')!;
+				const existing = frame.querySelector('iframe');
+				if (existing) {
+					send(existing, 'seekTo', [start, true]);
+					send(existing, 'playVideo');
+					return;
+				}
+				const iframe = document.createElement('iframe');
+				iframe.src = `https://www.youtube-nocookie.com/embed/${fig.dataset.yt}?autoplay=1&enablejsapi=1&rel=0&start=${start}`;
+				iframe.title = fig.dataset.titel ?? 'Video';
+				iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+				iframe.allowFullscreen = true;
+				frame.replaceChildren(iframe);
+			};
+
+			document.querySelectorAll<HTMLElement>('.vid').forEach((fig) => {
+				fig.querySelector('.vid-play')?.addEventListener('click', () => play(fig));
+				const marks = fig.querySelectorAll<HTMLElement>('[data-s]');
+				marks.forEach((btn) =>
+					btn.addEventListener('click', () => {
+						marks.forEach((m) => m.classList.toggle('on', m.dataset.s === btn.dataset.s));
+						const head = fig.querySelector<HTMLElement>('.vid-tl .head');
+						if (head) head.style.left = `${btn.dataset.p}%`;
+						const frage = fig.querySelector<HTMLElement>('[data-kapfrage]');
+						if (frage) {
+							frage.textContent = btn.dataset.frage ?? '';
+							frage.hidden = !btn.dataset.frage;
+						}
+						play(fig, Number(btn.dataset.s));
+					}),
+				);
+			});
+
+			// Overview: mark past sessions and the next one by today's date.
+			const today = new Date().toISOString().slice(0, 10);
+			const rows = [...document.querySelectorAll<HTMLElement>('.sem-row[data-datum]')];
+			rows.find((r) => r.dataset.datum! >= today)?.classList.add('naechste');
+			document.querySelectorAll<HTMLElement>('.pfad-line a[data-datum]').forEach((a) => {
+				if (!a.classList.contains('cur') && a.dataset.datum! < today) a.classList.add('done');
+			});
+		</script>
+	</body>
+</html>

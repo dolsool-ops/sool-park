@@ -1,0 +1,59 @@
+---
+import { getCollection } from 'astro:content';
+import Seminar from '../../../layouts/Seminar.astro';
+import Pfad from '../../../components/seminar/Pfad.astro';
+
+const sitzungen = (await getCollection('sitzungen')).sort((a, b) => a.data.nr - b.data.nr);
+const slug = (nr: number) => String(nr).padStart(2, '0');
+const tag = (d: Date) => d.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'UTC' });
+const anzahl = (n: number, eins: string, viele: string) => (n === 1 ? `1 ${eins}` : `${n} ${viele}`);
+const erste = sitzungen[0].data.datum;
+const letzte = sitzungen[sitzungen.length - 1].data.datum;
+---
+
+<Seminar
+	title="Philosophie der Digitalität"
+	description="Seminar im Wintersemester 2026/27 an der Universität Hildesheim: Material zu jeder Sitzung – Leitfragen, Interviews, Bilder und Lektüre."
+>
+	<div class="sem-hero">
+		<div class="sem-num">13<small style="font-size:26px;letter-spacing:0">&nbsp;Sitzungen</small></div>
+		<div>
+			<p class="sem-kick">Seminar · Wintersemester 2026/27 · Universität Hildesheim</p>
+			<h1>Philosophie der Digitalität</h1>
+		</div>
+	</div>
+	<p class="sem-lead">Theorie · Praxis · Kritik · <span class="hl">Content</span></p>
+	<div class="sem-facts">
+		<span><b>Mittwoch</b> 18–20 Uhr</span>
+		<span><b>{tag(erste)}</b> – {tag(letzte)}</span>
+		<span><b>Leitung</b> Jun.-Prof. Dr. Sool Park</span>
+	</div>
+	<p class="sem-intro">
+		Zu jeder Sitzung liegt hier das Material bereit: die Leitfrage, Interviews mit Menschen, die die KI-Industrie prägen oder
+		kritisieren, und die Lektüre. Den Reader mit den Texten erhalten die Teilnehmenden per Mail; frei zugängliche Texte sind
+		verlinkt.
+	</p>
+
+	<Pfad sitzungen={sitzungen.map((s) => s.data)} />
+
+	<div class="sem-list">
+		{
+			sitzungen.map(({ data: s }) => (
+				<a class="sem-row" href={`/teaching/digitalitaet/${slug(s.nr)}/`} data-datum={s.datum.toISOString().slice(0, 10)}>
+					<span class="nr">{slug(s.nr)}</span>
+					<h3>
+						{s.titel}
+						<span class="badge">Nächste Sitzung</span>
+					</h3>
+					<span class="dat">Mi {tag(s.datum)}</span>
+					<p class="frage">{s.leitfrage}</p>
+					<span class="cnt">
+						{[s.videos.length > 0 && anzahl(s.videos.length, 'Video', 'Videos'), anzahl(s.texte.length, 'Text', 'Texte')]
+							.filter(Boolean)
+							.join(' · ')}
+					</span>
+				</a>
+			))
+		}
+	</div>
+</Seminar>
