@@ -10,8 +10,8 @@
 		"run_worker_first": ["/api/*"]
 	},
 	// Seminar chat: reader context, budget and rate counters.
-	// Before deploying: `npx wrangler kv namespace create SEMINAR` and put the returned id here.
-	"kv_namespaces": [{ "binding": "SEMINAR", "id": "seminar-lokal" }]
+	// KV namespace "SEMINAR" (created 2026-10-17).
+	"kv_namespaces": [{ "binding": "SEMINAR", "id": "4b1e858c12d743ceaaf85ff3f26a0932" }]
 	// Secrets (never in this file): ANTHROPIC_API_KEY, SEMINAR_CODE
 	//   local: .dev.vars   live: npx wrangler secret put <NAME>
 }
