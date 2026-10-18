@@ -58,8 +58,8 @@ import Seminar from '../../../layouts/Seminar.astro';
 		</p>
 		<p>
 			CO₂e mit dem US-Strommix (0,37 kg/kWh, EPA eGRID), Kühlwasser mit 1,15 l/kWh (Googles Flottenmittel); das Wasser
-			der Kraftwerke ist nicht enthalten. Vergleiche: 1 Liter Wasser im Wasserkocher ≈ 0,1 kWh; ICE ≈ 26 g CO₂e pro
-			Personenkilometer (Umweltbundesamt). Die Zahlen können um ein Mehrfaches daneben liegen – in beide Richtungen.
+			der Kraftwerke ist nicht enthalten. Vergleiche: 1 Liter Wasser im Wasserkocher ≈ 0,1 kWh; durchschnittlicher Pkw 164 g und Inlandsflug 290 g CO₂e
+			pro Personenkilometer (Umweltbundesamt, TREMOD 6.71B, Bezugsjahr 2024; Pkw mit 1,4 Personen besetzt). Die Zahlen können um ein Mehrfaches daneben liegen – in beide Richtungen.
 			Nicht erfasst ist der erste Entwurf des Readers, der außerhalb dieses Rechners entstand.
 		</p>
 	</details>
@@ -69,7 +69,7 @@ import Seminar from '../../../layouts/Seminar.astro';
 		const zahl = (x: number, stellen = 1) => x.toLocaleString('de-DE', { maximumFractionDigits: stellen, minimumFractionDigits: stellen });
 		const vergleich: Record<string, (v: number) => string> = {
 			kwh: (v) => `≈ ${zahl(v / 0.1, 0)} × Wasserkocher (1 Liter)`,
-			g_co2e: (v) => `≈ ${zahl(v / 26, 0)} km im ICE`,
+			g_co2e: (v) => `≈ ${zahl(v / 164, 0)} km im Auto · ${zahl(v / 290, 0)} km im Flugzeug`,
 			l_wasser: (v) => `≈ ${zahl(v / 0.5, 0)} Flaschen (0,5 l)`,
 		};
 
