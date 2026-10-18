@@ -2,12 +2,13 @@
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "sool-park",
 	"compatibility_date": "2026-06-01",
-	// Worker only for /api/* (seminar chat); everything else is served straight from ./dist
+	// Worker for /api/* (seminar chat) and the seminar pages (release one week ahead);
+	// everything else is served straight from ./dist
 	"main": "worker/index.ts",
 	"assets": {
 		"directory": "./dist",
 		"binding": "ASSETS",
-		"run_worker_first": ["/api/*"]
+		"run_worker_first": ["/api/*", "/teaching/digitalitaet/*"]
 	},
 	// Seminar chat: reader context, budget and rate counters.
 	// KV namespace "SEMINAR" (created 2026-10-17).

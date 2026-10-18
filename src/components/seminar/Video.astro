@@ -11,9 +11,12 @@ const dauer = sek(v.dauer);
 const kapitel = v.kapitel.map((k) => ({ ...k, s: sek(k.zeit), p: ((sek(k.zeit) / dauer) * 100).toFixed(2) }));
 const datum = v.datum.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'UTC' });
 const fragen = v.fragen.length > 0 || kapitel.some((k) => k.frage);
+// long chapter lists show the first ten; the rest opens on request
+const ZEIGEN = 10;
+const kuerzen = kapitel.length > ZEIGEN + 2;
 ---
 
-<figure class="vid" data-yt={v.youtube} data-titel={v.titel}>
+<figure class="vid" data-yt={v.youtube} data-titel={v.titel} data-dauer={dauer}>
 	<p class="sem-label">Video {String(n).padStart(2, '0')} · {v.person}</p>
 	<div class="vid-card">
 		<div class="vid-frame">
@@ -41,14 +44,15 @@ const fragen = v.fragen.length > 0 || kapitel.some((k) => k.frage);
 				<>
 					<div class="vid-tl" aria-hidden="true">
 						<div class="bar" />
+						<div class="prog" style="width:0%" />
 						<div class="head" style="left:0%" />
 						{kapitel.map((k) => (
 							<button tabindex="-1" style={`left:${k.p}%`} data-s={k.s} data-p={k.p} data-frage={k.frage} title={`${k.zeit} ${k.titel}`} />
 						))}
 					</div>
 					<ol class="vid-chap">
-						{kapitel.map((k) => (
-							<li>
+						{kapitel.map((k, i) => (
+							<li class={kuerzen && i >= ZEIGEN ? 'mehr' : undefined}>
 								<button type="button" data-s={k.s} data-p={k.p} data-frage={k.frage}>
 									<time>{k.zeit}</time>
 									<span>{k.titel}</span>
@@ -56,6 +60,11 @@ const fragen = v.fragen.length > 0 || kapitel.some((k) => k.frage);
 							</li>
 						))}
 					</ol>
+					{kuerzen && (
+						<button type="button" class="vid-mehr mono" aria-expanded="false">
+							Alle {kapitel.length} Kapitel ↓
+						</button>
+					)}
 				</>
 			)
 		}

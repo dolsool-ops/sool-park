@@ -115,7 +115,8 @@ body.sem {
 
 .vid-tl { position: relative; height: 54px; margin: 0 1.2rem; border-bottom: 1px solid var(--line); }
 .vid-tl .bar { position: absolute; left: 0; right: 0; top: 24px; height: 6px; background: repeating-linear-gradient(90deg, #d5d9e2 0 3px, transparent 3px 5px); }
-.vid-tl .head { position: absolute; top: 12px; width: 2px; height: 30px; background: var(--ac); transition: left 0.35s ease; }
+.vid-tl .prog { position: absolute; left: 0; top: 24px; height: 6px; background: var(--ac); opacity: 0.35; transition: width 0.35s linear; }
+.vid-tl .head { position: absolute; top: 12px; width: 2px; height: 30px; background: var(--ac); transition: left 0.35s linear; }
 .vid-tl button { all: unset; cursor: pointer; position: absolute; top: 18px; width: 10px; height: 18px; margin-left: -5px; background: var(--ink); }
 .vid-tl button:hover, .vid-tl button.on { background: var(--ac); }
 .vid-chap { list-style: none; margin: 0; padding: 0.5rem 1.2rem 1rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0 1.5rem; }
@@ -126,6 +127,10 @@ body.sem {
 }
 .vid-chap time { font: 500 13px/1.6 var(--mono); color: var(--ac); min-width: 3.6em; }
 .vid-chap button:hover, .vid-chap button.on { color: var(--ac); }
+.vid:not(.alle) .vid-chap li.mehr { display: none; }
+.vid-mehr { all: unset; cursor: pointer; display: block; margin: -0.4rem 1.2rem 1rem; font-size: 13px; color: var(--ac); }
+.vid-mehr:hover { text-decoration: underline; }
+.vid-mehr:focus-visible { outline: 2px solid var(--ac); outline-offset: 2px; }
 .vid-q { margin-top: 1.2rem; padding: 1.1rem 1.3rem; background: var(--hl); border: 1.5px solid var(--ink); font-size: 18px; line-height: 1.45; }
 .vid-q .mono { display: block; margin-bottom: 0.4rem; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
 .vid-q ol { list-style: lower-alpha; margin: 0; padding-left: 1.4rem; }
@@ -177,6 +182,18 @@ body.sem {
 .sem-row .cnt { grid-column: 3; font: 12px/1.6 var(--mono); color: var(--mute); text-align: right; white-space: nowrap; }
 .sem-row .badge { display: none; margin-left: 0.6rem; padding: 0.1rem 0.5rem; background: var(--hl); color: var(--ink); font: 500 11px/1.5 var(--mono); text-transform: uppercase; letter-spacing: 0.05em; vertical-align: middle; }
 .sem-row.naechste .badge { display: inline-block; }
+/* not released yet (see src/lib/freigabe.ts) */
+.sem-row .ab, .sem-pn .ab { margin-left: 0.6rem; padding: 0.1rem 0.5rem; border: 1px solid var(--line); color: var(--mute); font: 500 11px/1.5 var(--mono); text-transform: uppercase; letter-spacing: 0.05em; vertical-align: middle; }
+.sem-row .ab[hidden], .sem-pn .ab[hidden] { display: none; }
+.sem-row.zu { cursor: default; }
+.sem-row.zu:hover { background: none; }
+.sem-row.zu .nr, .sem-row.zu h3 { color: var(--mute); }
+.pfad-line a.zu { cursor: default; }
+.pfad-line a.zu i { opacity: 0.4; }
+.pfad-line a.zu:hover i { transform: none; }
+.sem-pn a.zu { cursor: default; border-color: var(--line); }
+.sem-pn a.zu:hover { box-shadow: none; transform: none; }
+.sem-pn a.zu b { color: var(--mute); }
 .sem-row.naechste { background: rgba(227, 255, 61, 0.18); }
 
 .sem-foot { max-width: 1180px; margin: 0 auto; padding: 2rem; border-top: 1px solid var(--line); font: 12px/1.6 var(--mono); color: var(--mute); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }

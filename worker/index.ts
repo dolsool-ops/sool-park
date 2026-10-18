@@ -16,6 +16,7 @@ interface Env {
 	ANTHROPIC_API_KEY: string;
 	SEMINAR_CODE: string;
 	BUDGET_USD?: string; // monthly cap, default 21 (≈ 20 €)
+	FREIGABE_JETZT?: string; // local tests only: pretend it is this moment (ISO)
 }
 
 const MODEL = 'claude-sonnet-5-5';
@@ -171,11 +172,44 @@ async function bilanz(env: Env): Promise<Response> {
 	});
 }
 
+// Session pages go online one week ahead (src/lib/freigabe.ts). The times come from
+// termine.json in the built site, so the session files stay the only source. If the
+// file cannot be read, the page is shown (better open than locked for students).
+const SITZUNGSSEITE = /^\/teaching\/digitalitaet\/(\d\d)(?:\/(?:index\.html)?)?$/;
+
+async function gesperrt(request: Request, env: Env, nr: string): Promise<Response | null> {
+	const asset = (pfad: string) => env.ASSETS.fetch(new Request(new URL(pfad, request.url)));
+	let termine: { aktivAb: string; seiten: Record<string, string | null>; titel: Record<string, string> };
+	try {
+		termine = await (await asset('/teaching/digitalitaet/termine.json')).json();
+	} catch {
+		return null;
+	}
+	const jetzt = env.FREIGABE_JETZT ? new Date(env.FREIGABE_JETZT) : new Date();
+	const ab = termine.seiten?.[nr];
+	if (jetzt < new Date(termine.aktivAb) || !ab || jetzt >= new Date(ab)) return null;
+
+	const tag = new Date(ab).toLocaleDateString('de-DE', { timeZone: 'Europe/Berlin', weekday: 'long', day: 'numeric', month: 'long' });
+	const uhr = new Date(ab).toLocaleTimeString('de-DE', { timeZone: 'Europe/Berlin', hour: 'numeric' }).replace(/\D/g, '');
+	const html = (await (await asset('/teaching/digitalitaet/noch-nicht/')).text())
+		.replaceAll('__AB__', `${tag} um ${uhr} Uhr`)
+		.replaceAll('__TITEL__', `Sitzung ${nr} · ${termine.titel?.[nr] ?? ''}`);
+	return new Response(html, {
+		status: 404,
+		headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-store', 'x-robots-tag': 'noindex' },
+	});
+}
+
 export default {
 	async fetch(request: Request, env: Env): Promise<Response> {
 		const url = new URL(request.url);
 		if (url.pathname === '/api/seminar-chat') return chat(request, env);
 		if (url.pathname === '/api/seminar-bilanz') return bilanz(env);
+		const seite = url.pathname.match(SITZUNGSSEITE);
+		if (seite) {
+			const sperre = await gesperrt(request, env, seite[1]);
+			if (sperre) return sperre;
+		}
 		return env.ASSETS.fetch(request);
 	},
 };

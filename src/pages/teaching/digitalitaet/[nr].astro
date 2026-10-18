@@ -4,6 +4,7 @@ import Seminar from '../../../layouts/Seminar.astro';
 import Pfad from '../../../components/seminar/Pfad.astro';
 import Video from '../../../components/seminar/Video.astro';
 import Chat from '../../../components/seminar/Chat.astro';
+import { freigaben } from '../../../lib/freigabe';
 
 export async function getStaticPaths() {
 	const alle = (await getCollection('sitzungen')).sort((a, b) => a.data.nr - b.data.nr);
@@ -17,6 +18,7 @@ const { s, vorher, nachher, alle } = Astro.props;
 const { Content } = await render(s);
 const d = s.data;
 const slug = (nr: number) => String(nr).padStart(2, '0');
+const fg = freigaben(alle.map((x) => x.data));
 const tag = d.datum.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'UTC' });
 
 // Leitfrage with an optional highlighted part
@@ -144,8 +146,8 @@ const hatText = s.body?.trim();
 		}
 		{
 			nachher && (
-				<a class="next" href={`/teaching/digitalitaet/${slug(nachher.data.nr)}/`}>
-					<span class="mono">Sitzung {slug(nachher.data.nr)} →</span>
+				<a class="next" href={`/teaching/digitalitaet/${slug(nachher.data.nr)}/`} data-freigabe={fg[slug(nachher.data.nr)] ?? undefined}>
+					<span class="mono">Sitzung {slug(nachher.data.nr)} → <span class="ab" hidden /></span>
 					<b>{nachher.data.titel}</b>
 				</a>
 			)

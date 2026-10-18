@@ -1,0 +1,17 @@
+---
+// Shown by the Worker instead of a session page that is not yet released;
+// it fills in __TITEL__ and __AB__ (see worker/index.ts).
+import Seminar from '../../../layouts/Seminar.astro';
+---
+
+<Seminar title="Noch nicht online" description="Diese Sitzung erscheint am Abend nach der vorigen Sitzung." robots="noindex">
+	<div class="sem-hero">
+		<div class="sem-num">…</div>
+		<div>
+			<p class="sem-kick">Philosophie der Digitalität · __TITEL__</p>
+			<h1>Noch nicht online</h1>
+		</div>
+	</div>
+	<p class="sem-lead">Diese Sitzung erscheint hier am __AB__, am Abend nach der vorigen Sitzung.</p>
+	<p class="sem-bilanz-link"><a href="/teaching/digitalitaet/">← Zur Übersicht aller Sitzungen</a></p>
+</Seminar>

@@ -8,8 +8,10 @@ import '@fontsource-variable/jetbrains-mono';
 import '../styles/seminar.css';
 import { SITE_TITLE } from '../consts';
 
-interface Props { title: string; description: string; nr?: string; }
-const { title, description, nr } = Astro.props;
+import { AKTIV_AB } from '../lib/freigabe';
+
+interface Props { title: string; description: string; nr?: string; robots?: string; }
+const { title, description, nr, robots } = Astro.props;
 const year = new Date().getFullYear();
 ---
 
@@ -17,8 +19,9 @@ const year = new Date().getFullYear();
 <html lang="de">
 	<head>
 		<BaseHead title={`${title} · ${SITE_TITLE}`} description={description} />
+		{robots && <meta name="robots" content={robots} />}
 	</head>
-	<body class="sem">
+	<body class="sem" data-freigabe-ab={AKTIV_AB}>
 		<header class="sem-top">
 			<a class="sem-brand" href="/">Sool Park · 박술</a>
 			<nav class="sem-crumbs" aria-label="Pfad">
@@ -53,29 +56,88 @@ const year = new Date().getFullYear();
 				iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen';
 				iframe.referrerPolicy = 'strict-origin-when-cross-origin';
 				iframe.allowFullscreen = true;
+				// ask the player to report its playback time (arrives as 'infoDelivery' messages)
+				iframe.addEventListener('load', () =>
+					iframe.contentWindow?.postMessage(JSON.stringify({ event: 'listening', id: fig.dataset.yt, channel: 'widget' }), '*'),
+				);
 				frame.replaceChildren(iframe);
+			};
+
+			// Moves the playhead to a position (in %) and highlights the chapter that contains it.
+			const markiere = (fig: HTMLElement, prozent: number, sek: number) => {
+				const head = fig.querySelector<HTMLElement>('.vid-tl .head');
+				const prog = fig.querySelector<HTMLElement>('.vid-tl .prog');
+				if (head) head.style.left = `${prozent}%`;
+				if (prog) prog.style.width = `${prozent}%`;
+				const marks = [...fig.querySelectorAll<HTMLElement>('[data-s]')];
+				const cur = marks.filter((m) => Number(m.dataset.s) <= sek + 0.5).pop();
+				if (cur?.dataset.s === fig.dataset.kap) return;
+				fig.dataset.kap = cur?.dataset.s ?? '';
+				marks.forEach((m) => m.classList.toggle('on', m.dataset.s === cur?.dataset.s));
+				const frage = fig.querySelector<HTMLElement>('[data-kapfrage]');
+				if (frage) {
+					frage.textContent = cur?.dataset.frage ?? '';
+					frage.hidden = !cur?.dataset.frage;
+				}
 			};
 
 			document.querySelectorAll<HTMLElement>('.vid').forEach((fig) => {
 				fig.querySelector('.vid-play')?.addEventListener('click', () => play(fig));
-				const marks = fig.querySelectorAll<HTMLElement>('[data-s]');
-				marks.forEach((btn) =>
+				fig.querySelectorAll<HTMLElement>('[data-s]').forEach((btn) =>
 					btn.addEventListener('click', () => {
-						marks.forEach((m) => m.classList.toggle('on', m.dataset.s === btn.dataset.s));
-						const head = fig.querySelector<HTMLElement>('.vid-tl .head');
-						if (head) head.style.left = `${btn.dataset.p}%`;
-						const frage = fig.querySelector<HTMLElement>('[data-kapfrage]');
-						if (frage) {
-							frage.textContent = btn.dataset.frage ?? '';
-							frage.hidden = !btn.dataset.frage;
-						}
+						markiere(fig, Number(btn.dataset.p), Number(btn.dataset.s));
 						play(fig, Number(btn.dataset.s));
 					}),
 				);
+				fig.querySelector('.vid-mehr')?.addEventListener('click', (e) => {
+					const offen = fig.classList.toggle('alle');
+					const btn = e.currentTarget as HTMLElement;
+					btn.setAttribute('aria-expanded', String(offen));
+					btn.textContent = offen ? 'Weniger Kapitel ↑' : `Alle ${fig.querySelectorAll('.vid-chap li').length} Kapitel ↓`;
+				});
 			});
 
+			// Playback time from the YouTube player keeps the timeline in step with the video.
+			window.addEventListener('message', (e) => {
+				if (!/^https:\/\/www\.youtube(-nocookie)?\.com$/.test(e.origin) || typeof e.data !== 'string') return;
+				let d: { event?: string; info?: { currentTime?: number } };
+				try {
+					d = JSON.parse(e.data);
+				} catch {
+					return;
+				}
+				const t = d.info?.currentTime;
+				if (d.event !== 'infoDelivery' || typeof t !== 'number') return;
+				const fig = [...document.querySelectorAll<HTMLElement>('.vid')].find((f) => f.querySelector('iframe')?.contentWindow === e.source);
+				const dauer = Number(fig?.dataset.dauer);
+				if (fig && dauer) markiere(fig, Math.min(100, (t / dauer) * 100), t);
+			});
+
+			// Session pages that are not released yet (the Worker blocks them; see src/lib/freigabe.ts):
+			// links become plain labels with their release date. `?jetzt=ISO` previews another moment.
+			const vorschau = new URLSearchParams(location.search).get('jetzt');
+			const jetzt = vorschau ? new Date(vorschau) : new Date();
+			if (jetzt >= new Date(document.body.dataset.freigabeAb!)) {
+				document.querySelectorAll<HTMLAnchorElement>('a[data-freigabe]').forEach((a) => {
+					const ab = new Date(a.dataset.freigabe!);
+					if (jetzt >= ab) return;
+					const tag = ab.toLocaleDateString('de-DE', { timeZone: 'Europe/Berlin', day: '2-digit', month: '2-digit' });
+					a.removeAttribute('href');
+					a.classList.add('zu');
+					a.setAttribute('aria-disabled', 'true');
+					a.title = `Online ab ${tag}, ${ab.toLocaleTimeString('de-DE', { timeZone: 'Europe/Berlin', hour: '2-digit', minute: '2-digit' })} Uhr`;
+					const label = a.querySelector<HTMLElement>('.ab');
+					if (label) {
+						label.textContent = `ab ${tag}`;
+						label.hidden = false;
+					}
+					const tip = a.querySelector('.tip');
+					if (tip) tip.textContent += ` · ab ${tag}`;
+				});
+			}
+
 			// Overview: mark past sessions and the next one by today's date.
-			const today = new Date().toISOString().slice(0, 10);
+			const today = jetzt.toISOString().slice(0, 10);
 			const rows = [...document.querySelectorAll<HTMLElement>('.sem-row[data-datum]')];
 			rows.find((r) => r.dataset.datum! >= today)?.classList.add('naechste');
 			document.querySelectorAll<HTMLElement>('.pfad-line a[data-datum]').forEach((a) => {
