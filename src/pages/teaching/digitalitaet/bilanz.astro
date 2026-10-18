@@ -1,0 +1,108 @@
+---
+import Seminar from '../../../layouts/Seminar.astro';
+---
+
+<Seminar
+	title="Bilanz"
+	description="Strom, CO₂ und Kühlwasser, die die KI in diesem Seminar bisher verbraucht hat – beim Vorbereiten, im Web-Chat und im Seminarraum."
+	nr="bilanz"
+>
+	<div class="sem-hero">
+		<div class="sem-num" style="font-size:120px">∑</div>
+		<div>
+			<p class="sem-kick">Philosophie der Digitalität · Bilanz</p>
+			<h1>Was verbraucht die KI in diesem Seminar?</h1>
+		</div>
+	</div>
+	<p class="sem-lead">Strom, CO₂ und Kühlwasser – beim Vorbereiten, im Web-Chat und im Seminarraum.</p>
+
+	<div class="bz-tiles" data-bilanz>
+		<section class="bz-tile" data-k="kwh">
+			<svg class="bz-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z" /></svg>
+			<p class="sem-label">Strom</p>
+			<p class="bz-num"><span data-wert>–</span> <small>kWh</small></p>
+			<p class="bz-vgl" data-vgl>&nbsp;</p>
+			<div class="bz-bar" data-bar></div>
+		</section>
+		<section class="bz-tile" data-k="g_co2e">
+			<svg class="bz-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a5 5 0 0 1-.6-9.96A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z" /></svg>
+			<p class="sem-label">CO₂e</p>
+			<p class="bz-num"><span data-wert>–</span> <small data-einheit>kg</small></p>
+			<p class="bz-vgl" data-vgl>&nbsp;</p>
+			<div class="bz-bar" data-bar></div>
+		</section>
+		<section class="bz-tile" data-k="l_wasser">
+			<svg class="bz-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5S5 10.2 5 14.5a7 7 0 0 0 14 0C19 10.2 12 2.5 12 2.5z" /></svg>
+			<p class="sem-label">Kühlwasser</p>
+			<p class="bz-num"><span data-wert>–</span> <small>Liter</small></p>
+			<p class="bz-vgl" data-vgl>&nbsp;</p>
+			<div class="bz-bar" data-bar></div>
+		</section>
+	</div>
+
+	<div class="bz-legende">
+		<span><i class="q-vorbereitung"></i>Vorbereitung</span>
+		<span><i class="q-chat"></i>Web-Chat</span>
+		<span><i class="q-seminarraum"></i>Seminarraum</span>
+		<span class="bz-stand" data-stand></span>
+	</div>
+
+	<details class="bz-methode">
+		<summary>Wie das gerechnet ist</summary>
+		<p>
+			Gezählt werden die Tokens, die Claude für dieses Seminar verarbeitet hat: beim Bauen von Webseite und Reader
+			(Claude Code mit Hilfsagenten), im Web-Chat und im Seminarraum. Anbieter veröffentlichen keinen Strombedarf pro Token;
+			wir rechnen mit groben Schätzwerten für ein großes Modell auf H100-Grafikkarten: 0,5 J pro gelesenem, 6 J pro
+			erzeugtem Token, ein Zehntel davon für Text aus dem Zwischenspeicher (Methode nach carbon.carlboettiger.info),
+			dazu 20 % für das Rechenzentrum (PUE 1,2).
+		</p>
+		<p>
+			CO₂e mit dem US-Strommix (0,37 kg/kWh, EPA eGRID), Kühlwasser mit 1,15 l/kWh (Googles Flottenmittel); das Wasser
+			der Kraftwerke ist nicht enthalten. Vergleiche: 1 Liter Wasser im Wasserkocher ≈ 0,1 kWh; ICE ≈ 26 g CO₂e pro
+			Personenkilometer (Umweltbundesamt). Die Zahlen können um ein Mehrfaches daneben liegen – in beide Richtungen.
+			Nicht erfasst ist der erste Entwurf des Readers, der außerhalb dieses Rechners entstand.
+		</p>
+	</details>
+
+	<script>
+		const QUELLEN = ['vorbereitung', 'chat', 'seminarraum'];
+		const zahl = (x: number, stellen = 1) => x.toLocaleString('de-DE', { maximumFractionDigits: stellen, minimumFractionDigits: stellen });
+		const vergleich: Record<string, (v: number) => string> = {
+			kwh: (v) => `≈ ${zahl(v / 0.1, 0)} × Wasserkocher (1 Liter)`,
+			g_co2e: (v) => `≈ ${zahl(v / 26, 0)} km im ICE`,
+			l_wasser: (v) => `≈ ${zahl(v / 0.5, 0)} Flaschen (0,5 l)`,
+		};
+
+		fetch('/api/seminar-bilanz')
+			.then((r) => r.json())
+			.then((b) => {
+				document.querySelectorAll<HTMLElement>('.bz-tile').forEach((tile) => {
+					const k = tile.dataset.k!;
+					let v = b.summe[k] as number;
+					const wert = tile.querySelector('[data-wert]')!;
+					if (k === 'g_co2e' && v >= 1000) wert.textContent = zahl(v / 1000, 1);
+					else if (k === 'g_co2e') {
+						wert.textContent = zahl(v, 0);
+						tile.querySelector('[data-einheit]')!.textContent = 'g';
+					} else wert.textContent = zahl(v, 1);
+					tile.querySelector('[data-vgl]')!.textContent = vergleich[k](v);
+					const bar = tile.querySelector('[data-bar]')!;
+					for (const q of QUELLEN) {
+						const teil = b.quellen[q]?.[k] ?? 0;
+						if (!teil || !v) continue;
+						const s = document.createElement('span');
+						s.className = `q-${q}`;
+						s.style.width = `${Math.max(1.5, (teil / v) * 100)}%`;
+						s.title = `${q}: ${zahl(teil, 2)}`;
+						bar.appendChild(s);
+					}
+				});
+				const stand = b.stand ? new Date(b.stand).toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' }) : '';
+				document.querySelector('[data-stand]')!.textContent =
+					`${stand ? `Vorbereitung bis ${stand}` : ''}${b.quellen.chat ? ` · Chat: ${b.quellen.chat.fragen} Fragen` : ''}${b.quellen.seminarraum ? '' : ' · Seminarraum ab der ersten Sitzung'}`;
+			})
+			.catch(() => {
+				document.querySelector('[data-stand]')!.textContent = 'Die Zahlen konnten gerade nicht geladen werden.';
+			});
+	</script>
+</Seminar>

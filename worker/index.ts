@@ -138,10 +138,44 @@ async function chat(request: Request, env: Env): Promise<Response> {
 	});
 }
 
+// Public balance of the seminar's AI use: electricity, CO2e and cooling water.
+// Same rough factors as scripts/seminar_bilanz.py and the status pane (good to a factor of a few).
+const J_PER_TOKEN = { input: 0.5, output: 6, cacheRead: 0.05, cacheWrite: 0.5 };
+const PUE = 1.2;
+const KG_CO2E_PER_KWH = 0.37;
+const L_PER_KWH = 1.15;
+
+type Posten = { kwh: number; g_co2e: number; l_wasser: number; tokens?: Record<string, number>; fragen?: number };
+
+async function bilanz(env: Env): Promise<Response> {
+	const quellen: Record<string, Posten | null> = { vorbereitung: null, chat: null, seminarraum: null };
+	const lokal = JSON.parse((await env.SEMINAR.get('bilanz:lokal')) ?? '{}');
+	if (lokal.vorbereitung) quellen.vorbereitung = lokal.vorbereitung;
+	const raum = await env.SEMINAR.get('bilanz:seminarraum');
+	if (raum) quellen.seminarraum = JSON.parse(raum);
+
+	// chat: token counters per month since October 2026
+	const t: Record<string, number> = {};
+	for (let d = new Date(Date.UTC(2026, 9, 1)); d <= new Date(); d.setUTCMonth(d.getUTCMonth() + 1)) {
+		const m = JSON.parse((await env.SEMINAR.get(`tokens:${d.toISOString().slice(0, 7)}`)) ?? '{}');
+		for (const [k, v] of Object.entries(m)) t[k] = (t[k] ?? 0) + Number(v);
+	}
+	const joule = (['input', 'output', 'cacheRead', 'cacheWrite'] as const).reduce((a, k) => a + (t[k] ?? 0) * J_PER_TOKEN[k], 0);
+	const kwh = (joule * PUE) / 3.6e6;
+	quellen.chat = { kwh, g_co2e: kwh * KG_CO2E_PER_KWH * 1000, l_wasser: kwh * L_PER_KWH, tokens: t, fragen: t.fragen ?? 0 };
+
+	const summe = { kwh: 0, g_co2e: 0, l_wasser: 0 };
+	for (const q of Object.values(quellen)) if (q) for (const k of ['kwh', 'g_co2e', 'l_wasser'] as const) summe[k] += q[k];
+	return new Response(JSON.stringify({ stand: lokal.stand ?? null, summe, quellen }), {
+		headers: { 'content-type': 'application/json; charset=utf-8', 'cache-control': 'public, max-age=300' },
+	});
+}
+
 export default {
 	async fetch(request: Request, env: Env): Promise<Response> {
 		const url = new URL(request.url);
 		if (url.pathname === '/api/seminar-chat') return chat(request, env);
+		if (url.pathname === '/api/seminar-bilanz') return bilanz(env);
 		return env.ASSETS.fetch(request);
 	},
 };
