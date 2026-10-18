@@ -18,9 +18,9 @@ interface Env {
 	BUDGET_USD?: string; // monthly cap, default 21 (≈ 20 €)
 }
 
-const MODEL = 'claude-opus-5-5';
-// USD per million tokens (Claude Opus 5.5): input, output, 5-minute cache write, cache read
-const PRICE = { input: 4, output: 20, cacheWrite: 5, cacheRead: 0.2 };
+const MODEL = 'claude-sonnet-5-5';
+// USD per million tokens (Claude Sonnet 5.5): input, output, 5-minute cache write, cache read
+const PRICE = { input: 2, output: 10, cacheWrite: 2.5, cacheRead: 0.2 };
 const PER_HOUR = 40; // questions per IP and hour
 const MAX_TURNS = 20;
 const MAX_CHARS = 4000;
@@ -78,7 +78,7 @@ async function chat(request: Request, env: Env): Promise<Response> {
 	const stream = client.beta.messages.stream({
 		model: MODEL,
 		max_tokens: 16000,
-		output_config: { effort: 'medium' },
+		output_config: { effort: 'high' },
 		betas: ['server-side-fallback-2026-07-01'],
 		fallbacks: 'default',
 		system: [
@@ -117,6 +117,14 @@ async function chat(request: Request, env: Env): Promise<Response> {
 				1e6;
 			const now = Number((await env.SEMINAR.get(`budget:${month}`)) ?? 0);
 			await env.SEMINAR.put(`budget:${month}`, (now + cost).toFixed(4));
+			const t = JSON.parse((await env.SEMINAR.get(`tokens:${month}`)) ?? '{}');
+			const add = (k: string, n: number) => (t[k] = (t[k] ?? 0) + n);
+			add('fragen', 1);
+			add('input', u.input_tokens);
+			add('output', u.output_tokens);
+			add('cacheWrite', u.cache_creation_input_tokens ?? 0);
+			add('cacheRead', u.cache_read_input_tokens ?? 0);
+			await env.SEMINAR.put(`tokens:${month}`, JSON.stringify(t));
 		} catch (err) {
 			const msg = err instanceof Anthropic.APIError ? `API-Fehler ${err.status}` : 'Verbindung unterbrochen';
 			await writer.write(encoder.encode(`\n\n[${msg} – bitte noch einmal versuchen.]`));
