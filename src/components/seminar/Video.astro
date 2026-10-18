@@ -17,6 +17,16 @@ const fragen = v.fragen.length > 0 || kapitel.some((k) => k.frage);
 	<p class="sem-label">Video {String(n).padStart(2, '0')} · {v.person}</p>
 	<div class="vid-card">
 		<div class="vid-frame">
+			<!-- preview image straight from YouTube; hqdefault exists for every video, maxresdefault not always -->
+			<img
+				class="vid-thumb"
+				src={`https://i.ytimg.com/vi/${v.youtube}/maxresdefault.jpg`}
+				onerror={`this.onerror=null;this.src='https://i.ytimg.com/vi/${v.youtube}/hqdefault.jpg'`}
+				onload={`if(this.naturalWidth<200&&!this.dataset.hq){this.dataset.hq=1;this.src='https://i.ytimg.com/vi/${v.youtube}/hqdefault.jpg'}`}
+				alt=""
+				loading="lazy"
+				referrerpolicy="no-referrer"
+			/>
 			<button class="vid-play" type="button" aria-label={`Video abspielen: ${v.titel}`}>
 				<span class="play"></span>
 				<span class="lab">
@@ -24,7 +34,7 @@ const fragen = v.fragen.length > 0 || kapitel.some((k) => k.frage);
 					<span class="mono">{v.quelle} · {datum} · {v.dauer} · {v.sprache}</span>
 				</span>
 			</button>
-			<p class="vid-hint mono">Beim Abspielen wird YouTube geladen (youtube-nocookie.com)</p>
+			<p class="vid-hint mono">Vorschaubild und Video von YouTube</p>
 		</div>
 		{
 			kapitel.length > 0 && (
