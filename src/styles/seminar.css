@@ -146,6 +146,7 @@ body.sem {
 .sem-lit { border-top: 2px solid var(--ink); }
 .sem-lit li { display: grid; grid-template-columns: 3rem 1fr auto; gap: 1rem; align-items: baseline; padding: 1rem 0; border-bottom: 1px solid var(--line); }
 .sem-lit ol { list-style: none; margin: 0; padding: 0; }
+.sem-keine { margin: 0; padding: 1rem 0; border-bottom: 1px solid var(--line); font-size: 18px; }
 .sem-lit .n { font: 500 13px var(--mono); color: var(--ac); }
 .sem-lit b { font-family: var(--grotesk); font-weight: 600; }
 .sem-lit .pg { font: 13px/1.4 var(--mono); color: var(--mute); text-align: right; white-space: nowrap; }

@@ -45,7 +45,7 @@ const hatText = s.body?.trim();
 	<p class="sem-lead">{vor}{nach !== null && <><span class="hl">{d.markierung}</span>{nach}</>}</p>
 	<div class="sem-meta">
 		{d.videos.length > 0 && <span>{d.videos.length} {d.videos.length === 1 ? 'Video' : 'Videos'}</span>}
-		<span>{d.texte.length} {d.texte.length === 1 ? 'Text' : 'Texte'}</span>
+		<span>{d.texte.length === 0 ? 'Ohne Lektüre' : `${d.texte.length} ${d.texte.length === 1 ? 'Text' : 'Texte'}`}</span>
 		{bereich && <span>{bereich}</span>}
 	</div>
 
@@ -83,6 +83,7 @@ const hatText = s.body?.trim();
 	<section class="sem-sec">
 		<h2>Lektüre</h2>
 		<div class="sem-lit">
+			{d.texte.length === 0 && <p class="sem-keine">Für diese Sitzung ist nichts zu lesen – wir beginnen gemeinsam im Seminar.</p>}
 			<ol>
 				{
 					d.texte.map((t, i) => {

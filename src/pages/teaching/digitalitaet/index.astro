@@ -53,7 +53,7 @@ const letzte = sitzungen[sitzungen.length - 1].data.datum;
 					<span class="dat">Mi {tag(s.datum)}</span>
 					<p class="frage">{s.leitfrage}</p>
 					<span class="cnt">
-						{[s.videos.length > 0 && anzahl(s.videos.length, 'Video', 'Videos'), anzahl(s.texte.length, 'Text', 'Texte')]
+						{[s.videos.length > 0 && anzahl(s.videos.length, 'Video', 'Videos'), s.texte.length > 0 ? anzahl(s.texte.length, 'Text', 'Texte') : 'ohne Lektüre']
 							.filter(Boolean)
 							.join(' · ')}
 					</span>
