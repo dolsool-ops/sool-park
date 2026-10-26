@@ -268,7 +268,6 @@ body.sem {
 .stimme { margin: 0 0 1.8rem; padding-left: 1.1rem; border-left: 3px solid var(--ac); }
 .stimme figcaption { font: 500 12px/1.4 var(--mono); text-transform: uppercase; letter-spacing: 0.05em; color: var(--mute); margin-bottom: 0.45rem; }
 .stimme blockquote { margin: 0; padding: 0; border: 0; font-style: normal; font-size: 19px; line-height: 1.55; }
-.stimme .ko { margin: 0.5rem 0 0; font: 13.5px/1.6 'KoPubWorld Dotum', 'Apple SD Gothic Neo', sans-serif; color: var(--mute); }
 .stimme .quelle { margin: 0.35rem 0 0; font: 11.5px/1.45 var(--mono); color: var(--mute); word-break: break-word; }
 
 .sem-weiter { margin-top: 2rem; }
@@ -298,6 +297,7 @@ body.sem {
 .bz-methode { margin-top: 3rem; max-width: 46rem; font-size: 16.5px; }
 .bz-methode summary { cursor: pointer; font: 500 13px var(--mono); text-transform: uppercase; letter-spacing: 0.06em; color: var(--ac); }
 .bz-methode p { margin: 0.9rem 0 0; color: #3a404c; }
+.sem-claude { max-width: 44rem; margin: 1.6rem 0 0; font: 13px/1.6 var(--mono); color: var(--mute); }
 .sem-bilanz-link { margin: 1.4rem 0 0; font: 13px/1.5 var(--mono); }
 .sem-bilanz-link a { color: var(--ac); text-decoration: none; }
 .sem-bilanz-link a:hover { text-decoration: underline; }
