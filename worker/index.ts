@@ -1,9 +1,11 @@
 // Cloudflare Worker: static site from ./dist plus the seminar chat at /api/seminar-chat.
 // The chat needs the access code handed out in the first session, keeps a monthly
 // budget, and answers from the reader text of the session (KV namespace SEMINAR,
-// filled by scripts/seminar_kontext.py). Nothing the students write is stored.
+// filled by scripts/seminar_kontext.py). Chat messages are not stored; the anonymous
+// cards of the in-class exercise (worker/karten.ts) are, until the end of the semester.
 import Anthropic from '@anthropic-ai/sdk';
 import { PERSONA } from './persona';
+import { karten, type KartenKV } from './karten';
 
 interface KV {
 	get(key: string): Promise<string | null>;
@@ -12,11 +14,12 @@ interface KV {
 
 interface Env {
 	ASSETS: { fetch(request: Request): Promise<Response> };
-	SEMINAR: KV;
+	SEMINAR: KV & KartenKV;
 	ANTHROPIC_API_KEY: string;
 	SEMINAR_CODE: string;
 	BUDGET_USD?: string; // monthly cap, default 21 (≈ 20 €)
 	FREIGABE_JETZT?: string; // local tests only: pretend it is this moment (ISO)
+	KARTEN_JETZT?: string; // local tests only, for the anonymous cards (worker/karten.ts)
 }
 
 const MODEL = 'claude-sonnet-5-5';
@@ -205,6 +208,7 @@ export default {
 		const url = new URL(request.url);
 		if (url.pathname === '/api/seminar-chat') return chat(request, env);
 		if (url.pathname === '/api/seminar-bilanz') return bilanz(env);
+		if (url.pathname === '/api/seminar-karten' || url.pathname === '/api/seminar-karten/wand') return karten(request, env, url.pathname);
 		const seite = url.pathname.match(SITZUNGSSEITE);
 		if (seite) {
 			const sperre = await gesperrt(request, env, seite[1]);

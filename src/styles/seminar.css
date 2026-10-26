@@ -327,3 +327,33 @@ body.sem {
 	.sem-row .dat, .sem-row .cnt { grid-column: 2; text-align: left; }
 	.sem-row h3 { font-size: 21px; }
 }
+
+/* ---------- anonymous cards (worker/karten.ts) ---------- */
+.kt { max-width: 46rem; margin-top: 2rem; }
+.kt-frage { font: italic 400 26px/1.35 var(--serif); margin: 0 0 1.4rem; }
+.kt-form textarea {
+	display: block; box-sizing: border-box; width: 100%; margin: 0.4rem 0 1rem; padding: 0.9rem 1rem;
+	border: 1.5px solid var(--ink); background: #fff; font: 19px/1.45 var(--serif); resize: vertical;
+}
+.kt-form textarea:focus { outline: 3px solid var(--hl); outline-offset: 0; }
+.kt-zeile { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.kt-knopf { all: unset; cursor: pointer; padding: 0.7rem 1.3rem; background: var(--ink); color: #fff; font: 600 16px/1 var(--grotesk); }
+.kt-knopf:hover, .kt-knopf:focus-visible { background: var(--ac); }
+.kt-knopf:disabled { opacity: 0.5; cursor: default; }
+.kt-knopf-leise { background: #fff; color: var(--ink); border: 1.5px solid var(--ink); }
+.kt-hinweis { font-size: 13px; color: #b42318; }
+.kt-anonym { margin: 1.6rem 0 0; font: 13px/1.6 var(--mono); color: var(--mute); }
+.kt-danke { margin-top: 1rem; }
+.kt-danke .kt-knopf { margin-top: 1.4rem; }
+
+.kt-wand { margin-top: 1rem; }
+.kt-wand-kopf { display: flex; justify-content: space-between; align-items: flex-start; gap: 2rem; flex-wrap: wrap; }
+.kt-wand .kt-frage { font-size: 30px; max-width: 48rem; }
+.kt-adresse { font-size: 22px; padding: 0.4rem 0.8rem; background: var(--hl); white-space: nowrap; }
+.kt-wand-leiste { display: flex; justify-content: space-between; align-items: center; margin: 1rem 0 1.5rem; padding-bottom: 0.8rem; border-bottom: 2px solid var(--ink); }
+.kt-karten { columns: 3 18rem; column-gap: 1.2rem; }
+.kt-karte {
+	break-inside: avoid; margin: 0 0 1.2rem; padding: 1.1rem 1.3rem; background: #fff; border: 1.5px solid var(--ink);
+	font: 20px/1.45 var(--serif); white-space: pre-wrap; transition: transform 0.2s, box-shadow 0.2s;
+}
+.kt-karte.gezogen { background: var(--hl); box-shadow: 8px 8px 0 var(--ac); transform: translate(-3px, -3px); }

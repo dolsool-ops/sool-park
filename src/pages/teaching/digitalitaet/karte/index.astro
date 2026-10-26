@@ -1,0 +1,91 @@
+---
+// Anonymous card for an in-class exercise (worker/karten.ts). The question comes from the
+// Worker while the pad is open; it is not part of this page.
+import Seminar from '../../../../layouts/Seminar.astro';
+---
+
+<Seminar title="Karte" description="Eine anonyme Karte für das Seminar." robots="noindex">
+	<div class="sem-hero">
+		<div class="sem-num">✎</div>
+		<div>
+			<p class="sem-kick">Philosophie der Digitalität · Seminar</p>
+			<h1>Eine Karte</h1>
+		</div>
+	</div>
+
+	<div class="kt" data-karte>
+		<p class="sem-lead" data-zustand>Einen Moment …</p>
+
+		<form class="kt-form" data-form hidden>
+			<p class="kt-frage" data-frage></p>
+			<label class="sem-label" for="kt-text">Deine Antwort</label>
+			<textarea id="kt-text" name="text" rows="7" maxlength="500" required></textarea>
+			<div class="kt-zeile">
+				<button type="submit" class="kt-knopf">Karte abgeben</button>
+				<span class="mono kt-hinweis" data-fehler></span>
+			</div>
+			<p class="kt-anonym">
+				Anonym: Gespeichert wird nur der Text – kein Name, keine IP-Adresse, keine Cookies. Gegen Spam bleibt drei
+				Stunden lang eine unumkehrbare Prüfsumme deiner Verbindung. Die Karten werden im Seminar gezeigt und nach dem
+				Semester gelöscht.
+			</p>
+		</form>
+
+		<div class="kt-danke" data-danke hidden>
+			<p class="sem-lead">Danke – deine Karte ist angekommen.</p>
+			<button type="button" class="kt-knopf kt-knopf-leise" data-noch>Noch eine Karte</button>
+		</div>
+	</div>
+
+	<script>
+		const box = document.querySelector<HTMLElement>('[data-karte]')!;
+		const zustand = box.querySelector<HTMLElement>('[data-zustand]')!;
+		const form = box.querySelector<HTMLFormElement>('[data-form]')!;
+		const danke = box.querySelector<HTMLElement>('[data-danke]')!;
+		const fehler = box.querySelector<HTMLElement>('[data-fehler]')!;
+		const feld = form.querySelector('textarea')!;
+
+		fetch('/api/seminar-karten', { cache: 'no-store' })
+			.then((r) => r.json())
+			.then((d) => {
+				if (!d.offen || !d.frage) {
+					zustand.textContent = 'Diese Seite ist gerade nicht geöffnet.';
+					return;
+				}
+				zustand.hidden = true;
+				box.querySelector('[data-frage]')!.textContent = d.frage;
+				form.hidden = false;
+				feld.focus();
+			})
+			.catch(() => (zustand.textContent = 'Die Seite konnte gerade nicht geladen werden.'));
+
+		form.addEventListener('submit', async (e) => {
+			e.preventDefault();
+			fehler.textContent = '';
+			const knopf = form.querySelector('button')!;
+			knopf.disabled = true;
+			try {
+				const r = await fetch('/api/seminar-karten', {
+					method: 'POST',
+					headers: { 'content-type': 'application/json' },
+					body: JSON.stringify({ text: feld.value }),
+				});
+				const d = await r.json();
+				if (!r.ok) throw new Error(d.fehler ?? 'Das hat nicht geklappt.');
+				feld.value = '';
+				form.hidden = true;
+				danke.hidden = false;
+			} catch (err) {
+				fehler.textContent = err instanceof Error ? err.message : 'Das hat nicht geklappt.';
+			} finally {
+				knopf.disabled = false;
+			}
+		});
+
+		box.querySelector('[data-noch]')!.addEventListener('click', () => {
+			danke.hidden = true;
+			form.hidden = false;
+			feld.focus();
+		});
+	</script>
+</Seminar>

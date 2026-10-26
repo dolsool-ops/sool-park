@@ -1,0 +1,69 @@
+---
+// Projector view of the anonymous cards (worker/karten.ts): all cards, refreshed every 20 seconds,
+// and a button that picks one card at random to read aloud.
+import Seminar from '../../../../layouts/Seminar.astro';
+---
+
+<Seminar title="Karten" description="Die anonymen Karten des Seminars." robots="noindex">
+	<div class="kt-wand" data-wand>
+		<div class="kt-wand-kopf">
+			<p class="kt-frage" data-frage></p>
+			<p class="kt-adresse mono">sool-park.com/karte</p>
+		</div>
+		<div class="kt-wand-leiste">
+			<span class="mono" data-anzahl>–</span>
+			<button type="button" class="kt-knopf" data-ziehen>Eine Karte ziehen</button>
+		</div>
+		<p class="sem-lead" data-zustand>Einen Moment …</p>
+		<div class="kt-karten" data-karten></div>
+	</div>
+
+	<script>
+		const wand = document.querySelector<HTMLElement>('[data-wand]')!;
+		const liste = wand.querySelector<HTMLElement>('[data-karten]')!;
+		const zustand = wand.querySelector<HTMLElement>('[data-zustand]')!;
+		let bekannt: string[] = [];
+
+		const zeigen = (karten: string[]) => {
+			if (karten.join('\u0000') === bekannt.join('\u0000')) return;
+			bekannt = karten;
+			liste.replaceChildren(
+				...karten.map((t) => {
+					const k = document.createElement('blockquote');
+					k.className = 'kt-karte';
+					k.textContent = t;
+					return k;
+				}),
+			);
+			wand.querySelector('[data-anzahl]')!.textContent = karten.length === 1 ? '1 Karte' : `${karten.length} Karten`;
+		};
+
+		const laden = () =>
+			fetch('/api/seminar-karten/wand', { cache: 'no-store' })
+				.then((r) => r.json())
+				.then((d) => {
+					if (!d.offen) {
+						zustand.textContent = 'Die Karten sind gerade nicht geöffnet.';
+						zustand.hidden = false;
+						return;
+					}
+					wand.querySelector('[data-frage]')!.textContent = d.frage ?? '';
+					zustand.hidden = d.karten.length > 0;
+					zustand.textContent = 'Noch keine Karten – neue erscheinen nach spätestens einer Minute.';
+					zeigen(d.karten);
+				})
+				.catch(() => (zustand.textContent = 'Die Karten konnten gerade nicht geladen werden.'));
+
+		laden();
+		setInterval(laden, 20000);
+
+		wand.querySelector('[data-ziehen]')!.addEventListener('click', () => {
+			const alle = [...liste.querySelectorAll<HTMLElement>('.kt-karte')];
+			if (!alle.length) return;
+			alle.forEach((k) => k.classList.remove('gezogen'));
+			const k = alle[Math.floor(Math.random() * alle.length)];
+			k.classList.add('gezogen');
+			k.scrollIntoView({ behavior: 'smooth', block: 'center' });
+		});
+	</script>
+</Seminar>
