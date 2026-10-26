@@ -1,9 +1,10 @@
 // When the seminar pages go online. From the start of the seminar on, a session page opens
 // on the evening of the previous session (20:00 in Hildesheim), one week ahead; the first
-// session is always open. Before AKTIV_AB everything is visible (course choice).
+// session is always open. Before AKTIV_AB everything was visible (course choice); since 26.10.2026
+// only session 1 is open until the first meeting (decision of the course lead).
 // The Worker enforces this (worker/index.ts reads termine.json); the pages only mirror it.
 
-export const AKTIV_AB = '2026-10-28T00:00:00+01:00';
+export const AKTIV_AB = '2026-10-26T00:00:00+01:00';
 const UHRZEIT = '20:00';
 
 interface Termin { nr: number; datum: Date; }
