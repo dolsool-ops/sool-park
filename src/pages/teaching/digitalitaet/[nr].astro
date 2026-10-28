@@ -30,7 +30,9 @@ const teile = (angabe: string) => {
 	return i > 0 && i < 40 ? [angabe.slice(0, i), angabe.slice(i + 2)] : ['', angabe];
 };
 const seiten = d.texte.filter((t) => t.seiten).map((t) => t.seiten!);
-const bereich = seiten.length ? `Reader S. ${seiten[0].split('–')[0]}–${seiten[seiten.length - 1].split('–').pop()}` : null;
+// first and last reader page over all texts (the list need not follow the reader order)
+const grenzen = seiten.flatMap((s) => s.split('–').map(Number));
+const bereich = seiten.length ? `Reader S. ${Math.min(...grenzen)}–${Math.max(...grenzen)}` : null;
 const hatText = s.body?.trim();
 ---
 

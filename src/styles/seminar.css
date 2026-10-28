@@ -264,6 +264,11 @@ body.sem {
 .stimmen h2 { margin-bottom: 0.8rem; }
 .stimmen h3 { font-weight: 600; font-size: 21px; letter-spacing: -0.015em; margin: 2.6rem 0 1rem; padding-top: 0.8rem; border-top: 1px solid var(--line); }
 .stimmen-intro { font-size: 18px; margin: 0 0 0.6rem; }
+.stimmen-buch { float: right; width: 150px; margin: 0.3rem 0 1rem 1.6rem; }
+.stimmen-buch img { display: block; width: 100%; height: auto; box-shadow: 0 6px 18px rgb(0 0 0 / 0.18); }
+.stimmen-buch figcaption { margin-top: 0.55rem; font: 11px/1.45 var(--mono); color: var(--mute); }
+.stimmen h3 { clear: both; }
+@media (max-width: 560px) { .stimmen-buch { float: none; width: 130px; margin: 0.4rem 0 1.2rem; } }
 .stimmen-quelle { font: 12.5px/1.55 var(--mono); color: var(--mute); margin: 0 0 1rem; }
 .stimme { margin: 0 0 1.8rem; padding-left: 1.1rem; border-left: 3px solid var(--ac); }
 .stimme figcaption { font: 500 12px/1.4 var(--mono); text-transform: uppercase; letter-spacing: 0.05em; color: var(--mute); margin-bottom: 0.45rem; }

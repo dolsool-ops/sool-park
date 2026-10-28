@@ -115,9 +115,11 @@ const year = new Date().getFullYear();
 
 			// Session pages that are not released yet (the Worker blocks them; see src/lib/freigabe.ts):
 			// links become plain labels with their release date. `?jetzt=ISO` previews another moment.
+			// On the local dev server everything stays open (preview of the whole semester).
 			const vorschau = new URLSearchParams(location.search).get('jetzt');
 			const jetzt = vorschau ? new Date(vorschau) : new Date();
-			if (jetzt >= new Date(document.body.dataset.freigabeAb!)) {
+			const lokal = ['localhost', '127.0.0.1'].includes(location.hostname) && !vorschau;
+			if (!lokal && jetzt >= new Date(document.body.dataset.freigabeAb!)) {
 				document.querySelectorAll<HTMLAnchorElement>('a[data-freigabe]').forEach((a) => {
 					const ab = new Date(a.dataset.freigabe!);
 					if (jetzt >= ab) return;
