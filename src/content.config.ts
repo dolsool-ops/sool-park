@@ -88,6 +88,8 @@ const sitzungen = defineCollection({
 		kurz: z.string(),
 		leitfrage: z.string(),
 		markierung: z.string().optional(),
+		// button to the anonymous card pad (worker/karten.ts); shown only while the pad is open
+		pad: z.boolean().optional(),
 		texte: z
 			.array(
 				z.object({

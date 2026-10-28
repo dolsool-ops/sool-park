@@ -50,6 +50,7 @@ const hatText = s.body?.trim();
 		<span>{d.texte.length === 0 ? 'Ohne Lektüre' : `${d.texte.length} ${d.texte.length === 1 ? 'Text' : 'Texte'}`}</span>
 		{bereich && <span>{bereich}</span>}
 	</div>
+	{d.pad && <a class="sem-pad" href="/teaching/digitalitaet/karte/" data-pad hidden>Anonyme Karte schreiben →</a>}
 
 	<Pfad sitzungen={alle.map((x) => x.data)} aktuell={d.nr} />
 
@@ -158,4 +159,14 @@ const hatText = s.body?.trim();
 	</nav>
 
 	<Chat nr={slug(d.nr)} />
+
+	<script>
+		// The pad button appears only while the card pad is open; the Worker decides (worker/karten.ts).
+		const pad = document.querySelector<HTMLElement>('[data-pad]');
+		if (pad)
+			fetch('/api/seminar-karten', { cache: 'no-store' })
+				.then((r) => r.json())
+				.then((d) => (pad.hidden = !d.offen))
+				.catch(() => {});
+	</script>
 </Seminar>

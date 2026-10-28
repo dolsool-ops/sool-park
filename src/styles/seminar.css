@@ -59,6 +59,9 @@ body.sem {
 .sem-kick { font: 500 13px/1.5 var(--mono); text-transform: uppercase; letter-spacing: 0.06em; color: var(--mute); margin: 0 0 0.8rem; }
 .sem h1 { font-weight: 700; font-size: 58px; line-height: 1; letter-spacing: -0.035em; margin: 0; }
 .sem-lead { font-size: 1.5rem; font-style: italic; line-height: 1.4; max-width: 46rem; margin: 2rem 0 0; }
+.sem .sem-pad { display: inline-block; margin-top: 1.4rem; padding: 0.85rem 1.4rem; background: var(--ink); color: #fff; font: 600 17px/1 var(--grotesk); text-decoration: none; }
+.sem .sem-pad:hover, .sem .sem-pad:focus-visible { background: var(--ac); }
+.sem-pad[hidden] { display: none; }
 .sem-meta { display: flex; flex-wrap: wrap; gap: 0.4rem 1.6rem; margin-top: 1.2rem; font: 13px/1.4 var(--mono); color: var(--mute); }
 
 /* ---------- session path (13 stations) ---------- */
