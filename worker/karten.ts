@@ -22,7 +22,7 @@ export interface KartenEnv {
 const FENSTER = { von: '2026-10-28T17:45:00+01:00', bis: '2026-10-28T20:15:00+01:00' };
 const LOESCHEN = Date.parse('2027-03-31T23:59:00+02:00') / 1000;
 const MAX_BYTES = 1000; // stored as KV metadata, which allows 1024 bytes
-const PRO_GERAET = 5; // cards per address within three hours
+const PRO_GERAET = 50; // cards per address within three hours (a class may share one address behind the university NAT)
 const PREFIX = 'karten:01:';
 
 const antwort = (status: number, daten: unknown) =>
