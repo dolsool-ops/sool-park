@@ -1,8 +1,11 @@
 // Cloudflare Worker: static site from ./dist plus the seminar chat at /api/seminar-chat.
 // The chat needs the access code handed out in the first session, keeps a monthly
-// budget, and answers from the reader text of the session (KV namespace SEMINAR,
-// filled by scripts/seminar_kontext.py). Chat messages are not stored; the anonymous
-// cards of the in-class exercise (worker/karten.ts) are, until the end of the semester.
+// budget, and answers as the same participant as the voice in the room: same core
+// persona, semester plan, excerpt of all sessions and seminar memory, plus the page and
+// full reader text of the session being read (KV namespace SEMINAR, filled by
+// scripts/seminar_kontext.py and seminar-stimme/werkzeuge/claude_kontext.py). Chat
+// messages are not stored; the anonymous cards of the in-class exercise
+// (worker/karten.ts) are, until the end of the semester.
 import Anthropic from '@anthropic-ai/sdk';
 import { PERSONA } from './persona';
 import { karten, type KartenKV } from './karten';
@@ -72,11 +75,33 @@ async function chat(request: Request, env: Env): Promise<Response> {
 	if (Number(count ?? 0) >= PER_HOUR) return json(429, 'Zu viele Fragen in kurzer Zeit – bitte später weiter.');
 	await env.SEMINAR.put(`rate:${ip}:${hour}`, String(Number(count ?? 0) + 1), { expirationTtl: 7200 });
 
-	const [plan, texte, gedaechtnis] = await Promise.all([
+	const [persona, plan, exzerpt, gedaechtnis, seite, texte] = await Promise.all([
+		env.SEMINAR.get('persona'),
 		env.SEMINAR.get('plan'),
-		env.SEMINAR.get(`sitzung:${nr}`),
+		env.SEMINAR.get('exzerpt'),
 		env.SEMINAR.get('gedaechtnis'),
+		env.SEMINAR.get(`seite:${nr}`),
+		env.SEMINAR.get(`sitzung:${nr}`),
 	]);
+
+	// Everything the same on every page comes first and is cached on its own, so questions
+	// from all pages share it; the page and its reader text follow with a second breakpoint.
+	const cache = { type: 'ephemeral' } as const;
+	const system: Anthropic.Beta.BetaTextBlockParam[] = [
+		{ type: 'text', text: persona ?? PERSONA },
+		{ type: 'text', text: `# Semesterplan\n\n${plan ?? '(fehlt)'}` },
+	];
+	if (exzerpt) system.push({ type: 'text', text: `# Exzerpt der Texte aller Sitzungen\n\n${exzerpt}` });
+	system.push(
+		{ type: 'text', text: `# Seminargedächtnis\n\n${gedaechtnis ?? '(Noch keine Sitzung festgehalten.)'}`, cache_control: cache },
+		{
+			type: 'text',
+			text:
+				`# Diese Seite: Sitzung ${Number(nr)}\n\n${seite ? `${seite}\n\n` : ''}` +
+				`## Reader-Texte (Volltext)\n\n${texte ?? '(Für diese Sitzung liegt kein Text vor.)'}`,
+			cache_control: cache,
+		},
+	);
 
 	const client = new Anthropic({ apiKey: env.ANTHROPIC_API_KEY });
 	const stream = client.beta.messages.stream({
@@ -85,16 +110,7 @@ async function chat(request: Request, env: Env): Promise<Response> {
 		output_config: { effort: 'high' },
 		betas: ['server-side-fallback-2026-07-01'],
 		fallbacks: 'default',
-		system: [
-			{ type: 'text', text: PERSONA },
-			{ type: 'text', text: `# Semesterplan\n\n${plan ?? '(fehlt)'}` },
-			{ type: 'text', text: `# Reader-Texte zu Sitzung ${Number(nr)}\n\n${texte ?? '(Für diese Sitzung liegt kein Text vor.)'}` },
-			{
-				type: 'text',
-				text: `# Seminargedächtnis\n\n${gedaechtnis ?? '(Noch keine Sitzung festgehalten.)'}`,
-				cache_control: { type: 'ephemeral' },
-			},
-		],
+		system,
 		messages: messages.map((m) => ({ role: m.role, content: m.content })),
 	});
 

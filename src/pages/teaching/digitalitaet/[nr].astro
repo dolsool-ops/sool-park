@@ -100,7 +100,7 @@ const hatText = s.body?.trim();
 									{rest}
 								</span>
 								<span class="pg">
-									{t.folgt ? 'folgt' : `Reader S. ${t.seiten}`}
+									{t.folgt ? 'folgt' : t.seiten ? `Reader S. ${t.seiten}` : 'nur online'}
 									{t.link && (
 										<a href={t.link} target="_blank" rel="noopener">
 											frei online ↗
