@@ -36,7 +36,7 @@ for l in lines:
 
 sessions = []
 for text, page in entries:
-    m = re.match(r'Sitzung (\d+) · (\d\d\.\d\d\.\d{4}) · (.+)', text)
+    m = re.match(r'Sitzung (\d+) · (\d\d\.\d\d\.\d{4}|Termin folgt) · (.+)', text)
     if m:
         sessions.append(dict(nr=int(m[1]), datum=m[2], titel=m[3], kopf=page, texte=[]))
     else:

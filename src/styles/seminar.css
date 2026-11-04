@@ -62,6 +62,7 @@ body.sem {
 .sem .sem-pad { display: inline-block; margin-top: 1.4rem; padding: 0.85rem 1.4rem; background: var(--ink); color: #fff; font: 600 17px/1 var(--grotesk); text-decoration: none; }
 .sem .sem-pad:hover, .sem .sem-pad:focus-visible { background: var(--ac); }
 .sem-pad[hidden] { display: none; }
+.sem-ausfall { margin: 1.2rem 0 0; padding: 0.6rem 0.9rem; border-left: 3px solid var(--ac); background: rgba(31, 75, 255, 0.05); font: 14px/1.5 var(--mono); }
 .sem-meta { display: flex; flex-wrap: wrap; gap: 0.4rem 1.6rem; margin-top: 1.2rem; font: 13px/1.4 var(--mono); color: var(--mute); }
 
 /* ---------- session path (13 stations) ---------- */
@@ -189,6 +190,9 @@ body.sem {
 /* not released yet (see src/lib/freigabe.ts) */
 .sem-row .ab, .sem-pn .ab { margin-left: 0.6rem; padding: 0.1rem 0.5rem; border: 1px solid var(--line); color: var(--mute); font: 500 11px/1.5 var(--mono); text-transform: uppercase; letter-spacing: 0.05em; vertical-align: middle; }
 .sem-row .ab[hidden], .sem-pn .ab[hidden] { display: none; }
+.sem-row.aus { cursor: default; }
+.sem-row.aus:hover { background: none; }
+.sem-row.aus .nr, .sem-row.aus h3, .sem-row.aus .frage { color: var(--mute); }
 .sem-row.zu { cursor: default; }
 .sem-row.zu:hover { background: none; }
 .sem-row.zu .nr, .sem-row.zu h3 { color: var(--mute); }

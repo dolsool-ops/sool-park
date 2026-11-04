@@ -84,6 +84,8 @@ const sitzungen = defineCollection({
 	schema: z.object({
 		nr: z.number(),
 		datum: z.coerce.date(),
+		// date not fixed yet: the pages show "Termin folgt"; `datum` then only orders the session and sets its release
+		termin_folgt: z.boolean().optional(),
 		titel: z.string(),
 		kurz: z.string(),
 		leitfrage: z.string(),

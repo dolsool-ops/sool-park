@@ -5,6 +5,7 @@ import Pfad from '../../../components/seminar/Pfad.astro';
 import Video from '../../../components/seminar/Video.astro';
 import Chat from '../../../components/seminar/Chat.astro';
 import { freigaben } from '../../../lib/freigabe';
+import { AUSFAELLE, datumText } from '../../../lib/ausfall';
 
 export async function getStaticPaths() {
 	const alle = (await getCollection('sitzungen')).sort((a, b) => a.data.nr - b.data.nr);
@@ -19,7 +20,12 @@ const { Content } = await render(s);
 const d = s.data;
 const slug = (nr: number) => String(nr).padStart(2, '0');
 const fg = freigaben(alle.map((x) => x.data));
-const tag = d.datum.toLocaleDateString('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'UTC' });
+const iso = (x: Date) => x.toISOString().slice(0, 10);
+const tag = datumText(iso(d.datum));
+// cancelled Wednesdays between the previous session and this one, or between this one and the next
+const ausfall = AUSFAELLE.filter(
+	(a) => (vorher && a > iso(vorher.data.datum) && a < iso(d.datum)) || (nachher && a > iso(d.datum) && a < iso(nachher.data.datum)),
+);
 
 // Leitfrage with an optional highlighted part
 const [vor, nach] = d.markierung && d.leitfrage.includes(d.markierung) ? d.leitfrage.split(d.markierung) : [d.leitfrage, null];
@@ -40,7 +46,7 @@ const hatText = s.body?.trim();
 	<div class="sem-hero">
 		<div class="sem-num">{d.nr}<small>/{alle.length}</small></div>
 		<div>
-			<p class="sem-kick">Philosophie der Digitalität · Mi {tag} · 18–20 Uhr</p>
+			<p class="sem-kick">Philosophie der Digitalität · {d.termin_folgt ? 'Termin folgt' : `Mi ${tag} · 18–20 Uhr`}</p>
 			<h1>{d.titel}</h1>
 		</div>
 	</div>
@@ -50,6 +56,7 @@ const hatText = s.body?.trim();
 		<span>{d.texte.length === 0 ? 'Ohne Lektüre' : `${d.texte.length} ${d.texte.length === 1 ? 'Text' : 'Texte'}`}</span>
 		{bereich && <span>{bereich}</span>}
 	</div>
+	{ausfall.map((a) => <p class="sem-ausfall">Am Mittwoch, {datumText(a)}, entfällt die Sitzung.</p>)}
 	{d.pad && <a class="sem-pad" href="/teaching/digitalitaet/karte/" data-pad hidden>Anonyme Karte schreiben →</a>}
 
 	<Pfad sitzungen={alle.map((x) => x.data)} aktuell={d.nr} />
